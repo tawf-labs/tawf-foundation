@@ -30,7 +30,7 @@ export default function Landing() {
             </div>
 
             <h1 className="text-5xl md:text-7xl font-light leading-[1.1] tracking-tight text-tawf-green mb-8">
-              We Run the Alternative. <span className="italic text-tawf-gold">Live, On-Chain.</span>
+              Baitul Maal, <span className="italic text-tawf-gold">rebuilt for the digital age.</span>
             </h1>
 
             <p className="text-xl text-tawf-muted font-light leading-relaxed mb-10 max-w-lg">
