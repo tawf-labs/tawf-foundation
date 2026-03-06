@@ -11,7 +11,7 @@ export default function Landing() {
   return (
     <>
       {/* Hero Section */}
-      <section className="py-20 md:min-h-screen px-6 relative overflow-hidden">
+      <section className="py-20 md:py-32 px-6 relative overflow-hidden">
         <div className="absolute inset-0 opacity-[0.03] pointer-events-none flex items-center justify-center">
           <div className="w-[800px] h-[800px] border-[1px] border-tawf-green rounded-full absolute transform -translate-y-1/4"></div>
           <div className="w-[1200px] h-[1200px] border-[1px] border-tawf-green rounded-full absolute transform -translate-y-1/4"></div>
@@ -63,7 +63,7 @@ export default function Landing() {
       </section>
 
       {/* Mission Section */}
-      <section id="mission" className="bg-white min-h-screen border-y border-tawf-green/10">
+      <section id="mission" className="bg-white py-32 border-y border-tawf-green/10">
         <div className="max-w-7xl mx-auto px-6">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-light text-tawf-green mb-6">What We Actually Do</h2>
@@ -120,7 +120,7 @@ export default function Landing() {
       </section>
 
       {/* Foundation & Labs Relationship */}
-      <section className="min-h-screen bg-tawf-ink text-tawf-sand relative overflow-hidden">
+      <section className="py-32 bg-tawf-ink text-tawf-sand relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-tawf-gold/30 to-transparent"></div>
 
         <div className="max-w-7xl mx-auto px-6">
@@ -205,7 +205,7 @@ export default function Landing() {
       </section>
 
       {/* The Framework Section */}
-      <section id="framework" className="min-h-screen bg-tawf-sand">
+      <section id="framework" className="py-32 bg-tawf-sand">
         <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-tawf-gold/30 to-transparent"></div>
 
         <div className="max-w-7xl mx-auto px-6">
@@ -255,7 +255,7 @@ export default function Landing() {
       </section>
 
       {/* Organizational Structure */}
-      <section id="governance" className="min-h-screen bg-white">
+      <section id="governance" className="py-32 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-20">
             <h2 className="text-4xl md:text-5xl font-light text-tawf-green mb-6">Organizational Structure</h2>
@@ -302,7 +302,7 @@ export default function Landing() {
       </section>
 
       {/* Tawf ID */}
-      <section id="ecosystem" className="min-h-screen bg-tawf-sand border-t border-tawf-green/10">
+      <section id="ecosystem" className="py-32 bg-tawf-sand border-t border-tawf-green/10">
         <div className="max-w-3xl mx-auto px-6 text-center">
           <div className="flex items-center justify-center gap-4 mb-8">
             <div className="w-16 h-16 bg-tawf-green rounded-full flex items-center justify-center">
@@ -319,7 +319,7 @@ export default function Landing() {
       </section>
 
       {/* CTA Section */}
-      <section className="min-h-screen bg-tawf-green text-center px-6 relative overflow-hidden">
+      <section className="py-32 bg-tawf-green text-center px-6 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10 pointer-events-none flex items-center justify-center">
           <div className="w-[600px] h-[600px] border-[1px] border-tawf-gold rounded-full absolute"></div>
         </div>
