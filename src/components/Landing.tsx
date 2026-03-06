@@ -58,15 +58,6 @@ export default function Landing() {
               className="oval-mask w-full h-full object-cover opacity-90"
               referrerPolicy="no-referrer"
             />
-            <div className="absolute bottom-12 -left-12 bg-white p-6 rounded-2xl shadow-xl border border-black/5 flex items-center gap-4 max-w-xs">
-              <div className="w-14 h-14 bg-tawf-sand rounded-full flex items-center justify-center shrink-0">
-                <Coins className="w-7 h-7 text-tawf-gold" />
-              </div>
-              <div>
-                <p className="text-sm font-bold tracking-wider uppercase text-tawf-green mb-1">On-Chain Zakat</p>
-                <p className="text-base text-tawf-muted leading-tight">Every disbursement is transparent and auditable.</p>
-              </div>
-            </div>
           </motion.div>
         </div>
       </section>
