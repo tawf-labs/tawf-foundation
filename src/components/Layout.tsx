@@ -69,7 +69,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <ul className="space-y-4 text-sm">
               <li><Link to="/manifesto" className="hover:text-tawf-gold transition-colors">Read the Manifesto</Link></li>
               <li><a href="#" className="hover:text-tawf-gold transition-colors">Certification Portal</a></li>
-              <li><a href="#" className="hover:text-tawf-gold transition-colors">Tawf Labs</a></li>
+              <li><a href="https://tawf.xyz" target="_blank" rel="noopener noreferrer" className="hover:text-tawf-gold transition-colors">Tawf Labs</a></li>
               <li><a href="#" className="hover:text-tawf-gold transition-colors">Contact Us</a></li>
             </ul>
           </div>
