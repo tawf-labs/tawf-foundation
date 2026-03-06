@@ -3,7 +3,7 @@ import { motion } from 'motion/react';
 
 export default function Manifesto() {
   return (
-    <div className="bg-tawf-sand py-24 px-6">
+    <div className="bg-tawf-sand py-32 px-6">
       <div className="max-w-3xl mx-auto">
 
         {/* Header */}
