@@ -34,7 +34,7 @@ export default function Landing() {
             </h1>
 
             <p className="text-xl text-tawf-muted font-light leading-relaxed mb-10 max-w-lg">
-              The Tawf Foundation is the Baitul Maal — the social and charitable soul of the ecosystem. We collect zakat, manage waqf, and operate sadaqah programs. Not as promises. As on-chain reality.
+              The Tawf Foundation is the Baitul Maal - the social and charitable soul of the ecosystem. We collect zakat, manage waqf, and operate sadaqah programs. Not as promises. As on-chain reality.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -77,7 +77,7 @@ export default function Landing() {
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-light text-tawf-green mb-6">What We Actually Do</h2>
             <p className="text-tawf-muted text-xl leading-relaxed">
-              We don't just certify ethical finance. We operate it. Zakat collection, waqf trusteeship, sadaqah programs, and qardhul hasan lending — live on-chain, every day.
+              We don't just certify ethical finance. We operate it. Zakat collection, waqf trusteeship, sadaqah programs, and qardhul hasan lending - live on-chain, every day.
             </p>
           </div>
 
