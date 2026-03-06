@@ -26,7 +26,7 @@ export default function Landing() {
           >
             <div className="flex items-center gap-3 mb-8">
               <div className="h-[1px] w-12 bg-tawf-gold"></div>
-              <span className="text-sm font-semibold tracking-[0.2em] uppercase text-tawf-gold">Baitul Maal for the Digital Age</span>
+              <span className="text-sm font-semibold tracking-[0.2em] uppercase text-tawf-gold">The Public Trust Cornerstone</span>
             </div>
 
             <h1 className="text-5xl md:text-7xl font-light leading-[1.1] tracking-tight text-tawf-green mb-8">
