@@ -5,9 +5,9 @@ export default function Manifesto() {
   return (
     <div className="bg-tawf-sand py-20 px-6">
       <div className="max-w-3xl mx-auto">
-        
+
         {/* Header */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -24,56 +24,115 @@ export default function Manifesto() {
         </motion.div>
 
         {/* Content */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.3 }}
           className="prose prose-lg md:prose-xl prose-stone max-w-none text-tawf-ink/80"
         >
           <div className="space-y-16">
-            
+
             <section>
               <h2 className="text-3xl font-serif text-tawf-green mb-6 font-medium">We Believe Finance Can Be Just.</h2>
               <p className="leading-relaxed">
-                Not as an ideal. Not as a tagline. As a structural fact - encoded into governance, enforced by scholars, owned by the community.
+                Not as an ideal. Not as a tagline. As a structural fact, encoded into governance, enforced by scholars, owned by the community, and proven every single time we collect a dirham of zakat and place it in the hands of someone who needs it.
               </p>
               <p className="leading-relaxed mt-4">
                 For too long, the financial system has operated on a single premise: that profit is the only principle worth building around. That interest is inevitable. That opacity is acceptable. That the community is a market, not a stakeholder. That ethics are a feature you add at the end, not a foundation you build from the beginning.
               </p>
-              <p className="leading-relaxed mt-4 font-medium text-tawf-green">
-                We reject that premise entirely.
+              <p className="leading-relaxed mt-4">
+                We reject that premise. And we don't just say so. We run the alternative, live, on-chain, every day.
               </p>
             </section>
 
             <section>
               <h2 className="text-3xl font-serif text-tawf-green mb-6 font-medium">We Come From Something Real.</h2>
               <p className="leading-relaxed">
-                Before venture capital. Before blockchain. Before DeFi and DAOs and tokenomics - there was Baitul Maal wa Tamwil.
+                Before venture capital. Before blockchain. Before DeFi and DAOs and tokenomics, there was Baitul Maal wa Tamwil.
               </p>
               <p className="leading-relaxed mt-4">
-                For generations, Indonesian communities built their own financial institutions from the ground up. Cooperatives rooted in trust, not collateral. Governed by deliberation, not domination. Funded by zakat and waqf - the belief that wealth held by the few carries an obligation to the many. BMTs did not wait for banks to serve them. They built for themselves. They governed themselves. They trusted themselves.
+                For generations, Indonesian communities built their own financial institutions from the ground up. Cooperatives rooted in trust, not collateral. Governed by deliberation, not domination. Funded by zakat and waqf, the living belief that wealth held by the few carries an obligation to the many. BMTs did not wait for banks to serve them. They built for themselves. They governed themselves. They trusted themselves.
               </p>
               <p className="leading-relaxed mt-4">
                 That is where we come from. That is what we are rebuilding.
               </p>
               <p className="leading-relaxed mt-4">
-                Tawf Foundation is not a Silicon Valley idea wearing Islamic clothing. It is a deeply Indonesian, deeply Islamic institution - born from centuries of cooperative wisdom, rewritten in the language of the digital age.
+                The Tawf Foundation is the Baitul Maal, the social and charitable soul of this ecosystem. Everything commercial that Tawf Labs builds, earns, and grows flows back here. Into the community. Into the hands that need it. Into endowments that will outlast every market cycle. This is not a feature of Tawf. This is the reason Tawf exists.
               </p>
             </section>
 
             <section>
-              <h2 className="text-3xl font-serif text-tawf-green mb-6 font-medium">We Are Not Here to Disrupt. We Are Here to Restore.</h2>
+              <h2 className="text-3xl font-serif text-tawf-green mb-6 font-medium">We Are the Baitul Maal. This Is What That Means.</h2>
               <p className="leading-relaxed">
-                The promise of Web3 was radical: money without gatekeepers, governance without hierarchy, access without permission. A financial system that nobody owns and everybody can use.
+                In the original BMT model, Baitul Maal is not a charity department. It is not a PR initiative. It is not a percentage rounded up at checkout. It is the institutional heart of the entire cooperative, the body that holds the community's trust, manages its collective obligations, and ensures that commercial activity never becomes an end in itself.
               </p>
               <p className="leading-relaxed mt-4">
-                That promise has largely gone unfulfilled. Instead, we got speculation dressed as innovation. Token-weighted governance captured by whales. Complexity weaponized against the ordinary user. A new financial system that reproduced the sins of the old one - faster, more opaquely, with better branding.
+                Tawf Foundation is that body for the digital age.
               </p>
               <p className="leading-relaxed mt-4">
-                We are here to hold Web3 accountable to its own promise.
+                Every certification fee paid to Tawf Labs. Every royalty. Every revenue stream that the commercial engine generates, a portion flows here, to the Foundation, where it is transformed from profit into purpose.
               </p>
-              <p className="leading-relaxed mt-4">
-                Not through criticism from the outside. Through construction from the inside. By building the standards, the governance structures, and the certification infrastructure that make ethical Web3 not just possible - but verifiable, credible, and permanent.
+              <p className="leading-relaxed mt-4 font-medium text-tawf-green">
+                We are not a company that donates to charity. We are a structure where charity is architecturally mandatory.
+              </p>
+            </section>
+
+            <section className="bg-white/50 p-8 md:p-12 rounded-2xl">
+              <h2 className="text-3xl font-serif text-tawf-green mb-8 font-medium">What We Actively Manage and Operate</h2>
+
+              <div className="space-y-10">
+                <div>
+                  <h3 className="text-2xl font-serif text-tawf-green mb-4">Zakat</h3>
+                  <p className="leading-relaxed">
+                    Zakat is not optional. It is one of the Five Pillars of Islam, an obligation, not a choice. The Tawf Foundation serves as the official amil, the legitimate collector and distributor of zakat for the entire Tawf ecosystem. A portion of Tawf Labs' commercial revenue is calculated, declared, and disbursed as zakat through the Foundation to the eight categories of eligible recipients (asnaf) defined by Islamic law. This is not symbolic. It is a real, recurring, on-chain operation, fully transparent, auditable by any community member, and governed by the Scholar Chairmen who ensure every distribution is Sharia-compliant.
+                  </p>
+                  <p className="leading-relaxed mt-4 font-medium text-tawf-green">
+                    We are building the infrastructure to make this the most transparent zakat operation in Southeast Asia.
+                  </p>
+                </div>
+
+                <div>
+                  <h3 className="text-2xl font-serif text-tawf-green mb-4">Waqf and Wakaf Produktif</h3>
+                  <p className="leading-relaxed">
+                    Waqf is Islam's most powerful instrument for intergenerational wealth, an endowment given once that generates benefit forever. The Foundation acts as the legal and governance trustee for all waqf assets within the Tawf ecosystem, including wakaf produktif, productive waqf structures where the endowment is invested to generate ongoing returns that fund community programs perpetually.
+                  </p>
+                  <p className="leading-relaxed mt-4">
+                    Through Tawf Labs' infrastructure, we are building toward tokenized waqf, digital endowments that can be created, managed, and distributed on-chain, with the Foundation serving as the permanent trustee. This means a Muslim anywhere in the world can create a waqf with a smartphone, have it governed by the Foundation, and see its impact distributed to communities in Indonesia, transparently, permanently, without intermediaries taking a cut.
+                  </p>
+                  <p className="leading-relaxed mt-4 font-medium text-tawf-green">
+                    Waqf assets managed by the Foundation cannot be liquidated, redistributed commercially, or claimed by any investor. They are held in perpetual trust for the community. Always.
+                  </p>
+                </div>
+
+                <div>
+                  <h3 className="text-2xl font-serif text-tawf-green mb-4">Sadaqah and Community Grant Programs</h3>
+                  <p className="leading-relaxed">
+                    The Foundation runs active sadaqah programs, voluntary charitable giving channeled into targeted community impact initiatives. These include education grants for Islamic finance students, support for early-stage BMT digitization, funding for scholars and researchers contributing to the TAWF Sharia Framework, and direct community relief programs. Recipients are selected through a transparent, DAO-informed process with final approval from the Board of Trustees.
+                  </p>
+                </div>
+
+                <div>
+                  <h3 className="text-2xl font-serif text-tawf-green mb-4">Qardhul Hasan and Interest-Free Benevolent Lending</h3>
+                  <p className="leading-relaxed">
+                    One of the most important and most neglected instruments in Islamic finance is qardhul hasan, a loan given purely for the sake of Allah, with no interest, no profit, and no expectation beyond repayment of the principal. The Foundation manages a qardhul hasan fund for underserved community members and early-stage BMTs who need access to capital but cannot, or will not, engage with interest-bearing debt. This is ethical microfinance at its most fundamental: money as a tool of human dignity, not a mechanism of extraction.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <section className="bg-tawf-ink text-tawf-sand p-8 md:p-12 rounded-2xl">
+              <h2 className="text-3xl font-serif text-tawf-gold mb-6 font-medium">Our Relationship With Tawf Labs: The Flow of Obligation</h2>
+              <p className="leading-relaxed text-white/80">
+                Tawf Labs is the commercial engine. Tawf Foundation is the mission that engine serves. The relationship between them is not just legal. It is architectural, moral, and designed to be permanent.
+              </p>
+              <p className="leading-relaxed mt-4 text-white/80">
+                Labs pays a monthly royalty of 3 to 8% of gross certification revenue to the Foundation. But beyond the royalty, Labs operates under a broader obligation: a portion of its annual profit is calculated as zakat and transferred to the Foundation for distribution. Waqf assets created through Labs products are held in Foundation trusteeship. Community governance, the TAWF DAO, lives in the Foundation, not in Labs. The TAWF Sharia Framework, which Labs commercializes, is owned by the Foundation and can never be sold, transferred, or modified without Foundation approval.
+              </p>
+              <p className="leading-relaxed mt-4 text-white/80">
+                Labs is powerful. But the Foundation is sovereign.
+              </p>
+              <p className="leading-relaxed mt-6 text-tawf-gold font-medium">
+                This is the structure that guarantees that as Tawf grows, as Labs raises capital, signs enterprise deals, and scales across Southeast Asia, the community's share of the outcome cannot be diluted, sold, or quietly set aside. It is locked into the Foundation by design. Forever.
               </p>
             </section>
 
@@ -81,25 +140,25 @@ export default function Manifesto() {
               <h2 className="text-3xl font-serif text-tawf-green mb-6 font-medium">We Believe in Seven Principles. Non-Negotiable. Always.</h2>
               <ul className="space-y-6 list-none pl-0">
                 <li className="leading-relaxed">
-                  <strong className="text-tawf-green">No Riba.</strong> Interest is not a neutral instrument. It is a mechanism that transfers wealth from the borrower to the lender regardless of outcome - rewarding capital while punishing labor, entrenching inequality with mathematical precision. We build without it.
+                  <strong className="text-tawf-green">No Riba.</strong> Interest is not a neutral instrument. It is a mechanism that transfers wealth from the borrower to the lender regardless of outcome, rewarding capital while punishing labor, entrenching inequality with mathematical precision. We build without it. We certify without it. We operate without it.
                 </li>
                 <li className="leading-relaxed">
-                  <strong className="text-tawf-green">No Gharar.</strong> Uncertainty that harms is prohibited. Smart contracts must be auditable. Terms must be disclosed. Users must know what they are entering into. Opacity in finance is not sophistication - it is predation.
+                  <strong className="text-tawf-green">No Gharar.</strong> Uncertainty that harms is prohibited. Smart contracts must be auditable. Terms must be disclosed. Users must know what they are entering into. Opacity in finance is not sophistication. It is predation.
                 </li>
                 <li className="leading-relaxed">
-                  <strong className="text-tawf-green">No Maysir.</strong> Gambling is not a financial product. Zero-sum speculation that enriches participants at each other's expense is not innovation. The financial system must create real value - not merely redistribute it from the unlucky to the lucky.
+                  <strong className="text-tawf-green">No Maysir.</strong> Gambling is not a financial product. Zero-sum speculation that enriches participants at each other's expense is not innovation. The financial system must create real value, not merely redistribute it from the unlucky to the lucky.
                 </li>
                 <li className="leading-relaxed">
-                  <strong className="text-tawf-green">Real Asset Backing.</strong> Tokens must represent something real. Finance that is entirely detached from productive human activity - from goods, services, labor, and land - is not finance. It is a fiction that eventually collapses on the people least able to survive the fall.
+                  <strong className="text-tawf-green">Real Asset Backing.</strong> Tokens must represent something real. Finance entirely detached from productive human activity, from goods, services, labor, and land, is not finance. It is a fiction that eventually collapses on the people least able to survive the fall.
                 </li>
                 <li className="leading-relaxed">
-                  <strong className="text-tawf-green">Transparent Governance.</strong> Power must be visible. Decisions must be traceable. Those who govern must be accountable to those they govern. On-chain auditability is not a technical feature - it is a moral requirement.
+                  <strong className="text-tawf-green">Transparent Governance.</strong> Power must be visible. Decisions must be traceable. Those who govern must be accountable to those they govern. On-chain auditability is not a technical feature. It is a moral requirement.
                 </li>
                 <li className="leading-relaxed">
-                  <strong className="text-tawf-green">Social Impact & Maslaha.</strong> Every financial product must answer a simple question: who benefits, and how? If the honest answer is "a small group of early participants, at the eventual expense of everyone else," it does not pass. Finance must serve the many. That is what it is for.
+                  <strong className="text-tawf-green">Social Impact and Maslaha.</strong> Every financial product must answer a simple question: who benefits, and how? Finance must serve the many. That is what it is for. Maslaha is not a soft aspiration. It is a screening criterion, and it is the reason we run zakat and waqf operations ourselves rather than simply certifying others who claim to.
                 </li>
                 <li className="leading-relaxed">
-                  <strong className="text-tawf-green">Halal Sector Compliance.</strong> Capital has direction. Where money flows, power and harm follow. Certified products must not direct capital toward industries that cause demonstrable harm to individuals, families, or communities. The prohibition is not arbitrary - it is an acknowledgment that finance is never neutral.
+                  <strong className="text-tawf-green">Halal Sector Compliance.</strong> Capital has direction. Where money flows, power and harm follow. Certified products must not direct capital toward industries that cause demonstrable harm to individuals, families, or communities.
                 </li>
               </ul>
             </section>
@@ -110,78 +169,53 @@ export default function Manifesto() {
                 Not to investors. Not to founders. Not to whoever holds the most tokens.
               </p>
               <p className="leading-relaxed mt-4">
-                The TAWF DAO gives every verified member of this ecosystem one voice - equal, irrevocable, and inalienable. One Tawf ID. One vote. Because Musyawarah - collective deliberation, consultative consensus, shared responsibility - is not a governance experiment. It is an Islamic inheritance that predates every DAO by fourteen centuries.
-              </p>
-              <p className="leading-relaxed mt-4">
-                Community governance lives inside the Foundation - not inside the company. That placement is not administrative. It is a statement of values: the community is not a user base. It is not a growth metric. It is the owner.
+                The TAWF DAO gives every verified member of this ecosystem one voice, equal, irrevocable, and inalienable. One Tawf ID. One vote. The DAO governs ecosystem fund allocation, community programs, partnership priorities, and roadmap direction, including how zakat and sadaqah funds are targeted. Because Musyawarah, collective deliberation, consultative consensus, shared responsibility, is not a governance experiment. It is an Islamic inheritance that predates every DAO by fourteen centuries.
               </p>
             </section>
 
             <section>
               <h2 className="text-3xl font-serif text-tawf-green mb-6 font-medium">We Believe Scholars Must Lead.</h2>
               <p className="leading-relaxed">
-                At the apex of the Foundation sit the Scholar Chairmen - Islamic scholars whose authority over Sharia matters is absolute, unconditional, and structurally protected from every commercial override imaginable.
+                At the apex of the Foundation sit the Scholar Chairmen, Islamic scholars whose authority over Sharia matters is absolute, unconditional, and structurally protected from every commercial pressure imaginable.
               </p>
               <p className="leading-relaxed mt-4">
-                This is not tokenism. This is not a compliance checkbox to satisfy regulators or reassure investors. It is a genuine conviction: that in matters of what is just and what is prohibited, religious scholarship carries an authority that no algorithm, no market signal, and no majority vote can replace.
-              </p>
-              <p className="leading-relaxed mt-4">
-                The scholars do not advise. They chair. Their rulings are final. And no version of Tawf - no product, no partnership, no funding round - will ever change that.
+                They do not advise. They chair. Their rulings on the TAWF Sharia Framework, on certification decisions, and on the legitimacy of our zakat and waqf operations are final. No DAO vote, no board resolution, no investor term sheet will ever change that. This is not a promise. It is a structural fact.
               </p>
             </section>
 
             <section>
-              <h2 className="text-3xl font-serif text-tawf-green mb-6 font-medium">We Believe Tawf ID is Dignity, Not a Token.</h2>
+              <h2 className="text-3xl font-serif text-tawf-green mb-6 font-medium">We Are Funded by Obligation, Not Generosity.</h2>
               <p className="leading-relaxed">
-                We will not create a governance token. We will not design a system where your voice is proportional to your wealth. We will not build the same whale-capture dynamics that have corrupted so many DAOs before us - and then call it decentralization.
+                Zakat from Labs revenue. Waqf endowments from ecosystem participants. Sadaqah from individuals who believe in this mission. Grants from Islamic development institutions. And royalties from the commercial engine we license.
               </p>
               <p className="leading-relaxed mt-4">
-                Tawf ID is a soulbound credential. It cannot be bought, sold, transferred, or speculated upon. It is proof of membership, not proof of capital. It carries zero monetary value and infinite governance value - because in this ecosystem, those two things are deliberately, permanently decoupled.
-              </p>
-              <p className="leading-relaxed mt-4 font-medium text-tawf-green">
-                Your voice here is yours. Not for sale. Not transferable. Yours.
+                The key word is obligation. The zakat that flows through this Foundation is not optional. It is not a goodwill gesture that Labs makes when times are good and quietly skips when margins are tight. It is a calculated, Sharia-mandated, scholar-verified obligation, enforced by the same governance structure that governs everything else here. You cannot run an Islamic institution and treat zakat as a discretionary line item. We will not.
               </p>
             </section>
 
             <section>
               <h2 className="text-3xl font-serif text-tawf-green mb-6 font-medium">We Are Building for the 2 Billion.</h2>
               <p className="leading-relaxed">
-                Two billion Muslims live on this earth. The majority are in Southeast Asia - in Indonesia, Malaysia, Bangladesh, Pakistan, in cities and villages where Islamic values are not a niche identity but a living framework for how people work, borrow, give, and build together.
+                Two billion Muslims live on this earth. The majority are in Southeast Asia, in Indonesia, Malaysia, Bangladesh, Pakistan, in cities and villages where Islamic values are not a niche identity but a living framework for how people work, borrow, give, and build together.
               </p>
               <p className="leading-relaxed mt-4">
-                These communities have been underserved by conventional finance for a century. They have been patronized, excluded, and in many cases actively exploited by systems that had no interest in their values and no accountability to their needs.
+                These communities have been underserved by conventional finance for a century. Web3 has the technical capability to reach them. What it has lacked, until now, is the ethical infrastructure to deserve their trust.
               </p>
               <p className="leading-relaxed mt-4">
-                Web3 has the technical capability to reach them. What it has lacked - until now - is the ethical infrastructure to deserve their trust.
-              </p>
-              <p className="leading-relaxed mt-4">
-                That is what we are building. Not for a market. For a community. For the 20 million BMT members across Indonesia who already understand cooperative finance and simply need digital tools equal to their existing wisdom. For the young Muslim developer building her first DeFi protocol who wants to know it can be done right. For the scholar who has watched cryptocurrency from a distance, hoping something would emerge that he could honestly endorse.
+                The 4,500+ BMTs across Indonesia already understand cooperative finance. They already practice zakat. They already manage waqf for their communities. They do not need to be taught what ethical finance means. They need digital tools equal to the wisdom they already carry. That is what the Tawf Foundation is here to provide.
               </p>
               <p className="leading-relaxed mt-4 font-medium text-tawf-green">
-                We are building for all of them.
+                We are not building for a market. We are building for a community that has always known how to build for itself.
               </p>
             </section>
 
             <section>
               <h2 className="text-3xl font-serif text-tawf-green mb-6 font-medium">We Are Not the Last Word. We Are the First Standard.</h2>
               <p className="leading-relaxed">
-                Tawf Foundation does not claim to be the final authority on Islamic finance. We do not issue fatwas. We do not compete with DSN-MUI, AAOIFI, or any established Sharia institution. We are not a religious body.
+                Tawf Foundation does not claim to be the final authority on Islamic finance. We do not issue fatwas. We are not a religious body. We are a standard-setting institution that publishes a transparent, auditable, living methodology, the TAWF Sharia Framework, and certifies products that meet it. Every decision we make is open to scrutiny. Every zakat disbursement is on-chain and visible. Every waqf we hold is publicly declared. Every certification we issue or revoke is logged.
               </p>
               <p className="leading-relaxed mt-4">
-                We are a standard-setting institution. We define a transparent, auditable, publicly published methodology. We certify products that meet it. We revoke certification from products that fall short. And we publish everything - so that any scholar, any regulator, any community member can scrutinize our reasoning, challenge our conclusions, and hold us accountable.
-              </p>
-              <p className="leading-relaxed mt-4">
-                The TAWF Sharia Framework is a living document. It will evolve as technology evolves, as scholars deliberate, as the community grows. But it will always be open. Always auditable. Always owned by the Foundation - never by the market.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="text-3xl font-serif text-tawf-green mb-6 font-medium">We Are Funded by Principle.</h2>
-              <p className="leading-relaxed">
-                Zakat. Waqf. Grants. Donations. And a royalty from the commercial engine we license - because the mission must be financially sustainable to be structurally independent.
-              </p>
-              <p className="leading-relaxed mt-4">
-                We do not take equity from anyone whose interests might one day conflict with ours. We do not serve advertisers. We do not monetize community data. We do not compromise certification decisions for partnership revenue. Our independence is the product. Without it, nothing else we build has meaning.
+                We hold ourselves to the same standard we apply to everyone else. If we ever fall short, the community will see it. And the scholars will act.
               </p>
             </section>
 
@@ -195,26 +229,26 @@ export default function Manifesto() {
                   <strong className="text-white">To the scholars who chair our board:</strong> we will protect your authority from every commercial pressure, forever.
                 </li>
                 <li className="leading-relaxed text-lg">
-                  <strong className="text-white">To the builders who seek certification:</strong> we will judge your work against the same standard we apply to ourselves - transparently, consistently, and without exception.
+                  <strong className="text-white">To the builders who seek certification:</strong> we will judge your work transparently, consistently, and without exception.
+                </li>
+                <li className="leading-relaxed text-lg">
+                  <strong className="text-white">To the asnaf who receive our zakat:</strong> your share is not charity from us. It is a right. We are only the vessel.
+                </li>
+                <li className="leading-relaxed text-lg">
+                  <strong className="text-white">To the waqf beneficiaries across generations:</strong> what is entrusted to us will be held in perpetuity. We do not own it. We guard it.
                 </li>
                 <li className="leading-relaxed text-lg">
                   <strong className="text-white">To the community members who hold a Tawf ID:</strong> your voice will always be equal to every other voice in this ecosystem, regardless of how much capital you hold.
                 </li>
                 <li className="leading-relaxed text-lg">
-                  <strong className="text-white">To the tradition we inherit:</strong> we will honor it - not by freezing it in the past, but by carrying it, faithfully and boldly, into the future it always deserved.
+                  <strong className="text-white">To the tradition we inherit:</strong> we will honor it. Not by freezing it in the past, but by carrying it, faithfully and boldly, into the future it always deserved.
                 </li>
               </ul>
-              
+
               <div className="mt-16 pt-12 border-t border-white/20 text-center">
-                <p className="text-2xl font-serif text-tawf-gold mb-4">Tawf Foundation.</p>
-                <p className="text-xl font-light text-white mb-8">Baitul Maal, rebuilt for the digital age.</p>
-                <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 text-sm tracking-widest uppercase text-tawf-sand/70">
-                  <span>Ethical by principle.</span>
-                  <span className="hidden md:inline">•</span>
-                  <span>Sharia by design.</span>
-                  <span className="hidden md:inline">•</span>
-                  <span>Community by covenant.</span>
-                </div>
+                <p className="text-2xl font-serif text-tawf-gold mb-4">Tawf Foundation. Baitul Maal, rebuilt for the digital age.</p>
+                <p className="text-xl font-light text-white mb-8">Ethical by principle. Sharia by design. Community by covenant.</p>
+                <p className="text-lg text-white/70 italic">And our zakat is on-chain. You can check.</p>
               </div>
             </section>
 
