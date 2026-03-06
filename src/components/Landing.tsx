@@ -7,17 +7,27 @@ import {
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
+// Consistent spacing values
+const SECTION_PADDING = "py-24 md:py-24";
+const CONTAINER_PADDING = "px-6";
+const MAX_WIDTH = "max-w-7xl";
+
+// Consistent border radius
+const RADIUS_CARD = "rounded-2xl";
+const RADIUS_BUTTON = "rounded-full";
+const RADIUS_BOX = "rounded-2xl";
+
 export default function Landing() {
   return (
     <>
       {/* Hero Section */}
-      <section className="py-20 md:py-24 px-6 relative overflow-hidden">
+      <section className={`${SECTION_PADDING} ${CONTAINER_PADDING} relative overflow-hidden`}>
         <div className="absolute inset-0 opacity-[0.03] pointer-events-none flex items-center justify-center">
-          <div className="w-[800px] h-[800px] border-[1px] border-tawf-green rounded-full absolute transform -translate-y-1/4"></div>
-          <div className="w-[1200px] h-[1200px] border-[1px] border-tawf-green rounded-full absolute transform -translate-y-1/4"></div>
+          <div className="w-[800px] h-[800px] border border-tawf-green rounded-full absolute transform -translate-y-1/4"></div>
+          <div className="w-[1200px] h-[1200px] border border-tawf-green rounded-full absolute transform -translate-y-1/4"></div>
         </div>
 
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10">
+        <div className={`${MAX_WIDTH} mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10`}>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -25,7 +35,7 @@ export default function Landing() {
             className="max-w-2xl"
           >
             <div className="flex items-center gap-3 mb-8">
-              <div className="h-[1px] w-12 bg-tawf-gold"></div>
+              <div className="h-px w-12 bg-tawf-gold"></div>
               <span className="text-sm font-semibold tracking-[0.2em] uppercase text-tawf-gold">The Public Trust Cornerstone</span>
             </div>
 
@@ -38,7 +48,7 @@ export default function Landing() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link to="/manifesto" className="bg-tawf-green text-tawf-sand px-8 py-4 rounded-full text-base font-medium tracking-widest uppercase hover:bg-tawf-green-light transition-colors flex items-center justify-center gap-2">
+              <Link to="/manifesto" className={`bg-tawf-green text-tawf-sand px-8 py-4 ${RADIUS_BUTTON} text-base font-medium tracking-widest uppercase hover:bg-tawf-green-light transition-colors flex items-center justify-center gap-2`}>
                 Read the Manifesto
                 <ArrowRight className="w-5 h-5" />
               </Link>
@@ -63,8 +73,8 @@ export default function Landing() {
       </section>
 
       {/* Mission Section */}
-      <section id="mission" className="bg-white py-24 border-y border-tawf-green/10">
-        <div className="max-w-7xl mx-auto px-6">
+      <section id="mission" className={`bg-white ${SECTION_PADDING} border-y border-tawf-green/10`}>
+        <div className={`${MAX_WIDTH} mx-auto ${CONTAINER_PADDING}`}>
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-light text-tawf-green mb-6">What We Actually Do</h2>
             <p className="text-tawf-muted text-xl leading-relaxed">
@@ -105,7 +115,7 @@ export default function Landing() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: idx * 0.1 }}
-                className="p-8 border border-tawf-green/10 rounded-2xl bg-tawf-sand/30"
+                className={`p-8 border border-tawf-green/10 ${RADIUS_CARD} bg-tawf-sand/30`}
               >
                 <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center mb-5 shadow-sm">
                   {item.icon}
@@ -120,10 +130,10 @@ export default function Landing() {
       </section>
 
       {/* Foundation & Labs Relationship */}
-      <section className="py-24 bg-tawf-ink text-tawf-sand relative overflow-hidden">
+      <section className={`${SECTION_PADDING} bg-tawf-ink text-tawf-sand relative overflow-hidden`}>
         <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-tawf-gold/30 to-transparent"></div>
 
-        <div className="max-w-7xl mx-auto px-6">
+        <div className={`${MAX_WIDTH} mx-auto ${CONTAINER_PADDING}`}>
           <div className="text-center mb-16">
             <span className="text-sm font-semibold tracking-[0.2em] uppercase text-tawf-gold">The Flow of Obligation</span>
             <h2 className="text-4xl md:text-5xl font-light text-white mt-4 mb-6">From Labs, To the Community</h2>
@@ -134,7 +144,7 @@ export default function Landing() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Labs Side */}
-            <div className="bg-white/5 p-10 rounded-2xl border border-white/10">
+            <div className={`bg-white/5 p-10 ${RADIUS_BOX} border border-white/10`}>
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-14 h-14 bg-tawf-green rounded-full flex items-center justify-center">
                   <TrendingUp className="w-7 h-7 text-tawf-gold" />
@@ -163,7 +173,7 @@ export default function Landing() {
             </div>
 
             {/* Foundation Side */}
-            <div className="bg-tawf-green p-10 rounded-2xl">
+            <div className={`bg-tawf-green p-10 ${RADIUS_BOX}`}>
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center">
                   <Landmark className="w-7 h-7 text-tawf-gold" />
@@ -205,10 +215,10 @@ export default function Landing() {
       </section>
 
       {/* The Framework Section */}
-      <section id="framework" className="py-24 bg-tawf-sand">
+      <section id="framework" className={`${SECTION_PADDING} bg-tawf-sand relative`}>
         <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-tawf-gold/30 to-transparent"></div>
 
-        <div className="max-w-7xl mx-auto px-6">
+        <div className={`${MAX_WIDTH} mx-auto ${CONTAINER_PADDING}`}>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-16">
             <div className="lg:col-span-1">
               <div className="sticky top-32">
@@ -239,7 +249,7 @@ export default function Landing() {
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.5, delay: idx * 0.1 }}
-                    className="flex items-center gap-6 p-6 border border-tawf-green/10 rounded-2xl bg-white hover:shadow-lg transition-shadow"
+                    className={`flex items-center gap-6 p-6 border border-tawf-green/10 ${RADIUS_CARD} bg-white hover:shadow-lg transition-shadow`}
                   >
                     <div className="text-4xl font-serif text-tawf-gold font-light opacity-50">0{idx + 1}</div>
                     <div>
@@ -255,8 +265,8 @@ export default function Landing() {
       </section>
 
       {/* Organizational Structure */}
-      <section id="governance" className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-6">
+      <section id="governance" className={`${SECTION_PADDING} bg-white`}>
+        <div className={`${MAX_WIDTH} mx-auto ${CONTAINER_PADDING}`}>
           <div className="text-center mb-20">
             <h2 className="text-4xl md:text-5xl font-light text-tawf-green mb-6">Organizational Structure</h2>
             <p className="text-tawf-muted text-xl max-w-2xl mx-auto">
@@ -265,7 +275,7 @@ export default function Landing() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="p-10 border border-tawf-green/10 rounded-2xl bg-tawf-sand/30 relative overflow-hidden group">
+            <div className={`p-10 border border-tawf-green/10 ${RADIUS_CARD} bg-tawf-sand/30 relative overflow-hidden group`}>
               <div className="absolute top-0 right-0 p-6 opacity-5 group-hover:opacity-10 transition-opacity">
                 <Shield className="w-32 h-32 text-tawf-green" />
               </div>
@@ -276,7 +286,7 @@ export default function Landing() {
               </p>
             </div>
 
-            <div className="p-10 border border-tawf-green/10 rounded-2xl bg-tawf-sand/30 relative overflow-hidden group">
+            <div className={`p-10 border border-tawf-green/10 ${RADIUS_CARD} bg-tawf-sand/30 relative overflow-hidden group`}>
               <div className="absolute top-0 right-0 p-6 opacity-5 group-hover:opacity-10 transition-opacity">
                 <Building2 className="w-32 h-32 text-tawf-green" />
               </div>
@@ -287,7 +297,7 @@ export default function Landing() {
               </p>
             </div>
 
-            <div className="p-10 border border-tawf-green/10 rounded-2xl bg-tawf-sand/30 relative overflow-hidden group">
+            <div className={`p-10 border border-tawf-green/10 ${RADIUS_CARD} bg-tawf-sand/30 relative overflow-hidden group`}>
               <div className="absolute top-0 right-0 p-6 opacity-5 group-hover:opacity-10 transition-opacity">
                 <Network className="w-32 h-32 text-tawf-green" />
               </div>
@@ -302,7 +312,7 @@ export default function Landing() {
       </section>
 
       {/* Tawf ID */}
-      <section id="ecosystem" className="py-24 bg-tawf-sand border-t border-tawf-green/10">
+      <section id="ecosystem" className={`${SECTION_PADDING} bg-tawf-sand border-t border-tawf-green/10`}>
         <div className="max-w-3xl mx-auto px-6 text-center">
           <div className="flex items-center justify-center gap-4 mb-8">
             <div className="w-16 h-16 bg-tawf-green rounded-full flex items-center justify-center">
@@ -319,16 +329,16 @@ export default function Landing() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-tawf-green text-center px-6 relative overflow-hidden">
+      <section className={`${SECTION_PADDING} bg-tawf-green text-center ${CONTAINER_PADDING} relative overflow-hidden`}>
         <div className="absolute inset-0 opacity-10 pointer-events-none flex items-center justify-center">
-          <div className="w-[600px] h-[600px] border-[1px] border-tawf-gold rounded-full absolute"></div>
+          <div className="w-[600px] h-[600px] border border-tawf-gold rounded-full absolute"></div>
         </div>
         <div className="max-w-3xl mx-auto relative z-10">
           <h2 className="text-4xl md:text-5xl font-serif text-tawf-sand mb-6">Our Zakat Is On-Chain.</h2>
           <p className="text-tawf-sand/80 mb-10 text-xl font-light leading-relaxed">
             You can check. This is not a promise of ethical finance. This is ethical finance, proven every single time we collect a dirham of zakat and place it in the hands of someone who needs it.
           </p>
-          <Link to="/manifesto" className="bg-tawf-gold text-tawf-green px-10 py-5 rounded-full text-base font-medium tracking-widest uppercase hover:bg-white transition-colors inline-flex items-center gap-2">
+          <Link to="/manifesto" className={`bg-tawf-gold text-tawf-green px-10 py-5 ${RADIUS_BUTTON} text-base font-medium tracking-widest uppercase hover:bg-white transition-colors inline-flex items-center gap-2`}>
             Read Our Manifesto
             <ChevronRight className="w-5 h-5" />
           </Link>

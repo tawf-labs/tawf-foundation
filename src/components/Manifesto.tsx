@@ -1,9 +1,19 @@
 import React from 'react';
 import { motion } from 'motion/react';
+import { Link } from 'react-router-dom';
+
+// Consistent spacing values
+const SECTION_PADDING = "py-24 md:py-24";
+const CONTAINER_PADDING = "px-6";
+
+// Consistent border radius
+const RADIUS_CARD = "rounded-2xl";
+const RADIUS_BOX = "rounded-2xl";
+const RADIUS_BUTTON = "rounded-full";
 
 export default function Manifesto() {
   return (
-    <div className="bg-tawf-sand py-24 px-6">
+    <div className={`bg-tawf-sand ${SECTION_PADDING} ${CONTAINER_PADDING}`}>
       <div className="max-w-3xl mx-auto">
 
         {/* Header */}
@@ -14,9 +24,9 @@ export default function Manifesto() {
           className="text-center mb-20"
         >
           <div className="flex items-center justify-center gap-3 mb-8">
-            <div className="h-[1px] w-12 bg-tawf-gold"></div>
+            <div className="h-px w-12 bg-tawf-gold"></div>
             <span className="text-sm font-semibold tracking-[0.2em] uppercase text-tawf-gold">Our Covenant</span>
-            <div className="h-[1px] w-12 bg-tawf-gold"></div>
+            <div className="h-px w-12 bg-tawf-gold"></div>
           </div>
           <h1 className="text-5xl md:text-7xl font-serif text-tawf-green mb-8 leading-tight">
             The Tawf Foundation Manifesto
@@ -77,7 +87,7 @@ export default function Manifesto() {
               </p>
             </section>
 
-            <section className="bg-white/50 p-8 md:p-12 rounded-2xl">
+            <section className={`bg-white/50 p-8 md:p-12 ${RADIUS_BOX}`}>
               <h2 className="text-3xl font-serif text-tawf-green mb-8 font-medium">What We Actively Manage and Operate</h2>
 
               <div className="space-y-10">
@@ -120,7 +130,7 @@ export default function Manifesto() {
               </div>
             </section>
 
-            <section className="bg-tawf-ink text-tawf-sand p-8 md:p-12 rounded-2xl">
+            <section className={`bg-tawf-ink text-tawf-sand p-8 md:p-12 ${RADIUS_BOX}`}>
               <h2 className="text-3xl font-serif text-tawf-gold mb-6 font-medium">Our Relationship With Tawf Labs: The Flow of Obligation</h2>
               <p className="leading-relaxed text-white/80">
                 Tawf Labs is the commercial engine. Tawf Foundation is the mission that engine serves. The relationship between them is not just legal. It is architectural, moral, and designed to be permanent.
@@ -219,7 +229,7 @@ export default function Manifesto() {
               </p>
             </section>
 
-            <section className="bg-tawf-green text-tawf-sand p-10 md:p-16 rounded-3xl mt-16">
+            <section className={`bg-tawf-green text-tawf-sand p-10 md:p-16 ${RADIUS_BOX} mt-16`}>
               <h2 className="text-4xl font-serif text-tawf-gold mb-8">This Is Our Covenant.</h2>
               <ul className="space-y-6 list-none pl-0">
                 <li className="leading-relaxed text-lg">
@@ -254,6 +264,13 @@ export default function Manifesto() {
 
           </div>
         </motion.div>
+
+        {/* Back button */}
+        <div className="mt-20 text-center">
+          <Link to="/" className={`inline-flex items-center gap-2 border border-tawf-green text-tawf-green px-8 py-4 ${RADIUS_BUTTON} text-sm font-medium tracking-widest uppercase hover:bg-tawf-green hover:text-tawf-sand transition-all duration-300`}>
+            Back to Foundation
+          </Link>
+        </div>
       </div>
     </div>
   );
