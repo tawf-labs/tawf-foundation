@@ -73,7 +73,7 @@ export default function Manifesto() {
                 Every certification fee paid to Tawf Labs. Every royalty. Every revenue stream that the commercial engine generates, a portion flows here, to the Foundation, where it is transformed from profit into purpose.
               </p>
               <p className="leading-relaxed mt-4 font-medium text-tawf-green">
-                We are not a company that donates to charity. We are a structure where charity is architecturally mandatory.
+                We are not an organization that treats charity as an add-on. We are a structure where charity is architecturally mandatory.
               </p>
             </section>
 
