@@ -20,15 +20,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-tawf-sand/90 backdrop-blur-md border-b border-tawf-green/10">
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-          <Link to="/" className="flex items-center gap-3">
-            <img
-              src="/images/tawftransparent.png"
-              alt="Tawf Foundation"
-              className="h-10 w-auto object-contain brightness-0"
-            />
-            <span className="font-serif text-2xl font-medium tracking-wide text-tawf-green hidden sm:inline">
-              Tawf Foundation
-            </span>
+          <Link to="/" className="font-serif text-2xl font-medium tracking-wide text-tawf-green">
+            Tawf Foundation
           </Link>
           
           <div className="hidden lg:flex items-center gap-8">
@@ -53,16 +46,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <footer className="bg-tawf-ink text-white/60 py-16 border-t border-white/10">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
           <div className="col-span-1 md:col-span-2">
-            <div className="flex items-center gap-3 mb-6">
-              <img
-                src="/images/tawftransparent.png"
-                alt="Tawf Foundation"
-                className="h-8 w-auto object-contain brightness-0 invert"
-              />
-              <span className="font-serif text-xl font-medium tracking-wide text-white">
-                Tawf Foundation
-              </span>
-            </div>
+            <h3 className="font-serif text-xl font-medium tracking-wide text-white mb-6">
+              Tawf Foundation
+            </h3>
             <p className="text-sm max-w-sm leading-relaxed">
               The non-profit, public-trust cornerstone of the Tawf ecosystem. Generating legitimacy, trust, and genuine community ownership over ethical Web3 finance.
             </p>
