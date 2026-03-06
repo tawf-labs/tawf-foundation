@@ -1,9 +1,9 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import {
-  Shield, Scale, HeartHandshake, Landmark, BookOpen, ArrowRight,
-  Globe, ChevronRight, Users, Fingerprint, Coins, Building2,
-  FileCheck, Network, Lock, HandHeart, Sparkles, TrendingUp
+  Shield, HeartHandshake, Landmark, ArrowRight,
+  ChevronRight, Fingerprint, Coins, Building2,
+  Network, HandHeart, Sparkles, TrendingUp
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -310,50 +310,20 @@ export default function Landing() {
         </div>
       </section>
 
-      {/* Tawf ID & Ecosystem */}
+      {/* Tawf ID */}
       <section id="ecosystem" className="py-24 bg-tawf-sand border-t border-tawf-green/10">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-24">
-            <div>
-              <div className="flex items-center gap-4 mb-6">
-                <div className="w-14 h-14 bg-tawf-green rounded-full flex items-center justify-center">
-                  <Fingerprint className="w-7 h-7 text-tawf-gold" />
-                </div>
-                <h2 className="text-4xl font-serif text-tawf-green">The Tawf ID (TID)</h2>
-              </div>
-              <h3 className="text-2xl font-medium text-tawf-ink mb-4">Identity, Not a Token</h3>
-              <p className="text-tawf-muted text-lg leading-relaxed mb-6">
-                The credential that grants access to the TAWF DAO. TID is a Soulbound NFT built on Zero-Knowledge Decentralized Identity infrastructure. It is permanently bound to one wallet, non-transferable, and carries zero monetary value.
-              </p>
-              <p className="text-tawf-green font-medium text-lg">One Tawf ID. One vote. No exceptions.</p>
+        <div className="max-w-3xl mx-auto px-6 text-center">
+          <div className="flex items-center justify-center gap-4 mb-8">
+            <div className="w-16 h-16 bg-tawf-green rounded-full flex items-center justify-center">
+              <Fingerprint className="w-8 h-8 text-tawf-gold" />
             </div>
-
-            <div className="bg-white p-10 rounded-2xl border border-tawf-green/10 shadow-sm">
-              <div className="flex items-center gap-4 mb-6">
-                <div className="w-14 h-14 bg-tawf-green rounded-full flex items-center justify-center">
-                  <Lock className="w-7 h-7 text-tawf-gold" />
-                </div>
-                <h2 className="text-3xl font-serif text-tawf-green">Tawf Labs</h2>
-              </div>
-              <p className="text-tawf-muted text-lg leading-relaxed mb-6">
-                The Foundation and Tawf Labs are separate legal entities. <strong className="text-tawf-ink font-medium">The Foundation is the mission. Labs is the engine.</strong>
-              </p>
-              <ul className="space-y-4 text-lg text-tawf-muted">
-                <li className="flex items-start gap-3">
-                  <FileCheck className="w-6 h-6 text-tawf-gold shrink-0 mt-1" />
-                  <span>Labs is licensed to build commercial products.</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <Shield className="w-6 h-6 text-tawf-gold shrink-0 mt-1" />
-                  <span>Labs cannot modify the Framework or override Foundation governance.</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <Coins className="w-6 h-6 text-tawf-gold shrink-0 mt-1" />
-                  <span>The TAWF Sharia Framework is owned by the Foundation.</span>
-                </li>
-              </ul>
-            </div>
+            <h2 className="text-4xl md:text-5xl font-serif text-tawf-green">The Tawf ID (TID)</h2>
           </div>
+          <p className="text-2xl font-medium text-tawf-ink mb-8">Identity, Not a Token</p>
+          <p className="text-tawf-muted text-xl leading-relaxed mb-6">
+            The credential that grants access to the TAWF DAO. TID is a Soulbound NFT built on Zero-Knowledge Decentralized Identity infrastructure. It is permanently bound to one wallet, non-transferable, and carries zero monetary value.
+          </p>
+          <p className="text-tawf-green font-medium text-2xl">One Tawf ID. One vote. No exceptions.</p>
         </div>
       </section>
 
