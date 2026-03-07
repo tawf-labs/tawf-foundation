@@ -53,12 +53,12 @@ export default function InfoTooltip({ term, className = '', showPronunciation = 
               <p className="text-sm text-tawf-gold italic mb-4">/{termData.pronunciation}/</p>
             )}
 
-            <p className="text-tawf-ink/80 leading-relaxed mb-6">{termData.definition}</p>
+            <p className="text-tawf-ink/80 leading-relaxed mb-6">{termData.shortDefinition || termData.definition}</p>
 
-            {termData.context && (
+            {(termData.shortContext || termData.context) && (
               <div className="bg-tawf-sand/50 rounded-xl p-4">
                 <p className="text-sm text-tawf-muted">
-                  <span className="font-semibold text-tawf-green">In context:</span> {termData.context}
+                  <span className="font-semibold text-tawf-green">In context:</span> {termData.shortContext || termData.context}
                 </p>
               </div>
             )}

@@ -3,6 +3,8 @@ export interface GlossaryTerm {
   pronunciation?: string;
   definition: string;
   context?: string;
+  shortDefinition?: string;
+  shortContext?: string;
   related?: string[];
 }
 
@@ -11,7 +13,9 @@ export const glossaryTerms: Record<string, GlossaryTerm> = {
     term: "Baitul Maal",
     pronunciation: "bah-yool ma-al",
     definition: "A centuries-old Islamic community treasury. Think of it as a foundation, charity, and community bank combined. Historically, it collected, managed, and distributed community wealth for social welfare.",
-    context: "The Tawf Foundation is the Baitul Maal of the ecosystem - the social and charitable soul that transforms profit into purpose."
+    context: "The Tawf Foundation is the Baitul Maal of the ecosystem - the social and charitable soul that transforms profit into purpose.",
+    shortDefinition: "An Islamic treasury managing community wealth for social welfare.",
+    shortContext: "Tawf Foundation serves as the ecosystem's Baitul Maal—transforming profit into purpose."
   },
   "zakat": {
     term: "Zakat",
