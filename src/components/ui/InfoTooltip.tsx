@@ -29,11 +29,12 @@ export default function InfoTooltip({ term, className = '', showPronunciation = 
 
       {isModalOpen && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-tawf-ink/80 backdrop-blur-sm"
+          className="fixed inset-0 z-50 flex items-end sm:items-center sm:justify-center p-0 sm:p-4"
           onClick={() => setIsModalOpen(false)}
         >
+          <div className="absolute inset-0 bg-tawf-ink/60 backdrop-blur-sm sm:hidden" />
           <div
-            className="bg-white max-w-md w-full rounded-2xl p-8 shadow-2xl relative"
+            className="bg-white max-w-md w-full rounded-t-2xl sm:rounded-2xl p-6 shadow-2xl relative max-h-[70vh] overflow-y-auto"
             onClick={(e) => e.stopPropagation()}
           >
             <button
