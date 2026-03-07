@@ -3,14 +3,15 @@ import React, { ReactNode } from 'react';
 interface SectionProps {
   children: ReactNode;
   className?: string;
-  background?: 'sand' | 'white' | 'ink';
+  background?: 'sand' | 'white' | 'ink' | 'green';
   id?: string;
 }
 
 const bgStyles = {
   sand: 'bg-tawf-sand',
   white: 'bg-white',
-  ink: 'bg-tawf-ink'
+  ink: 'bg-tawf-ink',
+  green: 'bg-tawf-green'
 };
 
 export default function Section({
