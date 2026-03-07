@@ -6,6 +6,7 @@ import {
   Network, HandHeart, Sparkles, TrendingUp
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import InfoTooltip from '../ui/InfoTooltip';
 
 // Consistent spacing values
 const SECTION_PADDING = "py-24 md:py-24";
@@ -40,11 +41,30 @@ export default function Landing() {
             </div>
 
             <h1 className="text-5xl md:text-7xl font-light leading-[1.1] tracking-tight text-tawf-green mb-8">
-              Baitul Maal, <span className="italic text-tawf-gold">rebuilt for the digital age.</span>
+              <span className="inline-flex items-center gap-2">
+                Baitul Maal
+                <InfoTooltip term="baitul-maal" className="mt-2" />
+              </span>
+              , <span className="italic text-tawf-gold">rebuilt for the digital age.</span>
             </h1>
 
             <p className="text-xl text-tawf-muted font-light leading-relaxed mb-10 max-w-lg">
-              The Tawf Foundation is the Baitul Maal - the social and charitable soul of the ecosystem. We collect zakat, manage waqf, and operate sadaqah programs. Not as promises. As on-chain reality.
+              The Tawf Foundation is the Baitul Maal - the social and charitable soul of the ecosystem. We collect{' '}
+              <span className="inline-flex items-center gap-1">
+                zakat
+                <InfoTooltip term="zakat" />
+              </span>
+              , manage{' '}
+              <span className="inline-flex items-center gap-1">
+                waqf
+                <InfoTooltip term="waqf" />
+              </span>
+              , and operate{' '}
+              <span className="inline-flex items-center gap-1">
+                sadaqah
+                <InfoTooltip term="sadaqah" />
+              </span>
+              {' '}programs. Not as promises. As on-chain reality.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -78,7 +98,27 @@ export default function Landing() {
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-light text-tawf-green mb-6">What We Actually Do</h2>
             <p className="text-tawf-muted text-xl leading-relaxed">
-              We don't just certify ethical finance. We operate it. Zakat collection, waqf trusteeship, sadaqah programs, and qardhul hasan lending - live on-chain, every day.
+              We don't just certify ethical finance. We operate it.{' '}
+              <span className="inline-flex items-center gap-1">
+                Zakat
+                <InfoTooltip term="zakat" />
+              </span>
+              {' '}collection,{' '}
+              <span className="inline-flex items-center gap-1">
+                waqf
+                <InfoTooltip term="waqf" />
+              </span>
+              {' '}trusteeship,{' '}
+              <span className="inline-flex items-center gap-1">
+                sadaqah
+                <InfoTooltip term="sadaqah" />
+              </span>
+              {' '}programs, and{' '}
+              <span className="inline-flex items-center gap-1">
+                qardhul hasan
+                <InfoTooltip term="qardhul-hasan" />
+              </span>
+              {' '}lending - live on-chain, every day.
             </p>
           </div>
 
@@ -87,24 +127,28 @@ export default function Landing() {
               {
                 icon: <Coins className="w-8 h-8 text-tawf-gold" />,
                 title: "Zakat",
+                term: "zakat",
                 desc: "We serve as the official amil, collecting and distributing zakat from Labs revenue to eligible asnaf.",
                 detail: "On-chain & fully auditable"
               },
               {
                 icon: <Landmark className="w-8 h-8 text-tawf-gold" />,
                 title: "Waqf",
+                term: "waqf",
                 desc: "Trustee for all waqf assets, including wakaf produktif that generates perpetual community benefit.",
                 detail: "Held in perpetual trust"
               },
               {
                 icon: <HeartHandshake className="w-8 h-8 text-tawf-gold" />,
                 title: "Sadaqah",
+                term: "sadaqah",
                 desc: "Community grant programs for education, BMT digitization, and scholarly research.",
                 detail: "DAO-informed selection"
               },
               {
                 icon: <HandHeart className="w-8 h-8 text-tawf-gold" />,
                 title: "Qardhul Hasan",
+                term: "qardhul-hasan",
                 desc: "Interest-free benevolent lending for underserved communities and early-stage BMTs.",
                 detail: "Ethical microfinance"
               }
@@ -120,7 +164,10 @@ export default function Landing() {
                 <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center mb-5 shadow-sm">
                   {item.icon}
                 </div>
-                <h3 className="text-xl font-serif font-medium text-tawf-green mb-3">{item.title}</h3>
+                <div className="flex items-center gap-2 mb-3">
+                  <h3 className="text-xl font-serif font-medium text-tawf-green">{item.title}</h3>
+                  <InfoTooltip term={item.term} />
+                </div>
                 <p className="text-tawf-muted leading-relaxed mb-4">{item.desc}</p>
                 <p className="text-sm font-semibold tracking-wider uppercase text-tawf-gold">{item.detail}</p>
               </motion.div>
@@ -163,11 +210,23 @@ export default function Landing() {
                 </li>
                 <li className="flex items-center gap-3">
                   <ChevronRight className="w-5 h-5 text-tawf-gold shrink-0" />
-                  <span>Zakat calculated and transferred annually</span>
+                  <span>
+                    <span className="inline-flex items-center gap-1">
+                      Zakat
+                      <InfoTooltip term="zakat" />
+                    </span>
+                    {' '}calculated and transferred annually
+                  </span>
                 </li>
                 <li className="flex items-center gap-3">
                   <ChevronRight className="w-5 h-5 text-tawf-gold shrink-0" />
-                  <span>Waqf assets held in Foundation trusteeship</span>
+                  <span>
+                    <span className="inline-flex items-center gap-1">
+                      Waqf
+                      <InfoTooltip term="waqf" />
+                    </span>
+                    {' '}assets held in Foundation trusteeship
+                  </span>
                 </li>
               </ul>
             </div>
@@ -184,19 +243,47 @@ export default function Landing() {
               <ul className="space-y-3 text-white/90">
                 <li className="flex items-center gap-3">
                   <Sparkles className="w-5 h-5 text-tawf-gold shrink-0" />
-                  <span>Collects and distributes zakat to asnaf</span>
+                  <span>
+                    Collects and distributes{' '}
+                    <span className="inline-flex items-center gap-1">
+                      zakat
+                      <InfoTooltip term="zakat" />
+                    </span>
+                    {' '}to{' '}
+                    <span className="inline-flex items-center gap-1">
+                      asnaf
+                      <InfoTooltip term="asnaf" />
+                    </span>
+                  </span>
                 </li>
                 <li className="flex items-center gap-3">
                   <Sparkles className="w-5 h-5 text-tawf-gold shrink-0" />
-                  <span>Manages waqf for perpetual benefit</span>
+                  <span>
+                    Manages{' '}
+                    <span className="inline-flex items-center gap-1">
+                      waqf
+                      <InfoTooltip term="waqf" />
+                    </span>
+                    {' '}for perpetual benefit
+                  </span>
                 </li>
                 <li className="flex items-center gap-3">
                   <Sparkles className="w-5 h-5 text-tawf-gold shrink-0" />
-                  <span>Owns the TAWF Sharia Framework</span>
+                  <span>Owns the TAWF{' '}<span className="inline-flex items-center gap-1">
+                    Sharia
+                    <InfoTooltip term="sharia" />
+                  </span> Framework</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <Sparkles className="w-5 h-5 text-tawf-gold shrink-0" />
-                  <span>Houses the TAWF DAO governance</span>
+                  <span>
+                    Houses the TAWF{' '}
+                    <span className="inline-flex items-center gap-1">
+                      DAO
+                      <InfoTooltip term="dao" />
+                    </span>
+                    {' '}governance
+                  </span>
                 </li>
               </ul>
               <div className="mt-8 pt-6 border-t border-white/20">
@@ -223,7 +310,12 @@ export default function Landing() {
             <div className="lg:col-span-1">
               <div className="sticky top-32">
                 <h2 className="text-4xl md:text-5xl font-light mb-6 leading-tight text-tawf-green">
-                  The TAWF Sharia Framework
+                  The TAWF{' '}
+                  <span className="inline-flex items-center gap-1">
+                    Sharia
+                    <InfoTooltip term="sharia" />
+                  </span>
+                  {' '}Framework
                 </h2>
                 <p className="text-tawf-muted text-xl font-light leading-relaxed mb-8">
                   A rigorous, transparent, and publicly auditable methodology for screening Web3 products against Islamic finance principles.
@@ -235,12 +327,12 @@ export default function Landing() {
               <h3 className="text-3xl font-serif text-tawf-green mb-8">The Seven Foundational Pillars</h3>
               <div className="space-y-4">
                 {[
-                  { title: "No Riba", desc: "Entirely free of interest-based mechanics." },
-                  { title: "No Gharar", desc: "No excessive uncertainty or ambiguity." },
-                  { title: "No Maysir", desc: "No gambling or zero-sum speculation." },
+                  { title: "No Riba", term: "riba", desc: "Entirely free of interest-based mechanics." },
+                  { title: "No Gharar", term: "gharar", desc: "No excessive uncertainty or ambiguity." },
+                  { title: "No Maysir", term: "maysir", desc: "No gambling or zero-sum speculation." },
                   { title: "Real Asset Backing", desc: "Tokens must represent underlying real-world value." },
                   { title: "Transparent Governance", desc: "On-chain auditability is non-negotiable." },
-                  { title: "Social Impact & Maslaha", desc: "Must demonstrate genuine public benefit." },
+                  { title: "Social Impact & Maslaha", term: "maslaha", desc: "Must demonstrate genuine public benefit." },
                   { title: "Halal Sector Compliance", desc: "No exposure to prohibited industries." }
                 ].map((pillar, idx) => (
                   <motion.div
@@ -253,7 +345,10 @@ export default function Landing() {
                   >
                     <div className="text-4xl font-serif text-tawf-gold font-light opacity-50">0{idx + 1}</div>
                     <div>
-                      <h4 className="text-xl font-medium text-tawf-green mb-1">{pillar.title}</h4>
+                      <h4 className="text-xl font-medium text-tawf-green mb-1">
+                        {pillar.title}
+                        {pillar.term && <InfoTooltip term={pillar.term} />}
+                      </h4>
                       <p className="text-tawf-muted text-lg">{pillar.desc}</p>
                     </div>
                   </motion.div>
@@ -279,7 +374,10 @@ export default function Landing() {
               <div className="absolute top-0 right-0 p-6 opacity-5 group-hover:opacity-10 transition-opacity">
                 <Shield className="w-32 h-32 text-tawf-green" />
               </div>
-              <h3 className="text-2xl font-serif font-medium text-tawf-green mb-2">Sharia Advisory Board</h3>
+              <h3 className="text-2xl font-serif font-medium text-tawf-green mb-2">
+                Sharia Advisory Board
+                <InfoTooltip term="sharia" />
+              </h3>
               <p className="text-sm font-bold tracking-wider uppercase text-tawf-gold mb-6">Foundation Chairmen</p>
               <p className="text-tawf-muted text-lg leading-relaxed">
                 Islamic scholars whose decisions on all Sharia matters are final, binding, and beyond commercial override.
@@ -293,7 +391,12 @@ export default function Landing() {
               <h3 className="text-2xl font-serif font-medium text-tawf-green mb-2">Board of Trustees</h3>
               <p className="text-sm font-bold tracking-wider uppercase text-tawf-gold mb-6">Legal & Financial</p>
               <p className="text-tawf-muted text-lg leading-relaxed">
-                Handles legal governance, financial oversight, and executive accountability. Absolute separation from Sharia authority.
+                Handles legal governance, financial oversight, and executive accountability. Absolute separation from{' '}
+                <span className="inline-flex items-center gap-1">
+                  Sharia
+                  <InfoTooltip term="sharia" />
+                </span>
+                {' '}authority.
               </p>
             </div>
 
@@ -301,7 +404,13 @@ export default function Landing() {
               <div className="absolute top-0 right-0 p-6 opacity-5 group-hover:opacity-10 transition-opacity">
                 <Network className="w-32 h-32 text-tawf-green" />
               </div>
-              <h3 className="text-2xl font-serif font-medium text-tawf-green mb-2">The TAWF DAO</h3>
+              <h3 className="text-2xl font-serif font-medium text-tawf-green mb-2">
+                The TAWF{' '}
+                <span className="inline-flex items-center gap-1">
+                  DAO
+                  <InfoTooltip term="dao" />
+                </span>
+              </h3>
               <p className="text-sm font-bold tracking-wider uppercase text-tawf-gold mb-6">Community Governance</p>
               <p className="text-tawf-muted text-lg leading-relaxed">
                 The community's voice. Gated by Tawf ID (TID), where 1 TID equals 1 Vote. No token-weighting.
@@ -322,7 +431,17 @@ export default function Landing() {
           </div>
           <p className="text-2xl font-medium text-tawf-ink mb-8">Identity, Not a Token</p>
           <p className="text-tawf-muted text-xl leading-relaxed mb-6">
-            The credential that grants access to the TAWF DAO. TID is a Soulbound NFT built on Zero-Knowledge Decentralized Identity infrastructure. It is permanently bound to one wallet, non-transferable, and carries zero monetary value.
+            The credential that grants access to the TAWF{' '}
+            <span className="inline-flex items-center gap-1">
+              DAO
+              <InfoTooltip term="dao" />
+            </span>
+            . TID is a{' '}
+            <span className="inline-flex items-center gap-1">
+              Soulbound
+              <InfoTooltip term="soulbound" />
+            </span>
+            {' '}NFT built on Zero-Knowledge Decentralized Identity infrastructure. It is permanently bound to one wallet, non-transferable, and carries zero monetary value.
           </p>
           <p className="text-tawf-green font-medium text-2xl">One Tawf ID. One vote. No exceptions.</p>
         </div>
@@ -336,7 +455,12 @@ export default function Landing() {
         <div className="max-w-3xl mx-auto relative z-10">
           <h2 className="text-4xl md:text-5xl font-serif text-tawf-sand mb-6">Our Zakat Is On-Chain.</h2>
           <p className="text-tawf-sand/80 mb-10 text-xl font-light leading-relaxed">
-            You can check. This is not a promise of ethical finance. This is ethical finance, proven every single time we collect a dirham of zakat and place it in the hands of someone who needs it.
+            You can check. This is not a promise of ethical finance. This is ethical finance, proven every single time we collect a{' '}
+            <span className="inline-flex items-center gap-1">
+              dirham
+              <InfoTooltip term="dirham" />
+            </span>
+            {' '}of zakat and place it in the hands of someone who needs it.
           </p>
           <Link to="/manifesto" className={`bg-tawf-gold text-tawf-green px-10 py-5 ${RADIUS_BUTTON} text-base font-medium tracking-widest uppercase hover:bg-white transition-colors inline-flex items-center gap-2`}>
             Read Our Manifesto

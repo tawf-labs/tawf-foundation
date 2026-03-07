@@ -1,8 +1,11 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { ChevronDown, X, Menu } from 'lucide-react';
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const { hash } = useLocation();
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [programsOpen, setProgramsOpen] = useState(false);
 
   useEffect(() => {
     if (hash) {
@@ -15,6 +18,11 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     }
   }, [hash]);
 
+  // Close mobile menu when route changes
+  useEffect(() => {
+    setMobileMenuOpen(false);
+  }, [useLocation().pathname]);
+
   return (
     <div className="min-h-screen flex flex-col selection:bg-tawf-gold/30 selection:text-tawf-green bg-tawf-sand">
       {/* Navigation */}
@@ -23,18 +31,89 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <Link to="/" className="font-serif text-2xl font-medium tracking-wide text-tawf-green">
             Tawf Foundation
           </Link>
-          
+
+          {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-8">
             <Link to="/#mission" className="text-sm font-medium tracking-widest uppercase text-tawf-ink/70 hover:text-tawf-green transition-colors">Mission</Link>
             <Link to="/#framework" className="text-sm font-medium tracking-widest uppercase text-tawf-ink/70 hover:text-tawf-green transition-colors">Framework</Link>
-            <Link to="/#governance" className="text-sm font-medium tracking-widest uppercase text-tawf-ink/70 hover:text-tawf-green transition-colors">Governance</Link>
-            <Link to="/#ecosystem" className="text-sm font-medium tracking-widest uppercase text-tawf-ink/70 hover:text-tawf-green transition-colors">Ecosystem</Link>
+
+            {/* Programs Dropdown */}
+            <div className="relative">
+              <button
+                className="text-sm font-medium tracking-widest uppercase text-tawf-ink/70 hover:text-tawf-green transition-colors flex items-center gap-1"
+                onClick={() => setProgramsOpen(!programsOpen)}
+              >
+                Programs
+                <ChevronDown className="w-4 h-4" />
+              </button>
+              {programsOpen && (
+                <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-xl shadow-xl border border-tawf-green/10 py-2">
+                  <Link
+                    to="/zakat"
+                    className="block px-4 py-2 text-sm text-tawf-ink/70 hover:text-tawf-green hover:bg-tawf-sand/50"
+                    onClick={() => setProgramsOpen(false)}
+                  >
+                    Zakat
+                  </Link>
+                  <Link
+                    to="/qurban"
+                    className="block px-4 py-2 text-sm text-tawf-ink/70 hover:text-tawf-green hover:bg-tawf-sand/50"
+                    onClick={() => setProgramsOpen(false)}
+                  >
+                    Qurban
+                  </Link>
+                  <Link
+                    to="/research"
+                    className="block px-4 py-2 text-sm text-tawf-ink/70 hover:text-tawf-green hover:bg-tawf-sand/50"
+                    onClick={() => setProgramsOpen(false)}
+                  >
+                    Research
+                  </Link>
+                </div>
+              )}
+            </div>
+
+            <Link to="/glossary" className="text-sm font-medium tracking-widest uppercase text-tawf-ink/70 hover:text-tawf-green transition-colors">Glossary</Link>
           </div>
 
-          <Link to="/manifesto" className="hidden md:flex items-center gap-2 border border-tawf-green text-tawf-green px-6 py-2.5 rounded-full text-sm font-medium tracking-widest uppercase hover:bg-tawf-green hover:text-tawf-sand transition-all duration-300">
-            Read the Manifesto
-          </Link>
+          <div className="hidden md:flex items-center gap-4">
+            <Link to="/glossary" className="text-sm font-medium tracking-widest uppercase text-tawf-ink/70 hover:text-tawf-green transition-colors">
+              <span className="hidden lg:inline">Glossary</span>
+            </Link>
+            <Link to="/manifesto" className="flex items-center gap-2 border border-tawf-green text-tawf-green px-6 py-2.5 rounded-full text-sm font-medium tracking-widest uppercase hover:bg-tawf-green hover:text-tawf-sand transition-all duration-300">
+              Read the Manifesto
+            </Link>
+          </div>
+
+          {/* Mobile Menu Button */}
+          <button
+            className="lg:hidden p-2 text-tawf-green"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label="Toggle menu"
+          >
+            {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </button>
         </div>
+
+        {/* Mobile Menu */}
+        {mobileMenuOpen && (
+          <div className="lg:hidden border-t border-tawf-green/10 bg-white">
+            <div className="px-6 py-4 space-y-4">
+              <Link to="/#mission" className="block text-sm font-medium tracking-widest uppercase text-tawf-ink/70 hover:text-tawf-green">Mission</Link>
+              <Link to="/#framework" className="block text-sm font-medium tracking-widest uppercase text-tawf-ink/70 hover:text-tawf-green">Framework</Link>
+              <div className="pt-4 border-t border-tawf-green/10">
+                <p className="text-xs font-semibold tracking-widest uppercase text-tawf-gold mb-3">Programs</p>
+                <div className="space-y-3 pl-2">
+                  <Link to="/zakat" className="block text-sm text-tawf-ink/70 hover:text-tawf-green">Zakat</Link>
+                  <Link to="/qurban" className="block text-sm text-tawf-ink/70 hover:text-tawf-green">Qurban</Link>
+                  <Link to="/research" className="block text-sm text-tawf-ink/70 hover:text-tawf-green">Research</Link>
+                </div>
+              </div>
+              <Link to="/glossary" className="block text-sm font-medium tracking-widest uppercase text-tawf-ink/70 hover:text-tawf-green">Glossary</Link>
+              <Link to="/manifesto" className="block text-sm font-medium tracking-widest uppercase text-tawf-green border border-tawf-green px-6 py-2.5 rounded-full text-center">Read the Manifesto</Link>
+            </div>
+          </div>
+        )}
       </nav>
 
       {/* Main Content */}
@@ -53,7 +132,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               The non-profit, public-trust cornerstone of the Tawf ecosystem. Generating legitimacy, trust, and genuine community ownership over ethical Web3 finance.
             </p>
           </div>
-          
+
           <div>
             <h4 className="text-white font-medium tracking-widest uppercase text-xs mb-6">Foundation</h4>
             <ul className="space-y-4 text-sm">
@@ -65,16 +144,18 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           </div>
 
           <div>
-            <h4 className="text-white font-medium tracking-widest uppercase text-xs mb-6">Resources</h4>
+            <h4 className="text-white font-medium tracking-widest uppercase text-xs mb-6">Programs & Resources</h4>
             <ul className="space-y-4 text-sm">
+              <li><Link to="/zakat" className="hover:text-tawf-gold transition-colors">Zakat Program</Link></li>
+              <li><Link to="/qurban" className="hover:text-tawf-gold transition-colors">Qurban</Link></li>
+              <li><Link to="/research" className="hover:text-tawf-gold transition-colors">Research</Link></li>
+              <li><Link to="/glossary" className="hover:text-tawf-gold transition-colors">Glossary</Link></li>
               <li><Link to="/manifesto" className="hover:text-tawf-gold transition-colors">Read the Manifesto</Link></li>
-              <li><a href="#" className="hover:text-tawf-gold transition-colors">Certification Portal</a></li>
               <li><a href="https://tawf.xyz" target="_blank" rel="noopener noreferrer" className="hover:text-tawf-gold transition-colors">Tawf Labs</a></li>
-              <li><a href="#" className="hover:text-tawf-gold transition-colors">Contact Us</a></li>
             </ul>
           </div>
         </div>
-        
+
         <div className="max-w-7xl mx-auto px-6 mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between text-xs">
           <p>&copy; {new Date().getFullYear()} Tawf Foundation. All rights reserved.</p>
           <div className="flex gap-6 mt-4 md:mt-0">

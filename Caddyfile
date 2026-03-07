@@ -1,0 +1,97 @@
+# Caddyfile for Tawf Foundation subdomain routing
+# This configuration maps subdomains to the React app's client-side routes
+#
+# Subdomain mappings:
+#   zakat.tawf.foundation  →  tawf.foundation/zakat
+#   qurban.tawf.foundation →  tawf.foundation/qurban
+#   research.tawf.foundation → tawf.foundation/research
+#
+# Requirements:
+# 1. Copy this file to /etc/caddy/Caddyfile (or append to existing)
+# 2. Validate: caddy validate --config /etc/caddy/Caddyfile
+# 3. Reload: systemctl reload caddy
+# 4. DNS: Add CNAME records for each subdomain pointing to tawf.foundation
+#
+# Note: Caddy automatically handles HTTPS with Let's Encrypt
+
+# Main domain
+tawf.foundation, www.tawf.foundation {
+    root * /var/www/tawf-foundation/dist
+    file_server
+
+    # SPA fallback - all routes go to index.html
+    try_files {path} /index.html
+
+    # Static assets caching
+    @static {
+        path /assets/*
+    }
+    header @static Cache-Control "public, immutable, max-age=31536000"
+
+    # Gzip compression
+    encode gzip
+
+    # Security headers
+    header {
+        X-Content-Type-Options nosniff
+        X-Frame-Options DENY
+        Referrer-Policy no-referrer
+    }
+}
+
+# Zakat subdomain → /zakat route
+zakat.tawf.foundation {
+    root * /var/www/tawf-foundation/dist
+    file_server
+
+    # Rewrite subdomain root to /zakat path
+    handle_path /zakat* {
+        rewrite * /zakat{path}
+        try_files {path} /index.html
+    }
+
+    handle {
+        rewrite * /zakat{path}
+        try_files {path} /index.html
+    }
+
+    encode gzip
+}
+
+# Qurban subdomain → /qurban route
+qurban.tawf.foundation {
+    root * /var/www/tawf-foundation/dist
+    file_server
+
+    # Rewrite subdomain root to /qurban path
+    handle_path /qurban* {
+        rewrite * /qurban{path}
+        try_files {path} /index.html
+    }
+
+    handle {
+        rewrite * /qurban{path}
+        try_files {path} /index.html
+    }
+
+    encode gzip
+}
+
+# Research subdomain → /research route
+research.tawf.foundation {
+    root * /var/www/tawf-foundation/dist
+    file_server
+
+    # Rewrite subdomain root to /research path
+    handle_path /research* {
+        rewrite * /research{path}
+        try_files {path} /index.html
+    }
+
+    handle {
+        rewrite * /research{path}
+        try_files {path} /index.html
+    }
+
+    encode gzip
+}
