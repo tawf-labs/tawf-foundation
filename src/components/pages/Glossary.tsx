@@ -222,7 +222,7 @@ export default function Glossary() {
             </Link>
             <Link
               to="/zakat"
-              className="inline-flex items-center gap-2 border border-white/30 text-white px-8 py-4 rounded-full text-base font-medium tracking-widest uppercase hover:bg-white/10 transition-colors"
+              className="inline-flex text-black items-center gap-2 border border-white/30 px-8 py-4 rounded-full text-base font-medium tracking-widest uppercase hover:bg-white/10 transition-colors"
             >
               Learn About Zakat
             </Link>
