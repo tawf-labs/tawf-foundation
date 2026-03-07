@@ -13,6 +13,7 @@ const SUBDOMAIN_ROUTES: Record<string, string> = {
   'zakat': '/zakat',
   'qurban': '/qurban',
   'research': '/research',
+  'glossary': '/glossary',
 };
 
 // Get subdomain from hostname

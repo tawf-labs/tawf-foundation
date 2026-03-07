@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { ChevronDown, X, Menu } from 'lucide-react';
+import { useSubdomain } from '../hooks/useSubdomain';
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const { hash } = useLocation();
+  const { subdomain } = useSubdomain();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [programsOpen, setProgramsOpen] = useState(false);
 
@@ -28,14 +30,24 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-tawf-sand/90 backdrop-blur-md border-b border-tawf-green/10">
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-          <Link to="/" className="font-serif text-2xl font-medium tracking-wide text-tawf-green">
-            Tawf Foundation
-          </Link>
+          {subdomain ? (
+            <a href="https://tawf.foundation" className="font-serif text-2xl font-medium tracking-wide text-tawf-green">
+              Tawf Foundation
+            </a>
+          ) : (
+            <Link to="/" className="font-serif text-2xl font-medium tracking-wide text-tawf-green">
+              Tawf Foundation
+            </Link>
+          )}
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-8">
-            <Link to="/#mission" className="text-sm font-medium tracking-widest uppercase text-tawf-ink/70 hover:text-tawf-green transition-colors">Mission</Link>
-            <Link to="/#framework" className="text-sm font-medium tracking-widest uppercase text-tawf-ink/70 hover:text-tawf-green transition-colors">Framework</Link>
+            {!subdomain && (
+              <>
+                <Link to="/#mission" className="text-sm font-medium tracking-widest uppercase text-tawf-ink/70 hover:text-tawf-green transition-colors">Mission</Link>
+                <Link to="/#framework" className="text-sm font-medium tracking-widest uppercase text-tawf-ink/70 hover:text-tawf-green transition-colors">Framework</Link>
+              </>
+            )}
 
             {/* Programs Dropdown */}
             <div className="relative">
@@ -99,8 +111,12 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         {mobileMenuOpen && (
           <div className="lg:hidden border-t border-tawf-green/10 bg-white">
             <div className="px-6 py-4 space-y-4">
-              <Link to="/#mission" className="block text-sm font-medium tracking-widest uppercase text-tawf-ink/70 hover:text-tawf-green">Mission</Link>
-              <Link to="/#framework" className="block text-sm font-medium tracking-widest uppercase text-tawf-ink/70 hover:text-tawf-green">Framework</Link>
+              {!subdomain && (
+                <>
+                  <Link to="/#mission" className="block text-sm font-medium tracking-widest uppercase text-tawf-ink/70 hover:text-tawf-green">Mission</Link>
+                  <Link to="/#framework" className="block text-sm font-medium tracking-widest uppercase text-tawf-ink/70 hover:text-tawf-green">Framework</Link>
+                </>
+              )}
               <div className="pt-4 border-t border-tawf-green/10">
                 <p className="text-xs font-semibold tracking-widest uppercase text-tawf-gold mb-3">Programs</p>
                 <div className="space-y-3 pl-2">
@@ -136,10 +152,17 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <div>
             <h4 className="text-white font-medium tracking-widest uppercase text-xs mb-6">Foundation</h4>
             <ul className="space-y-4 text-sm">
-              <li><Link to="/#mission" className="hover:text-tawf-gold transition-colors">Our Mission</Link></li>
-              <li><Link to="/#framework" className="hover:text-tawf-gold transition-colors">Sharia Framework</Link></li>
-              <li><Link to="/#governance" className="hover:text-tawf-gold transition-colors">Governance Structure</Link></li>
-              <li><Link to="/#ecosystem" className="hover:text-tawf-gold transition-colors">Tawf ID (TID)</Link></li>
+              {!subdomain && (
+                <>
+                  <li><Link to="/#mission" className="hover:text-tawf-gold transition-colors">Our Mission</Link></li>
+                  <li><Link to="/#framework" className="hover:text-tawf-gold transition-colors">Sharia Framework</Link></li>
+                  <li><Link to="/#governance" className="hover:text-tawf-gold transition-colors">Governance Structure</Link></li>
+                  <li><Link to="/#ecosystem" className="hover:text-tawf-gold transition-colors">Tawf ID (TID)</Link></li>
+                </>
+              )}
+              {subdomain && (
+                <li><a href="https://tawf.foundation/#mission" className="hover:text-tawf-gold transition-colors">Our Mission</a></li>
+              )}
             </ul>
           </div>
 
