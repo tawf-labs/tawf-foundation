@@ -89,9 +89,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           </div>
 
           <div className="hidden md:flex items-center gap-4">
-            <Link to="/glossary" className="text-sm font-medium tracking-widest uppercase text-tawf-ink/70 hover:text-tawf-green transition-colors">
-              <span className="hidden lg:inline">Glossary</span>
-            </Link>
             <Link to="/manifesto" className="flex items-center gap-2 border border-tawf-green text-tawf-green px-6 py-2.5 rounded-full text-sm font-medium tracking-widest uppercase hover:bg-tawf-green hover:text-tawf-sand transition-all duration-300">
               Read the Manifesto
             </Link>
