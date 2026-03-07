@@ -23,10 +23,13 @@
   --radius-box: 1.5rem;
 
   /* Typography scale */
+  --text-hero-mobile: 2.5rem;
   --text-hero: 3.5rem;
   --text-hero-desktop: 4.5rem;
+  --text-h1-mobile: 2rem;
   --text-h1: 3rem;
   --text-h1-desktop: 3.75rem;
+  --text-h2-mobile: 1.75rem;
   --text-h2: 2.25rem;
   --text-h2-desktop: 2.5rem;
   --text-h3: 1.5rem;

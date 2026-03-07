@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 import InfoTooltip from '../ui/InfoTooltip';
 
 // Consistent spacing values
-const SECTION_PADDING = "py-24 md:py-24";
+const SECTION_PADDING = "py-16 md:py-24";
 const CONTAINER_PADDING = "px-6";
 const MAX_WIDTH = "max-w-7xl";
 
@@ -24,8 +24,8 @@ export default function Landing() {
       {/* Hero Section */}
       <section className={`${SECTION_PADDING} ${CONTAINER_PADDING} relative overflow-hidden`}>
         <div className="absolute inset-0 opacity-[0.03] pointer-events-none flex items-center justify-center">
-          <div className="w-[800px] h-[800px] border border-tawf-green rounded-full absolute transform -translate-y-1/4"></div>
-          <div className="w-[1200px] h-[1200px] border border-tawf-green rounded-full absolute transform -translate-y-1/4"></div>
+          <div className="w-[90vw] max-w-[600px] h-[90vw] max-h-[600px] md:w-[800px] md:h-[800px] border border-tawf-green rounded-full absolute transform -translate-y-1/4"></div>
+          <div className="w-[120vw] max-w-[900px] h-[120vw] max-h-[900px] md:w-[1200px] md:h-[1200px] border border-tawf-green rounded-full absolute transform -translate-y-1/4"></div>
         </div>
 
         <div className={`${MAX_WIDTH} mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10`}>
@@ -40,7 +40,7 @@ export default function Landing() {
               <span className="text-sm font-semibold tracking-[0.2em] uppercase text-tawf-gold">The Public Trust Cornerstone</span>
             </div>
 
-            <h1 className="text-5xl md:text-7xl font-light leading-[1.1] tracking-tight text-tawf-green mb-8">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light leading-[1.1] tracking-tight text-tawf-green mb-8">
               <span className="inline-flex items-center gap-2">
                 Baitul Maal
                 <InfoTooltip term="baitul-maal" className="mt-2" />
@@ -79,7 +79,7 @@ export default function Landing() {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
-            className="relative hidden lg:block h-[600px] flex items-center justify-center"
+            className="relative h-[300px] md:h-[450px] lg:h-[600px] flex items-center justify-center"
           >
             <div className="absolute inset-0 bg-tawf-green/5 rounded-full blur-3xl"></div>
             <img

@@ -23,7 +23,7 @@ export default function Section({
   return (
     <section
       id={id}
-      className={`py-24 md:py-24 px-6 ${bgStyles[background]} ${className}`.trim()}
+      className={`py-16 md:py-24 px-6 ${bgStyles[background]} ${className}`.trim()}
     >
       <div className="max-w-7xl mx-auto">
         {children}

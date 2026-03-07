@@ -96,7 +96,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
           {/* Mobile Menu Button */}
           <button
-            className="lg:hidden p-2 text-tawf-green"
+            className="lg:hidden p-3 text-tawf-green min-h-[48px] min-w-[48px] flex items-center justify-center"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle menu"
           >
