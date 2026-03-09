@@ -98,7 +98,7 @@ export default function Landing() {
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-light text-tawf-green mb-6">What We Actually Do</h2>
             <p className="text-tawf-muted text-xl leading-relaxed">
-              We don't just certify ethical finance. We operate it.{' '}
+              We don't just talk about ethical finance. We operate it.{' '}
               <span className="inline-flex items-center gap-1">
                 Zakat
                 <InfoTooltip term="zakat" />
@@ -198,7 +198,7 @@ export default function Landing() {
                 </div>
                 <h3 className="text-2xl font-serif text-white">Tawf Labs</h3>
               </div>
-              <p className="text-tawf-sand/70 text-lg mb-6">The commercial engine that builds and licenses Sharia-compliant products.</p>
+              <p className="text-tawf-sand/70 text-lg mb-6">The commercial engine that builds Sharia-compliant products.</p>
               <ul className="space-y-3 text-tawf-sand/80">
                 <li className="flex items-center gap-3">
                   <ChevronRight className="w-5 h-5 text-tawf-gold shrink-0" />
@@ -409,9 +409,9 @@ export default function Landing() {
                 <Shield className="w-7 h-7 text-tawf-gold" />
               </div>
               <h3 className="text-2xl font-serif text-tawf-green mb-2">Stage 3: Sharia Council Review</h3>
-              <p className="text-sm font-bold tracking-wider uppercase text-tawf-gold mb-6">Final Approval</p>
+              <p className="text-sm font-bold tracking-wider uppercase text-tawf-gold mb-6">Sharia Council Review</p>
               <p className="text-tawf-muted leading-relaxed mb-6">
-                The Sharia Advisory Board has final authority on compliance. Assisted by Tawf-AI for reference to established frameworks.
+                The Sharia Advisory Board provides guidance on Sharia matters. Assisted by Tawf-AI for reference to established frameworks like AAOIFI, Muhammadiyah, Malaysia DPSN, Bahrain, and Indonesia MUI.
               </p>
               <ul className="space-y-2 text-tawf-muted">
                 <li className="flex items-center gap-2">

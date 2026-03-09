@@ -24,7 +24,7 @@ const faqs = [
   },
   {
     q: 'How does Tawf Foundation distribute Qurban meat?',
-    a: 'We work with verified partners in Indonesia and other regions to ensure proper slaughter according to Sharia guidelines. Meat is distributed to eligible asnaf, with one-third for the family, one-third for friends, and one-third for the needy.'
+    a: 'We work with trusted partners in Indonesia and other regions to ensure proper slaughter according to Sharia guidelines. Meat is distributed to eligible asnaf, with one-third for the family, one-third for friends, and one-third for the needy.'
   },
   {
     q: 'Is Qurban different from regular charity?',
@@ -83,7 +83,7 @@ export default function Qurban() {
                 </div>
                 <div className="flex items-center gap-3">
                   <CheckCircle className="w-5 h-5 text-tawf-green shrink-0" />
-                  <span className="text-tawf-muted">Verified local partners</span>
+                  <span className="text-tawf-muted">Trusted local partners</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <CheckCircle className="w-5 h-5 text-tawf-green shrink-0" />
@@ -129,7 +129,7 @@ export default function Qurban() {
               {
                 step: '03',
                 title: 'We Source & Sacrifice',
-                desc: 'Our verified partners source healthy animals and perform Sharia-compliant slaughter.',
+                desc: 'Our trusted partners source healthy animals and perform Sharia-compliant slaughter.',
                 icon: <Scissors className="w-6 h-6" />
               },
               {

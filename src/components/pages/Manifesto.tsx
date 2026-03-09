@@ -196,7 +196,7 @@ export default function Manifesto() {
             <section>
               <h2 className="text-3xl font-serif text-tawf-green mb-6 font-medium">We Are Funded by Obligation, Not Generosity.</h2>
               <p className="leading-relaxed">
-                Zakat from Labs revenue. Waqf endowments from ecosystem participants. Sadaqah from individuals who believe in this mission. Grants from Islamic development institutions. And royalties from the commercial engine we license.
+                Zakat from Labs revenue. Waqf endowments from ecosystem participants. Sadaqah from individuals who believe in this mission. Grants from Islamic development institutions. And royalties from commercial products.
               </p>
               <p className="leading-relaxed mt-4">
                 The key word is obligation. The zakat that flows through this Foundation is not optional. It is not a goodwill gesture that Labs makes when times are good and quietly skips when margins are tight. It is a calculated, Sharia-mandated, scholar-verified obligation, enforced by the same governance structure that governs everything else here. You cannot run an Islamic institution and treat zakat as a discretionary line item. We will not.
