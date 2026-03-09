@@ -101,25 +101,25 @@ export const glossaryTerms: Record<string, GlossaryTerm> = {
     term: "Sharia",
     pronunciation: "shah-ree-ah",
     definition: "Islamic religious law derived from the Quran and the teachings of Prophet Muhammad (peace be upon him). It governs all aspects of a Muslim's life, including finance, business, and ethics.",
-    context: "All Tawf products are certified under the TAWF Sharia Framework."
+    context: "The Sharia Advisory Board provides guidance on all Sharia matters within the Tawf ecosystem."
   },
   "riba": {
     term: "Riba",
     pronunciation: "ree-bah",
     definition: "Interest or usury - the prohibition of charging or paying interest on loans. It's considered exploitative as it generates wealth from wealth without productive activity.",
-    context: "All certified Tawf products are completely free of riba."
+    context: "The Tawf ecosystem excludes all forms of riba."
   },
   "gharar": {
     term: "Gharar",
     pronunciation: "gah-rar",
     definition: "Excessive uncertainty, ambiguity, or risk in contracts. Islamic finance prohibits contracts with excessive uncertainty that could lead to disputes or unfair outcomes.",
-    context: "TAWF certification ensures products are free from gharar."
+    context: "The Tawf ecosystem ensures products are free from gharar."
   },
   "maysir": {
     term: "Maysir",
     pronunciation: "may-seer",
     definition: "Gambling or games of chance. Islamic finance prohibits zero-sum speculation where one person's gain is another's loss without productive value creation.",
-    context: "TAWF Sharia Framework screens out all forms of maysir."
+    context: "The Tawf ecosystem excludes all forms of maysir."
   },
   "maslaha": {
     term: "Maslaha",

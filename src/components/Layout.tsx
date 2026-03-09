@@ -45,7 +45,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             {!subdomain && (
               <>
                 <Link to="/#mission" className="text-sm font-medium tracking-widest uppercase text-tawf-ink/70 hover:text-tawf-green transition-colors">Mission</Link>
-                <Link to="/#framework" className="text-sm font-medium tracking-widest uppercase text-tawf-ink/70 hover:text-tawf-green transition-colors">Framework</Link>
+                <Link to="/#governance" className="text-sm font-medium tracking-widest uppercase text-tawf-ink/70 hover:text-tawf-green transition-colors">Governance</Link>
               </>
             )}
 
@@ -111,7 +111,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               {!subdomain && (
                 <>
                   <Link to="/#mission" className="block text-sm font-medium tracking-widest uppercase text-tawf-ink/70 hover:text-tawf-green">Mission</Link>
-                  <Link to="/#framework" className="block text-sm font-medium tracking-widest uppercase text-tawf-ink/70 hover:text-tawf-green">Framework</Link>
+                  <Link to="/#governance" className="block text-sm font-medium tracking-widest uppercase text-tawf-ink/70 hover:text-tawf-green">Governance</Link>
                 </>
               )}
               <div className="pt-4 border-t border-tawf-green/10">
@@ -152,8 +152,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               {!subdomain && (
                 <>
                   <li><Link to="/#mission" className="hover:text-tawf-gold transition-colors">Our Mission</Link></li>
-                  <li><Link to="/#framework" className="hover:text-tawf-gold transition-colors">Sharia Framework</Link></li>
-                  <li><Link to="/#governance" className="hover:text-tawf-gold transition-colors">Governance Structure</Link></li>
+                  <li><Link to="/#governance" className="hover:text-tawf-gold transition-colors">How Governance Works</Link></li>
+                  <li><Link to="/#organization" className="hover:text-tawf-gold transition-colors">Organizational Structure</Link></li>
                   <li><Link to="/#ecosystem" className="hover:text-tawf-gold transition-colors">Tawf ID (TID)</Link></li>
                 </>
               )}

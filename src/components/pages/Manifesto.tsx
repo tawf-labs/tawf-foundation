@@ -80,7 +80,7 @@ export default function Manifesto() {
                 Tawf Foundation is that body for the digital age.
               </p>
               <p className="leading-relaxed mt-4">
-                Every certification fee paid to Tawf Labs. Every royalty. Every revenue stream that the commercial engine generates, a portion flows here, to the Foundation, where it is transformed from profit into purpose.
+                Every royalty. Every revenue stream that the commercial engine generates, a portion flows here, to the Foundation, where it is transformed from profit into purpose.
               </p>
               <p className="leading-relaxed mt-4 font-medium text-tawf-green">
                 We are not an organization that treats charity as an add-on. We are a structure where charity is architecturally mandatory.
@@ -117,7 +117,7 @@ export default function Manifesto() {
                 <div>
                   <h3 className="text-2xl font-serif text-tawf-green mb-4">Sadaqah and Community Grant Programs</h3>
                   <p className="leading-relaxed">
-                    The Foundation runs active sadaqah programs, voluntary charitable giving channeled into targeted community impact initiatives. These include education grants for Islamic finance students, support for early-stage BMT digitization, funding for scholars and researchers contributing to the TAWF Sharia Framework, and direct community relief programs. Recipients are selected through a transparent, DAO-informed process with final approval from the Board of Trustees.
+                    The Foundation runs active sadaqah programs, voluntary charitable giving channeled into targeted community impact initiatives. These include education grants for Islamic finance students, support for early-stage BMT digitization, and direct community relief programs. Recipients are selected through a transparent, DAO-informed process with final approval from the Board of Trustees.
                   </p>
                 </div>
 
@@ -136,7 +136,7 @@ export default function Manifesto() {
                 Tawf Labs is the commercial engine. Tawf Foundation is the mission that engine serves. The relationship between them is not just legal. It is architectural, moral, and designed to be permanent.
               </p>
               <p className="leading-relaxed mt-4 text-white/80">
-                Labs pays a monthly royalty of 3 to 8% of gross certification revenue to the Foundation. But beyond the royalty, Labs operates under a broader obligation: a portion of its annual profit is calculated as zakat and transferred to the Foundation for distribution. Waqf assets created through Labs products are held in Foundation trusteeship. Community governance, the TAWF DAO, lives in the Foundation, not in Labs. The TAWF Sharia Framework, which Labs commercializes, is owned by the Foundation and can never be sold, transferred, or modified without Foundation approval.
+                Labs pays a monthly royalty of 3 to 8% of gross revenue to the Foundation. But beyond the royalty, Labs operates under a broader obligation: a portion of its annual profit is calculated as zakat and transferred to the Foundation for distribution. Waqf assets created through Labs products are held in Foundation trusteeship. Community governance, the TAWF DAO, lives in the Foundation, not in Labs.
               </p>
               <p className="leading-relaxed mt-4 text-white/80">
                 Labs is powerful. But the Foundation is sovereign.
@@ -150,7 +150,7 @@ export default function Manifesto() {
               <h2 className="text-3xl font-serif text-tawf-green mb-6 font-medium">We Believe in Seven Principles. Non-Negotiable. Always.</h2>
               <ul className="space-y-6 list-none pl-0">
                 <li className="leading-relaxed">
-                  <strong className="text-tawf-green">No Riba.</strong> Interest is not a neutral instrument. It is a mechanism that transfers wealth from the borrower to the lender regardless of outcome, rewarding capital while punishing labor, entrenching inequality with mathematical precision. We build without it. We certify without it. We operate without it.
+                  <strong className="text-tawf-green">No Riba.</strong> Interest is not a neutral instrument. It is a mechanism that transfers wealth from the borrower to the lender regardless of outcome, rewarding capital while punishing labor, entrenching inequality with mathematical precision. We build without it. We operate without it.
                 </li>
                 <li className="leading-relaxed">
                   <strong className="text-tawf-green">No Gharar.</strong> Uncertainty that harms is prohibited. Smart contracts must be auditable. Terms must be disclosed. Users must know what they are entering into. Opacity in finance is not sophistication. It is predation.
@@ -165,10 +165,10 @@ export default function Manifesto() {
                   <strong className="text-tawf-green">Transparent Governance.</strong> Power must be visible. Decisions must be traceable. Those who govern must be accountable to those they govern. On-chain auditability is not a technical feature. It is a moral requirement.
                 </li>
                 <li className="leading-relaxed">
-                  <strong className="text-tawf-green">Social Impact and Maslaha.</strong> Every financial product must answer a simple question: who benefits, and how? Finance must serve the many. That is what it is for. Maslaha is not a soft aspiration. It is a screening criterion, and it is the reason we run zakat and waqf operations ourselves rather than simply certifying others who claim to.
+                  <strong className="text-tawf-green">Social Impact and Maslaha.</strong> Every financial product must answer a simple question: who benefits, and how? Finance must serve the many. That is what it is for. Maslaha is not a soft aspiration. It is a screening criterion, and it is the reason we run zakat and waqf operations ourselves.
                 </li>
                 <li className="leading-relaxed">
-                  <strong className="text-tawf-green">Halal Sector Compliance.</strong> Capital has direction. Where money flows, power and harm follow. Certified products must not direct capital toward industries that cause demonstrable harm to individuals, families, or communities.
+                  <strong className="text-tawf-green">Halal Sector Compliance.</strong> Capital has direction. Where money flows, power and harm follow. Financial products must not direct capital toward industries that cause demonstrable harm to individuals, families, or communities.
                 </li>
               </ul>
             </section>
@@ -189,7 +189,7 @@ export default function Manifesto() {
                 At the apex of the Foundation sit the Scholar Chairmen, Islamic scholars whose authority over Sharia matters is absolute, unconditional, and structurally protected from every commercial pressure imaginable.
               </p>
               <p className="leading-relaxed mt-4">
-                They do not advise. They chair. Their rulings on the TAWF Sharia Framework, on certification decisions, and on the legitimacy of our zakat and waqf operations are final. No DAO vote, no board resolution, no investor term sheet will ever change that. This is not a promise. It is a structural fact.
+                They do not advise. They chair. Their rulings on Sharia compliance and on the legitimacy of our zakat and waqf operations are final. No DAO vote, no board resolution, no investor term sheet will ever change that. This is not a promise. It is a structural fact.
               </p>
             </section>
 
@@ -222,7 +222,7 @@ export default function Manifesto() {
             <section>
               <h2 className="text-3xl font-serif text-tawf-green mb-6 font-medium">We Are Not the Last Word. We Are the First Standard.</h2>
               <p className="leading-relaxed">
-                Tawf Foundation does not claim to be the final authority on Islamic finance. We do not issue fatwas. We are not a religious body. We are a standard-setting institution that publishes a transparent, auditable, living methodology, the TAWF Sharia Framework, and certifies products that meet it. Every decision we make is open to scrutiny. Every zakat disbursement is on-chain and visible. Every waqf we hold is publicly declared. Every certification we issue or revoke is logged.
+                Tawf Foundation does not claim to be the final authority on Islamic finance. We do not issue fatwas. We are not a religious body. We are a public trust institution that operates transparently, with zakat disbursements on-chain and visible, waqf holdings publicly declared, and governance decisions logged and auditable.
               </p>
               <p className="leading-relaxed mt-4">
                 We hold ourselves to the same standard we apply to everyone else. If we ever fall short, the community will see it. And the scholars will act.
@@ -239,7 +239,7 @@ export default function Manifesto() {
                   <strong className="text-white">To the scholars who chair our board:</strong> we will protect your authority from every commercial pressure, forever.
                 </li>
                 <li className="leading-relaxed text-lg">
-                  <strong className="text-white">To the builders who seek certification:</strong> we will judge your work transparently, consistently, and without exception.
+                  <strong className="text-white">To the builders and partners in our ecosystem:</strong> we will work with you transparently, consistently, and with integrity.
                 </li>
                 <li className="leading-relaxed text-lg">
                   <strong className="text-white">To the asnaf who receive our zakat:</strong> your share is not charity from us. It is a right. We are only the vessel.

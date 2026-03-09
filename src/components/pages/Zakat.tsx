@@ -32,7 +32,7 @@ const faqs = [
   },
   {
     q: 'How does Tawf Foundation collect zakat?',
-    a: 'We collect zakat from Tawf Labs revenue (3-8% monthly royalty), from direct community payments, and from ecosystem partners who use our certification services.'
+    a: 'We collect zakat from Tawf Labs revenue (3-8% monthly royalty), from direct community payments, and from ecosystem partners who contribute to our mission.'
   },
   {
     q: 'How is zakat distributed?',
@@ -187,9 +187,9 @@ export default function Zakat() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {[
-            { title: 'Labs Revenue', desc: '3-8% of Tawf Labs certification revenue flows to Foundation monthly', icon: <TrendingUp className="w-6 h-6" /> },
+            { title: 'Labs Revenue', desc: '3-8% of Tawf Labs revenue flows to Foundation monthly', icon: <TrendingUp className="w-6 h-6" /> },
             { title: 'Direct Payments', desc: 'Community members can pay zakat directly through our platform', icon: <Heart className="w-6 h-6" /> },
-            { title: 'Partners', desc: 'Certified partners contribute a portion as part of their obligation', icon: <Users className="w-6 h-6" /> },
+            { title: 'Partners', desc: 'Ecosystem partners contribute a portion as part of their obligation', icon: <Users className="w-6 h-6" /> },
             { title: 'Annual Audit', desc: 'Scholar Chairmen verify all calculations and distributions annually', icon: <CheckCircle className="w-6 h-6" /> }
           ].map((item, idx) => (
             <div key={idx} className="bg-white/5 p-6 rounded-2xl border border-white/10">

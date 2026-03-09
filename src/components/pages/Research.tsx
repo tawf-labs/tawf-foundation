@@ -38,12 +38,6 @@ const researchAreas = [
 
 const publications = [
   {
-    title: 'The TAWF Sharia Framework: A Methodology for Web3 Certification',
-    type: 'Framework Paper',
-    date: '2025',
-    status: 'Published'
-  },
-  {
     title: 'Tokenized Waqf: Preserving Perpetuity in a Digital Age',
     type: 'Research Paper',
     date: '2025',
@@ -77,7 +71,7 @@ export default function Research() {
         badge="Research & Scholarship"
         title="Research at Tawf Foundation"
         subtitle="Advancing Islamic finance in the digital age"
-        description="We fund and publish research that bridges traditional Islamic jurisprudence with modern Web3 technology. Our work informs the TAWF Sharia Framework and advances the field of digital Islamic finance."
+        description="We fund and publish research that bridges traditional Islamic jurisprudence with modern Web3 technology. Our work advances Sharia governance and the field of digital Islamic finance."
       />
 
       {/* Research Areas */}
@@ -206,7 +200,7 @@ export default function Research() {
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircle className="w-6 h-6 text-tawf-gold shrink-0 mt-0.5" />
-                <span>Informs the TAWF Sharia Framework evolution</span>
+                <span>Contributes to Sharia governance in the digital age</span>
               </li>
             </ul>
           </div>
