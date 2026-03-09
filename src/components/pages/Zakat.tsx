@@ -81,10 +81,6 @@ export default function Zakat() {
               </span>
               .
             </p>
-            <div className="flex items-center gap-4 p-6 bg-tawf-green/5 rounded-2xl border border-tawf-green/10">
-              <CheckCircle className="w-8 h-8 text-tawf-green shrink-0" />
-              <p className="text-tawf-green font-medium">Every zakat payment is recorded on-chain. You can verify where your contribution goes.</p>
-            </div>
           </div>
           <div className="relative">
             <div className="absolute inset-0 bg-tawf-green/5 rounded-3xl transform rotate-3"></div>
