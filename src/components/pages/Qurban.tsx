@@ -23,7 +23,7 @@ const faqs = [
     a: 'The acceptable animals for Qurban are sheep, goats, cattle, and camels that meet specific age and health requirements as defined by Islamic law.'
   },
   {
-    q: 'How does Tawf Foundation distribute Qurban meat?',
+    q: 'How does Tawf Islamic Foundation distribute Qurban meat?',
     a: 'We work with trusted partners in Indonesia and other regions to ensure proper slaughter according to Sharia guidelines. Meat is distributed to eligible asnaf, with one-third for the family, one-third for friends, and one-third for the needy.'
   },
   {
@@ -43,7 +43,7 @@ export default function Qurban() {
     <>
       <PageHero
         badge="Eid al-Adha Sacrifice"
-        title="Qurban at Tawf Foundation"
+        title="Qurban at Tawf Islamic Foundation"
         subtitle="Digital qurban with full transparency"
         description="Experience a modern approach to the ancient tradition of Qurban. Register online, track your sacrifice, and verify distribution—all on-chain."
       />
@@ -61,7 +61,7 @@ export default function Qurban() {
               Before the sacrifice could be completed, God provided a ram as a substitute. To honor this story, Muslims around the world sacrifice eligible livestock and distribute the meat to family, friends, and especially the needy.
             </p>
             <p className="text-tawf-muted text-lg leading-relaxed">
-              At Tawf Foundation, we've modernized this tradition. Our digital platform allows you to register your Qurban, track the process, and verify that the meat reaches those who need it most—all with full transparency.
+              At Tawf Islamic Foundation, we've modernized this tradition. Our digital platform allows you to register your Qurban, track the process, and verify that the meat reaches those who need it most—all with full transparency.
             </p>
           </div>
           <div className="relative">

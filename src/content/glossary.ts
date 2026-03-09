@@ -13,9 +13,9 @@ export const glossaryTerms: Record<string, GlossaryTerm> = {
     term: "Baitul Maal",
     pronunciation: "bah-yool ma-al",
     definition: "A centuries-old Islamic community treasury. Think of it as a foundation, charity, and community bank combined. Historically, it collected, managed, and distributed community wealth for social welfare.",
-    context: "The Tawf Foundation is the Baitul Maal of the ecosystem - the social and charitable soul that transforms profit into purpose.",
+    context: "The Tawf Islamic Foundation is the Baitul Maal of the ecosystem - the social and charitable soul that transforms profit into purpose.",
     shortDefinition: "An Islamic treasury managing community wealth for social welfare.",
-    shortContext: "Tawf Foundation serves as the ecosystem's Baitul Maal—transforming profit into purpose."
+    shortContext: "Tawf Islamic Foundation serves as the ecosystem's Baitul Maal—transforming profit into purpose."
   },
   "zakat": {
     term: "Zakat",
@@ -53,7 +53,7 @@ export const glossaryTerms: Record<string, GlossaryTerm> = {
     term: "Amil",
     pronunciation: "ah-meel",
     definition: "An officially appointed collector and administrator of zakat. Amils are authorized to collect zakat from eligible payers and ensure it reaches qualified recipients.",
-    context: "Tawf Foundation serves as the official amil for the Tawf ecosystem."
+    context: "Tawf Islamic Foundation serves as the official amil for the Tawf ecosystem."
   },
   "asnaf": {
     term: "Asnaf",
@@ -83,7 +83,7 @@ export const glossaryTerms: Record<string, GlossaryTerm> = {
     term: "BMT",
     pronunciation: "B-M-T",
     definition: "Baitul Maal wa Tamwil - Islamic financial cooperatives common in Indonesia. They combine social funds (Baitul Maal) for charity with commercial financing (Tamwil) for members.",
-    context: "Tawf Foundation works with BMTs across Indonesia for digitization and zakat distribution."
+    context: "Tawf Islamic Foundation works with BMTs across Indonesia for digitization and zakat distribution."
   },
   "soulbound": {
     term: "Soulbound",

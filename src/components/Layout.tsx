@@ -32,11 +32,11 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
           {subdomain ? (
             <a href="https://tawf.foundation" className="font-serif text-2xl font-medium tracking-wide text-tawf-green">
-              Tawf Foundation
+              Tawf Islamic Foundation
             </a>
           ) : (
             <Link to="/" className="font-serif text-2xl font-medium tracking-wide text-tawf-green">
-              Tawf Foundation
+              Tawf Islamic Foundation
             </Link>
           )}
 
@@ -139,7 +139,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
           <div className="col-span-1 md:col-span-2">
             <h3 className="font-serif text-xl font-medium tracking-wide text-white mb-6">
-              Tawf Foundation
+              Tawf Islamic Foundation
             </h3>
             <p className="text-sm max-w-sm leading-relaxed">
               The non-profit, public-trust cornerstone of the Tawf ecosystem. Generating legitimacy, trust, and genuine community ownership over ethical Web3 finance.
@@ -177,7 +177,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         </div>
 
         <div className="max-w-7xl mx-auto px-6 mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between text-xs">
-          <p>&copy; {new Date().getFullYear()} Tawf Foundation. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Tawf Islamic Foundation. All rights reserved.</p>
           <div className="flex gap-6 mt-4 md:mt-0">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-white transition-colors">Terms of Service</a>

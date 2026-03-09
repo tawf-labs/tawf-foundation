@@ -29,7 +29,7 @@ export default function Manifesto() {
             <div className="h-px w-12 bg-tawf-gold"></div>
           </div>
           <h1 className="text-5xl md:text-7xl font-serif text-tawf-green mb-8 leading-tight">
-            The Tawf Foundation Manifesto
+            The Tawf Islamic Foundation Manifesto
           </h1>
         </motion.div>
 
@@ -67,7 +67,7 @@ export default function Manifesto() {
                 That is where we come from. That is what we are rebuilding.
               </p>
               <p className="leading-relaxed mt-4">
-                The Tawf Foundation is the Baitul Maal, the social and charitable soul of this ecosystem. Everything commercial that Tawf Labs builds, earns, and grows flows back here. Into the community. Into the hands that need it. Into endowments that will outlast every market cycle. This is not a feature of Tawf. This is the reason Tawf exists.
+                The Tawf Islamic Foundation is the Baitul Maal, the social and charitable soul of this ecosystem. Everything commercial that Tawf Labs builds, earns, and grows flows back here. Into the community. Into the hands that need it. Into endowments that will outlast every market cycle. This is not a feature of Tawf. This is the reason Tawf exists.
               </p>
             </section>
 
@@ -77,7 +77,7 @@ export default function Manifesto() {
                 In the original BMT model, Baitul Maal is not a charity department. It is not a PR initiative. It is not a percentage rounded up at checkout. It is the institutional heart of the entire cooperative, the body that holds the community's trust, manages its collective obligations, and ensures that commercial activity never becomes an end in itself.
               </p>
               <p className="leading-relaxed mt-4">
-                Tawf Foundation is that body for the digital age.
+                Tawf Islamic Foundation is that body for the digital age.
               </p>
               <p className="leading-relaxed mt-4">
                 Every royalty. Every revenue stream that the commercial engine generates, a portion flows here, to the Foundation, where it is transformed from profit into purpose.
@@ -94,7 +94,7 @@ export default function Manifesto() {
                 <div>
                   <h3 className="text-2xl font-serif text-tawf-green mb-4">Zakat</h3>
                   <p className="leading-relaxed">
-                    Zakat is not optional. It is one of the Five Pillars of Islam, an obligation, not a choice. The Tawf Foundation serves as the official amil, the legitimate collector and distributor of zakat for the entire Tawf ecosystem. A portion of Tawf Labs' commercial revenue is calculated, declared, and disbursed as zakat through the Foundation to the eight categories of eligible recipients (asnaf) defined by Islamic law. This is not symbolic. It is a real, recurring, on-chain operation, fully transparent, auditable by any community member, and governed by the Scholar Chairmen who ensure every distribution is Sharia-compliant.
+                    Zakat is not optional. It is one of the Five Pillars of Islam, an obligation, not a choice. The Tawf Islamic Foundation serves as the official amil, the legitimate collector and distributor of zakat for the entire Tawf ecosystem. A portion of Tawf Labs' commercial revenue is calculated, declared, and disbursed as zakat through the Foundation to the eight categories of eligible recipients (asnaf) defined by Islamic law. This is not symbolic. It is a real, recurring, on-chain operation, fully transparent, auditable by any community member, and governed by the Scholar Chairmen who ensure every distribution is Sharia-compliant.
                   </p>
                   <p className="leading-relaxed mt-4 font-medium text-tawf-green">
                     We are building the infrastructure to make this the most transparent zakat operation in Southeast Asia.
@@ -133,7 +133,7 @@ export default function Manifesto() {
             <section className={`bg-tawf-ink text-tawf-sand p-8 md:p-12 ${RADIUS_BOX}`}>
               <h2 className="text-3xl font-serif text-tawf-gold mb-6 font-medium">Our Relationship With Tawf Labs: The Flow of Obligation</h2>
               <p className="leading-relaxed text-white/80">
-                Tawf Labs is the commercial engine. Tawf Foundation is the mission that engine serves. The relationship between them is not just legal. It is architectural, moral, and designed to be permanent.
+                Tawf Labs is the commercial engine. Tawf Islamic Foundation is the mission that engine serves. The relationship between them is not just legal. It is architectural, moral, and designed to be permanent.
               </p>
               <p className="leading-relaxed mt-4 text-white/80">
                 Labs pays a monthly royalty of 3 to 8% of gross revenue to the Foundation. But beyond the royalty, Labs operates under a broader obligation: a portion of its annual profit is calculated as zakat and transferred to the Foundation for distribution. Waqf assets created through Labs products are held in Foundation trusteeship. Community governance, the TAWF DAO, lives in the Foundation, not in Labs.
@@ -212,7 +212,7 @@ export default function Manifesto() {
                 These communities have been underserved by conventional finance for a century. Web3 has the technical capability to reach them. What it has lacked, until now, is the ethical infrastructure to deserve their trust.
               </p>
               <p className="leading-relaxed mt-4">
-                The 4,500+ BMTs across Indonesia already understand cooperative finance. They already practice zakat. They already manage waqf for their communities. They do not need to be taught what ethical finance means. They need digital tools equal to the wisdom they already carry. That is what the Tawf Foundation is here to provide.
+                The 4,500+ BMTs across Indonesia already understand cooperative finance. They already practice zakat. They already manage waqf for their communities. They do not need to be taught what ethical finance means. They need digital tools equal to the wisdom they already carry. That is what the Tawf Islamic Foundation is here to provide.
               </p>
               <p className="leading-relaxed mt-4 font-medium text-tawf-green">
                 We are not building for a market. We are building for a community that has always known how to build for itself.
@@ -222,7 +222,7 @@ export default function Manifesto() {
             <section>
               <h2 className="text-3xl font-serif text-tawf-green mb-6 font-medium">We Are Not the Last Word. We Are the First Standard.</h2>
               <p className="leading-relaxed">
-                Tawf Foundation does not claim to be the final authority on Islamic finance. We do not issue fatwas. We are not a religious body. We are a public trust institution that operates transparently, with zakat disbursements on-chain and visible, waqf holdings publicly declared, and governance decisions logged and auditable.
+                Tawf Islamic Foundation does not claim to be the final authority on Islamic finance. We do not issue fatwas. We are not a religious body. We are a public trust institution that operates transparently, with zakat disbursements on-chain and visible, waqf holdings publicly declared, and governance decisions logged and auditable.
               </p>
               <p className="leading-relaxed mt-4">
                 We hold ourselves to the same standard we apply to everyone else. If we ever fall short, the community will see it. And the scholars will act.
@@ -256,7 +256,7 @@ export default function Manifesto() {
               </ul>
 
               <div className="mt-16 pt-12 border-t border-white/20 text-center">
-                <p className="text-2xl font-serif text-tawf-gold mb-4">Tawf Foundation. Baitul Maal, rebuilt for the digital age.</p>
+                <p className="text-2xl font-serif text-tawf-gold mb-4">Tawf Islamic Foundation. Baitul Maal, rebuilt for the digital age.</p>
                 <p className="text-xl font-light text-white mb-8">Ethical by principle. Sharia by design. Community by covenant.</p>
                 <p className="text-lg text-white/70 italic">And our zakat is on-chain. You can check.</p>
               </div>

@@ -49,7 +49,7 @@ export default function Landing() {
             </h1>
 
             <p className="text-xl text-tawf-muted font-light leading-relaxed mb-10 max-w-lg">
-              The Tawf Foundation is the Baitul Maal - the social and charitable soul of the ecosystem. We collect{' '}
+              Tawf Islamic Foundation is the Baitul Maal - the social and charitable soul of the ecosystem. We collect{' '}
               <span className="inline-flex items-center gap-1">
                 zakat
                 <InfoTooltip term="zakat" />
@@ -185,7 +185,7 @@ export default function Landing() {
             <span className="text-sm font-semibold tracking-[0.2em] uppercase text-tawf-gold">The Flow of Obligation</span>
             <h2 className="text-4xl md:text-5xl font-light text-white mt-4 mb-6">From Labs, To the Community</h2>
             <p className="text-tawf-sand/70 text-xl max-w-3xl mx-auto">
-              Tawf Labs is the commercial engine. Tawf Foundation is the mission that engine serves. The relationship is architectural, moral, and permanent.
+              Tawf Labs is the commercial engine. Tawf Islamic Foundation is the mission that engine serves. The relationship is architectural, moral, and permanent.
             </p>
           </div>
 
@@ -233,7 +233,7 @@ export default function Landing() {
                 <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center">
                   <Landmark className="w-7 h-7 text-tawf-gold" />
                 </div>
-                <h3 className="text-2xl font-serif text-white">Tawf Foundation</h3>
+                <h3 className="text-2xl font-serif text-white">Tawf Islamic Foundation</h3>
               </div>
               <p className="text-white/80 text-lg mb-6">The Baitul Maal that transforms profit into purpose.</p>
               <ul className="space-y-3 text-white/90">

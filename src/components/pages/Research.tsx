@@ -69,7 +69,7 @@ export default function Research() {
     <>
       <PageHero
         badge="Research & Scholarship"
-        title="Research at Tawf Foundation"
+        title="Research at Tawf Islamic Foundation"
         subtitle="Advancing Islamic finance in the digital age"
         description="We fund and publish research that bridges traditional Islamic jurisprudence with modern Web3 technology. Our work advances Sharia governance and the field of digital Islamic finance."
       />
@@ -183,7 +183,7 @@ export default function Research() {
             <span className="text-sm font-semibold tracking-[0.2em] uppercase text-tawf-gold">Funding Research</span>
             <h2 className="text-3xl md:text-4xl font-serif text-white mt-4 mb-6">Research Grants Available</h2>
             <p className="text-tawf-sand/70 text-lg leading-relaxed mb-6">
-              Tawf Foundation offers research grants for scholars and students researching Islamic finance and Web3 technology. We prioritize research that:
+              Tawf Islamic Foundation offers research grants for scholars and students researching Islamic finance and Web3 technology. We prioritize research that:
             </p>
             <ul className="space-y-4 text-tawf-sand/80">
               <li className="flex items-start gap-3">

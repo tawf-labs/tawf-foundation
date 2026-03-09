@@ -1,7 +1,7 @@
-# Tawf Foundation - Design Guidelines
+# Tawf Islamic Foundation - Design Guidelines
 
 ## Overview
-The Tawf Foundation website embodies ethical Web3 finance through a sophisticated, trust-building design system that balances traditional Islamic aesthetics with modern digital interfaces.
+The Tawf Islamic Foundation website embodies ethical Web3 finance through a sophisticated, trust-building design system that balances traditional Islamic aesthetics with modern digital interfaces.
 
 ---
 
@@ -388,4 +388,4 @@ src/
 
 ---
 
-*This design system reflects the Tawf Foundation's commitment to ethical finance, transparency, and community ownership. Every design decision serves the mission of rebuilding Baitul Maal for the digital age.*
+*This design system reflects the Tawf Islamic Foundation's commitment to ethical finance, transparency, and community ownership. Every design decision serves the mission of rebuilding Baitul Maal for the digital age.*

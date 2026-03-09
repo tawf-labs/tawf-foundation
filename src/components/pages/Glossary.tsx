@@ -210,7 +210,7 @@ export default function Glossary() {
           <BookOpen className="w-16 h-16 text-tawf-gold mx-auto mb-6" />
           <h2 className="text-3xl md:text-4xl font-serif text-tawf-gold mb-6">Learn More About Tawf</h2>
           <p className="text-tawf-sand/80 text-xl mb-10 max-w-2xl mx-auto">
-            Explore our zakat programs or read our manifesto to learn more about Tawf Foundation.
+            Explore our zakat programs or read our manifesto to learn more about Tawf Islamic Foundation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

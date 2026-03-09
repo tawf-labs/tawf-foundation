@@ -31,7 +31,7 @@ const faqs = [
     a: 'Any Muslim who possesses wealth above the nisab threshold for one lunar year must pay zakat. Nisab is equivalent to the value of 87.48 grams of gold or 612.36 grams of silver.'
   },
   {
-    q: 'How does Tawf Foundation collect zakat?',
+    q: 'How does Tawf Islamic Foundation collect zakat?',
     a: 'We collect zakat from Tawf Labs revenue (3-8% monthly royalty), from direct community payments, and from ecosystem partners who contribute to our mission.'
   },
   {
@@ -40,7 +40,7 @@ const faqs = [
   },
   {
     q: 'Is my zakat payment tax-deductible?',
-    a: 'Tawf Foundation is a registered non-profit organization. Zakat payments may be tax-deductible depending on your local tax jurisdiction. Please consult with a tax professional.'
+    a: 'Tawf Islamic Foundation is a registered non-profit organization. Zakat payments may be tax-deductible depending on your local tax jurisdiction. Please consult with a tax professional.'
   },
   {
     q: 'Can I specify which asnaf my zakat goes to?',
@@ -55,7 +55,7 @@ export default function Zakat() {
     <>
       <PageHero
         badge="Zakat Collection & Distribution"
-        title="Zakat at Tawf Foundation"
+        title="Zakat at Tawf Islamic Foundation"
         subtitle="Transparent, on-chain obligatory charity"
         description="We serve as the official amil, collecting and distributing zakat with full transparency. Every payment is recorded on-chain, every distribution is traceable."
       />
@@ -69,7 +69,7 @@ export default function Zakat() {
               Zakat is not charity in the voluntary sense. It is an obligation—one of the Five Pillars of Islam. Eligible Muslims must pay 2.5% of their qualifying wealth annually to support those in need.
             </p>
             <p className="text-tawf-muted text-lg leading-relaxed mb-6">
-              At Tawf Foundation, we've modernized this ancient practice. We serve as the official{' '}
+              At Tawf Islamic Foundation, we've modernized this ancient practice. We serve as the official{' '}
               <span className="inline-flex items-center gap-1">
                 amil
                 <InfoTooltip term="amil" />
@@ -147,7 +147,7 @@ export default function Zakat() {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-serif text-tawf-green mb-6">The Eight Asnaf</h2>
           <p className="text-tawf-muted text-xl max-w-3xl mx-auto">
-            Islamic law specifies eight categories of eligible zakat recipients. The Tawf Foundation distributes to all eight categories under the guidance of our Scholar Chairmen.
+            Islamic law specifies eight categories of eligible zakat recipients. The Tawf Islamic Foundation distributes to all eight categories under the guidance of our Scholar Chairmen.
           </p>
         </div>
 

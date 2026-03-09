@@ -1,4 +1,4 @@
-# Caddyfile for Tawf Foundation subdomain routing
+# Caddyfile for Tawf Islamic Foundation subdomain routing
 # This configuration maps subdomains to the React app's client-side routes
 #
 # Subdomain mappings:

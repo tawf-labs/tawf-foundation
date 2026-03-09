@@ -1,8 +1,8 @@
 <div align="center">
 
-![Tawf Foundation Logo](public/images/tawftransparent.png)
+![Tawf Islamic Foundation Logo](public/images/tawftransparent.png)
 
-# Tawf Foundation
+# Tawf Islamic Foundation
 
 *The non-profit, public-trust cornerstone of the Tawf ecosystem.*
 
@@ -19,7 +19,7 @@
 
 ## About
 
-The **Tawf Foundation** is a non-profit organization dedicated to building ethical Web3 financial solutions grounded in Shariah-compliant principles. We serve as the public-trust cornerstone of the Tawf ecosystem, generating legitimacy, trust, and genuine community ownership.
+The **Tawf Islamic Foundation** is a non-profit organization dedicated to building ethical Web3 financial solutions grounded in Shariah-compliant principles. We serve as the public-trust cornerstone of the Tawf ecosystem, generating legitimacy, trust, and genuine community ownership.
 
 ### Our Mission
 
@@ -111,7 +111,7 @@ tawf-foundation/
 | Route | Description |
 |-------|-------------|
 | `/` | Landing page with mission, framework, governance & ecosystem |
-| `/manifesto` | Full Tawf Foundation manifesto |
+| `/manifesto` | Full Tawf Islamic Foundation manifesto |
 
 ---
 
