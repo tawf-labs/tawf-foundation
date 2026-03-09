@@ -142,7 +142,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               Tawf Islamic Foundation
             </h3>
             <p className="text-sm max-w-sm leading-relaxed">
-              The non-profit, public-trust cornerstone of the Tawf ecosystem. Generating legitimacy, trust, and genuine community ownership over ethical Web3 finance.
+              Ethical finance. Community ownership. On-chain transparency.
             </p>
           </div>
 
