@@ -206,10 +206,6 @@ export default function Landing() {
                 </li>
                 <li className="flex items-center gap-3">
                   <ChevronRight className="w-5 h-5 text-tawf-gold shrink-0" />
-                  <span>3-8% monthly royalty to Foundation</span>
-                </li>
-                <li className="flex items-center gap-3">
-                  <ChevronRight className="w-5 h-5 text-tawf-gold shrink-0" />
                   <span>
                     <span className="inline-flex items-center gap-1">
                       Zakat
@@ -290,160 +286,26 @@ export default function Landing() {
         </div>
       </section>
 
-      {/* DAO Governance Workflow Section */}
+      {/* Governance Section */}
       <section id="governance" className={`${SECTION_PADDING} bg-tawf-sand relative`}>
         <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-tawf-gold/30 to-transparent"></div>
 
         <div className={`${MAX_WIDTH} mx-auto ${CONTAINER_PADDING}`}>
+          {/* Section Header */}
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-light text-tawf-green mb-6">How Governance Works</h2>
-            <p className="text-tawf-muted text-xl max-w-3xl mx-auto">
-              The TAWF DAO follows a three-stage workflow that balances community voice with{' '}
-              <span className="inline-flex items-center gap-1">
-                Sharia
-                <InfoTooltip term="sharia" />
-              </span> oversight.
-            </p>
+            <h2 className="text-4xl md:text-5xl font-light text-tawf-green mb-6">Governance</h2>
+            <p className="text-tawf-muted text-xl">Three distinct bodies, one clear workflow.</p>
           </div>
 
-          {/* Visual Flow */}
-          <div className="flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-8 mb-16">
-            <div className="flex items-center gap-4">
-              <div className="w-16 h-16 bg-tawf-green rounded-full flex items-center justify-center">
-                <FileText className="w-8 h-8 text-tawf-gold" />
-              </div>
-              <span className="text-lg font-medium text-tawf-green">Proposal</span>
-            </div>
-            <ArrowDown className="w-6 h-6 text-tawf-gold lg:rotate-0 rotate-90" />
-            <div className="flex items-center gap-4">
-              <div className="w-16 h-16 bg-tawf-green rounded-full flex items-center justify-center">
-                <Users className="w-8 h-8 text-tawf-gold" />
-              </div>
-              <span className="text-lg font-medium text-tawf-green">Community Vote</span>
-            </div>
-            <ArrowDown className="w-6 h-6 text-tawf-gold lg:rotate-0 rotate-90" />
-            <div className="flex items-center gap-4">
-              <div className="w-16 h-16 bg-tawf-green rounded-full flex items-center justify-center">
-                <Shield className="w-8 h-8 text-tawf-gold" />
-              </div>
-              <span className="text-lg font-medium text-tawf-green">Sharia Review</span>
-            </div>
-          </div>
-
-          {/* Three Stage Cards */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          {/* PART 1: The Three Governing Bodies */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className={`p-8 border border-tawf-green/10 ${RADIUS_CARD} bg-white hover:shadow-lg transition-shadow`}
+              className={`p-10 border border-tawf-green/10 ${RADIUS_CARD} bg-white relative overflow-hidden group`}
             >
-              <div className="w-14 h-14 bg-tawf-green rounded-full flex items-center justify-center mb-6">
-                <FileText className="w-7 h-7 text-tawf-gold" />
-              </div>
-              <h3 className="text-2xl font-serif text-tawf-green mb-2">Stage 1: Community Proposal</h3>
-              <p className="text-sm font-bold tracking-wider uppercase text-tawf-gold mb-6">Initiate</p>
-              <p className="text-tawf-muted leading-relaxed mb-6">
-                Any TID holder can submit proposals for ecosystem fund allocation, community programs, partnership priorities, and roadmap direction.
-              </p>
-              <ul className="space-y-2 text-tawf-muted">
-                <li className="flex items-center gap-2">
-                  <ChevronRight className="w-4 h-4 text-tawf-gold shrink-0" />
-                  <span>Open to all verified TID holders</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <ChevronRight className="w-4 h-4 text-tawf-gold shrink-0" />
-                  <span>Structured proposal templates</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <ChevronRight className="w-4 h-4 text-tawf-gold shrink-0" />
-                  <span>Transparent on-chain submission</span>
-                </li>
-              </ul>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.15 }}
-              className={`p-8 border border-tawf-green/10 ${RADIUS_CARD} bg-white hover:shadow-lg transition-shadow`}
-            >
-              <div className="w-14 h-14 bg-tawf-green rounded-full flex items-center justify-center mb-6">
-                <Users className="w-7 h-7 text-tawf-gold" />
-              </div>
-              <h3 className="text-2xl font-serif text-tawf-green mb-2">Stage 2: Community Voting</h3>
-              <p className="text-sm font-bold tracking-wider uppercase text-tawf-gold mb-6">Deliberate</p>
-              <p className="text-tawf-muted leading-relaxed mb-6">
-                One TID equals one vote. No token weighting. Following{' '}
-                <span className="inline-flex items-center gap-1">
-                  musyawarah
-                  <InfoTooltip term="musyawarah" />
-                </span> principles of collective deliberation.
-              </p>
-              <ul className="space-y-2 text-tawf-muted">
-                <li className="flex items-center gap-2">
-                  <ChevronRight className="w-4 h-4 text-tawf-gold shrink-0" />
-                  <span>1 TID = 1 Vote (no weighting)</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <ChevronRight className="w-4 h-4 text-tawf-gold shrink-0" />
-                  <span>Transparent on-chain voting</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <ChevronRight className="w-4 h-4 text-tawf-gold shrink-0" />
-                  <span>Defined voting periods</span>
-                </li>
-              </ul>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.3 }}
-              className={`p-8 border border-tawf-green/10 ${RADIUS_CARD} bg-white hover:shadow-lg transition-shadow`}
-            >
-              <div className="w-14 h-14 bg-tawf-green rounded-full flex items-center justify-center mb-6">
-                <Shield className="w-7 h-7 text-tawf-gold" />
-              </div>
-              <h3 className="text-2xl font-serif text-tawf-green mb-2">Stage 3: Sharia Council Review</h3>
-              <p className="text-sm font-bold tracking-wider uppercase text-tawf-gold mb-6">Sharia Council Review</p>
-              <p className="text-tawf-muted leading-relaxed mb-6">
-                The Sharia Advisory Board provides guidance on Sharia matters. Assisted by Tawf-AI for reference to established frameworks like AAOIFI, Muhammadiyah, Malaysia DPSN, Bahrain, and Indonesia MUI.
-              </p>
-              <ul className="space-y-2 text-tawf-muted">
-                <li className="flex items-center gap-2">
-                  <ChevronRight className="w-4 h-4 text-tawf-gold shrink-0" />
-                  <span>AAOIFI standards reference</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <ChevronRight className="w-4 h-4 text-tawf-gold shrink-0" />
-                  <span>Muhammadiyah, Malaysia DPSN</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <ChevronRight className="w-4 h-4 text-tawf-gold shrink-0" />
-                  <span>Bahrain, Indonesia MUI guidance</span>
-                </li>
-              </ul>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* Organizational Structure */}
-      <section id="organization" className={`${SECTION_PADDING} bg-white`}>
-        <div className={`${MAX_WIDTH} mx-auto ${CONTAINER_PADDING}`}>
-          <div className="text-center mb-20">
-            <h2 className="text-4xl md:text-5xl font-light text-tawf-green mb-6">Organizational Structure</h2>
-            <p className="text-tawf-muted text-xl max-w-2xl mx-auto">
-              Three distinct governing bodies with defined authority and deliberate checks against unchecked power.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className={`p-10 border border-tawf-green/10 ${RADIUS_CARD} bg-tawf-sand/30 relative overflow-hidden group`}>
               <div className="absolute top-0 right-0 p-6 opacity-5 group-hover:opacity-10 transition-opacity">
                 <Shield className="w-32 h-32 text-tawf-green" />
               </div>
@@ -452,12 +314,25 @@ export default function Landing() {
                 <InfoTooltip term="sharia" />
               </h3>
               <p className="text-sm font-bold tracking-wider uppercase text-tawf-gold mb-6">Foundation Chairmen</p>
-              <p className="text-tawf-muted text-lg leading-relaxed">
-                Islamic scholars whose decisions on all Sharia matters are final, binding, and beyond commercial override.
+              <p className="text-tawf-muted text-lg leading-relaxed mb-4">
+                Islamic scholars whose decisions on all{' '}
+                <span className="inline-flex items-center gap-1">
+                  Sharia
+                  <InfoTooltip term="sharia" />
+                </span> matters are final, binding, and beyond commercial override.
               </p>
-            </div>
+              <p className="text-tawf-muted text-sm leading-relaxed">
+                Assisted by Tawf-AI referencing established frameworks: AAOIFI, Muhammadiyah, Malaysia DPSN, Bahrain, and Indonesia MUI.
+              </p>
+            </motion.div>
 
-            <div className={`p-10 border border-tawf-green/10 ${RADIUS_CARD} bg-tawf-sand/30 relative overflow-hidden group`}>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.15 }}
+              className={`p-10 border border-tawf-green/10 ${RADIUS_CARD} bg-white relative overflow-hidden group`}
+            >
               <div className="absolute top-0 right-0 p-6 opacity-5 group-hover:opacity-10 transition-opacity">
                 <Building2 className="w-32 h-32 text-tawf-green" />
               </div>
@@ -468,12 +343,17 @@ export default function Landing() {
                 <span className="inline-flex items-center gap-1">
                   Sharia
                   <InfoTooltip term="sharia" />
-                </span>
-                {' '}authority.
+                </span> authority.
               </p>
-            </div>
+            </motion.div>
 
-            <div className={`p-10 border border-tawf-green/10 ${RADIUS_CARD} bg-tawf-sand/30 relative overflow-hidden group`}>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              className={`p-10 border border-tawf-green/10 ${RADIUS_CARD} bg-white relative overflow-hidden group`}
+            >
               <div className="absolute top-0 right-0 p-6 opacity-5 group-hover:opacity-10 transition-opacity">
                 <Network className="w-32 h-32 text-tawf-green" />
               </div>
@@ -485,16 +365,79 @@ export default function Landing() {
                 </span>
               </h3>
               <p className="text-sm font-bold tracking-wider uppercase text-tawf-gold mb-6">Community Governance</p>
-              <p className="text-tawf-muted text-lg leading-relaxed mb-4">
+              <p className="text-tawf-muted text-lg leading-relaxed">
                 The community's voice. Gated by Tawf ID (TID), where 1 TID equals 1 Vote. No token-weighting.
               </p>
-              <p className="text-tawf-muted text-sm leading-relaxed">
-                Proposals flow from community → community voting → Sharia Council review. Final authority rests with the{' '}
-                <span className="inline-flex items-center gap-1">
-                  Sharia
-                  <InfoTooltip term="sharia" />
-                </span> Advisory Board, assisted by Tawf-AI referencing established frameworks like AAOIFI, Muhammadiyah, and Malaysia DPSN.
-              </p>
+            </motion.div>
+          </div>
+
+          {/* PART 2: The Workflow */}
+          <div className={`p-8 md:p-12 border border-tawf-green/10 ${RADIUS_CARD} bg-white`}>
+            <h3 className="text-2xl md:text-3xl font-serif text-tawf-green mb-10 text-center">How Decisions Flow</h3>
+
+            {/* Visual Flow */}
+            <div className="flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-6 mb-12">
+              <div className="flex items-center gap-3">
+                <div className="w-14 h-14 bg-tawf-green rounded-full flex items-center justify-center">
+                  <FileText className="w-7 h-7 text-tawf-gold" />
+                </div>
+                <span className="font-medium text-tawf-green">Proposal</span>
+              </div>
+              <ChevronRight className="w-6 h-6 text-tawf-gold lg:rotate-0 rotate-90" />
+              <div className="flex items-center gap-3">
+                <div className="w-14 h-14 bg-tawf-green rounded-full flex items-center justify-center">
+                  <Users className="w-7 h-7 text-tawf-gold" />
+                </div>
+                <span className="font-medium text-tawf-green">Community Vote</span>
+              </div>
+              <ChevronRight className="w-6 h-6 text-tawf-gold lg:rotate-0 rotate-90" />
+              <div className="flex items-center gap-3">
+                <div className="w-14 h-14 bg-tawf-green rounded-full flex items-center justify-center">
+                  <Shield className="w-7 h-7 text-tawf-gold" />
+                </div>
+                <span className="font-medium text-tawf-green">Sharia Review</span>
+              </div>
+            </div>
+
+            {/* Three Stage Descriptions */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="text-center">
+                <div className="w-10 h-10 bg-tawf-green/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-tawf-green font-semibold">1</span>
+                </div>
+                <h4 className="font-semibold text-tawf-green mb-2">Community Proposal</h4>
+                <p className="text-tawf-muted text-sm leading-relaxed">
+                  Any TID holder can submit proposals for ecosystem fund allocation, community programs, partnership priorities, and roadmap direction.
+                </p>
+              </div>
+
+              <div className="text-center">
+                <div className="w-10 h-10 bg-tawf-green/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-tawf-green font-semibold">2</span>
+                </div>
+                <h4 className="font-semibold text-tawf-green mb-2">Community Voting</h4>
+                <p className="text-tawf-muted text-sm leading-relaxed">
+                  Following{' '}
+                  <span className="inline-flex items-center gap-1">
+                    musyawarah
+                    <InfoTooltip term="musyawarah" />
+                  </span> principles of collective deliberation. Transparent on-chain voting with defined periods.
+                </p>
+              </div>
+
+              <div className="text-center">
+                <div className="w-10 h-10 bg-tawf-green/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-tawf-green font-semibold">3</span>
+                </div>
+                <h4 className="font-semibold text-tawf-green mb-2">Sharia Council Review</h4>
+                <p className="text-tawf-muted text-sm leading-relaxed">
+                  The{' '}
+                  <span className="inline-flex items-center gap-1">
+                    Sharia
+                    <InfoTooltip term="sharia" />
+                  </span> Advisory Board provides final guidance on all Sharia matters.
+                </p>
+              </div>
             </div>
           </div>
         </div>
