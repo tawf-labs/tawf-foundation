@@ -444,7 +444,7 @@ export default function Landing() {
       </section>
 
       {/* Tawf ID */}
-      <section id="ecosystem" className={`${SECTION_PADDING} bg-tawf-sand border-t border-tawf-green/10`}>
+      <section id="ecosystem" className={`${SECTION_PADDING} bg-white border-t border-tawf-green/10`}>
         <div className="max-w-3xl mx-auto px-6 text-center">
           <div className="flex items-center justify-center gap-4 mb-8">
             <div className="w-16 h-16 bg-tawf-green rounded-full flex items-center justify-center">
