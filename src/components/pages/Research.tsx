@@ -20,7 +20,7 @@ const researchAreas = [
     icon: <Building2 className="w-8 h-8" />,
     title: 'Tokenized Waqf',
     desc: 'Researching how blockchain can enable waqf digitization while preserving perpetual trust requirements.',
-    topics: ['Waqf tokenization models', 'Perpetual custody on-chain', 'Cross-border waqf management']
+    topics: ['Waqf tokenization models', 'Perpetual blockchain custody', 'Cross-border waqf management']
   },
   {
     icon: <Award className="w-8 h-8" />,

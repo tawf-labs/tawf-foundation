@@ -45,7 +45,7 @@ export default function Qurban() {
         badge="Eid al-Adha Sacrifice"
         title="Qurban at Tawf Islamic Foundation"
         subtitle="Digital qurban with full transparency"
-        description="Experience a modern approach to the ancient tradition of Qurban. Register online, track your sacrifice, and verify distribution—all on-chain."
+        description="Experience a modern approach to the ancient tradition of Qurban. Register online, track your sacrifice, and verify distribution—all on the blockchain."
       />
 
       {/* What Is Qurban */}

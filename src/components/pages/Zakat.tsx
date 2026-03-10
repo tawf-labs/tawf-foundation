@@ -36,7 +36,7 @@ const faqs = [
   },
   {
     q: 'How is zakat distributed?',
-    a: 'Zakat is distributed to the eight asnaf categories defined by Islamic law. Our distributions are recorded on-chain for full transparency and auditability.'
+    a: 'Zakat is distributed to the eight asnaf categories defined by Islamic law. Our distributions are recorded on the blockchain for full transparency and auditability.'
   },
   {
     q: 'Is my zakat payment tax-deductible?',
@@ -56,8 +56,8 @@ export default function Zakat() {
       <PageHero
         badge="Zakat Collection & Distribution"
         title="Zakat at Tawf Islamic Foundation"
-        subtitle="Transparent, on-chain obligatory charity"
-        description="We serve as the official amil, collecting and distributing zakat with full transparency. Every payment is recorded on-chain, every distribution is traceable."
+        subtitle="Transparent, blockchain-based obligatory charity"
+        description="We serve as the official amil, collecting and distributing zakat with full transparency. Every payment is recorded on the blockchain, every distribution is traceable."
       />
 
       {/* What Is Zakat */}
@@ -232,7 +232,7 @@ export default function Zakat() {
         <div className="text-center">
           <h2 className="text-3xl md:text-4xl font-serif text-tawf-gold mb-6">Pay Your Zakat With Confidence</h2>
           <p className="text-tawf-sand/80 text-xl mb-10 max-w-2xl mx-auto">
-            Every payment is recorded on-chain. Every distribution is traceable. This is zakat as it was meant to be—transparent, accountable, and trustworthy.
+            Every payment is recorded on the blockchain. Every distribution is traceable. This is zakat as it was meant to be—transparent, accountable, and trustworthy.
           </p>
           <Link
             to="/glossary"

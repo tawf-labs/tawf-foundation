@@ -51,7 +51,7 @@ export default function Manifesto() {
                 For too long, the financial system has operated on a single premise: that profit is the only principle worth building around. That interest is inevitable. That opacity is acceptable. That the community is a market, not a stakeholder. That ethics are a feature you add at the end, not a foundation you build from the beginning.
               </p>
               <p className="leading-relaxed mt-4">
-                We reject that premise. And we don't just say so. We run the alternative, live, on-chain, every day.
+                We reject that premise. And we don't just say so. We run the alternative, live on the blockchain, every day.
               </p>
             </section>
 
@@ -94,7 +94,7 @@ export default function Manifesto() {
                 <div>
                   <h3 className="text-2xl font-serif text-tawf-green mb-4">Zakat</h3>
                   <p className="leading-relaxed">
-                    Zakat is not optional. It is one of the Five Pillars of Islam, an obligation, not a choice. The Tawf Islamic Foundation serves as the official amil, the legitimate collector and distributor of zakat for the entire Tawf ecosystem. A portion of Tawf Labs' commercial revenue is calculated, declared, and disbursed as zakat through the Foundation to the eight categories of eligible recipients (asnaf) defined by Islamic law. This is not symbolic. It is a real, recurring, on-chain operation, fully transparent, auditable by any community member, and governed by the Scholar Chairmen who ensure every distribution is Sharia-compliant.
+                    Zakat is not optional. It is one of the Five Pillars of Islam, an obligation, not a choice. The Tawf Islamic Foundation serves as the official amil, the legitimate collector and distributor of zakat for the entire Tawf ecosystem. A portion of Tawf Labs' commercial revenue is calculated, declared, and disbursed as zakat through the Foundation to the eight categories of eligible recipients (asnaf) defined by Islamic law. This is not symbolic. It is a real, recurring, blockchain operation, fully transparent, auditable by any community member, and governed by the Scholar Chairmen who ensure every distribution is Sharia-compliant.
                   </p>
                   <p className="leading-relaxed mt-4 font-medium text-tawf-green">
                     We are building the infrastructure to make this the most transparent zakat operation in Southeast Asia.
@@ -107,7 +107,7 @@ export default function Manifesto() {
                     Waqf is Islam's most powerful instrument for intergenerational wealth, an endowment given once that generates benefit forever. The Foundation acts as the legal and governance trustee for all waqf assets within the Tawf ecosystem, including wakaf produktif, productive waqf structures where the endowment is invested to generate ongoing returns that fund community programs perpetually.
                   </p>
                   <p className="leading-relaxed mt-4">
-                    Through Tawf Labs' infrastructure, we are building toward tokenized waqf, digital endowments that can be created, managed, and distributed on-chain, with the Foundation serving as the permanent trustee. This means a Muslim anywhere in the world can create a waqf with a smartphone, have it governed by the Foundation, and see its impact distributed to communities in Indonesia, transparently, permanently, without intermediaries taking a cut.
+                    Through Tawf Labs' infrastructure, we are building toward tokenized waqf, digital endowments that can be created, managed, and distributed on the blockchain, with the Foundation serving as the permanent trustee. This means a Muslim anywhere in the world can create a waqf with a smartphone, have it governed by the Foundation, and see its impact distributed to communities in Indonesia, transparently, permanently, without intermediaries taking a cut.
                   </p>
                   <p className="leading-relaxed mt-4 font-medium text-tawf-green">
                     Waqf assets managed by the Foundation cannot be liquidated, redistributed commercially, or claimed by any investor. They are held in perpetual trust for the community. Always.
@@ -222,7 +222,7 @@ export default function Manifesto() {
             <section>
               <h2 className="text-3xl font-serif text-tawf-green mb-6 font-medium">We Are Not the Last Word. We Are the First Standard.</h2>
               <p className="leading-relaxed">
-                Tawf Islamic Foundation does not claim to be the final authority on Islamic finance. We do not issue fatwas. We are not a religious body. We are a public trust institution that operates transparently, with zakat disbursements on-chain and visible, waqf holdings publicly declared, and governance decisions logged and auditable.
+                Tawf Islamic Foundation does not claim to be the final authority on Islamic finance. We do not issue fatwas. We are not a religious body. We are a public trust institution that operates transparently, with zakat disbursements on the blockchain and visible, waqf holdings publicly declared, and governance decisions logged and auditable.
               </p>
               <p className="leading-relaxed mt-4">
                 We hold ourselves to the same standard we apply to everyone else. If we ever fall short, the community will see it. And the scholars will act.
@@ -258,7 +258,7 @@ export default function Manifesto() {
               <div className="mt-16 pt-12 border-t border-white/20 text-center">
                 <p className="text-2xl font-serif text-tawf-gold mb-4">Tawf Islamic Foundation. Baitul Maal, rebuilt for the digital age.</p>
                 <p className="text-xl font-light text-white mb-8">Ethical by principle. Sharia by design. Community by covenant.</p>
-                <p className="text-lg text-white/70 italic">And our zakat is on-chain. You can check.</p>
+                <p className="text-lg text-white/70 italic">And our zakat is on the blockchain. You can verify.</p>
               </div>
             </section>
 

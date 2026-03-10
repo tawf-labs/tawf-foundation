@@ -71,7 +71,7 @@ export const glossaryTerms: Record<string, GlossaryTerm> = {
     term: "Dirham",
     pronunciation: "dir-ham",
     definition: "Historical Islamic currency unit. Today, it's used figuratively to refer to money or wealth, especially in the context of charitable giving.",
-    context: "Every dirham of zakat is tracked and distributed transparently on-chain."
+    context: "Every dirham of zakat is tracked and distributed transparently on the blockchain."
   },
   "musyawarah": {
     term: "Musyawarah",

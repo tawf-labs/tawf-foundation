@@ -142,7 +142,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               Tawf Islamic Foundation
             </h3>
             <p className="text-sm max-w-sm leading-relaxed">
-              Ethical finance. Community ownership. On-chain transparency.
+              Ethical finance on the blockchain. Baitul Maal for the digital age.
             </p>
           </div>
 

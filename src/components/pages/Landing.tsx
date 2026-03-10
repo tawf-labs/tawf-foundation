@@ -64,7 +64,7 @@ export default function Landing() {
                 sadaqah
                 <InfoTooltip term="sadaqah" />
               </span>
-              {' '}programs. Not as promises. As on-chain reality.
+              {' '}programs. Not as promises. As blockchain reality.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -118,7 +118,7 @@ export default function Landing() {
                 qardhul hasan
                 <InfoTooltip term="qardhul-hasan" />
               </span>
-              {' '}lending - live on-chain, every day.
+              {' '}lending - live on the blockchain, every day.
             </p>
           </div>
 
@@ -129,7 +129,7 @@ export default function Landing() {
                 title: "Zakat",
                 term: "zakat",
                 desc: "We serve as the official amil, collecting and distributing zakat from Labs revenue to eligible asnaf.",
-                detail: "On-chain & fully auditable"
+                detail: "Blockchain-verified & fully auditable"
               },
               {
                 icon: <Landmark className="w-8 h-8 text-tawf-gold" />,
@@ -421,7 +421,7 @@ export default function Landing() {
                   <span className="inline-flex items-center gap-1">
                     musyawarah
                     <InfoTooltip term="musyawarah" />
-                  </span> principles of collective deliberation. Transparent on-chain voting with defined periods.
+                  </span> principles of collective deliberation. Transparent blockchain voting with defined periods.
                 </p>
               </div>
 
@@ -464,7 +464,7 @@ export default function Landing() {
               Soulbound
               <InfoTooltip term="soulbound" />
             </span>
-            {' '}NFT built on Zero-Knowledge Decentralized Identity infrastructure. It is permanently bound to one wallet, non-transferable, and carries zero monetary value.
+            {' '}NFT built using secure privacy technology. It is permanently bound to one wallet, non-transferable, and carries zero monetary value.
           </p>
           <p className="text-tawf-green font-medium text-2xl">One Tawf ID. One vote. No exceptions.</p>
         </div>
@@ -476,7 +476,7 @@ export default function Landing() {
           <div className="w-[600px] h-[600px] border border-tawf-gold rounded-full absolute"></div>
         </div>
         <div className="max-w-3xl mx-auto relative z-10">
-          <h2 className="text-4xl md:text-5xl font-serif text-tawf-sand mb-6">Our Zakat Is On-Chain.</h2>
+          <h2 className="text-4xl md:text-5xl font-serif text-tawf-sand mb-6">Our Zakat Is On The Blockchain.</h2>
           <p className="text-tawf-sand/80 mb-10 text-xl font-light leading-relaxed">
             You can check. This is not a promise of ethical finance. This is ethical finance, proven every single time we collect a{' '}
             <span className="inline-flex items-center gap-1">
