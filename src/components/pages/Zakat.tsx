@@ -185,7 +185,7 @@ export default function Zakat() {
           {[
             { title: 'Labs Revenue', desc: '3-8% of Tawf Labs revenue flows to Foundation monthly', icon: <TrendingUp className="w-6 h-6" /> },
             { title: 'Direct Payments', desc: 'Community members can pay zakat directly through our platform', icon: <Heart className="w-6 h-6" /> },
-            { title: 'Partners', desc: 'Ecosystem partners contribute a portion as part of their obligation', icon: <Users className="w-6 h-6" /> },
+            { title: 'BMT Partners', desc: 'We partner with BMT organizations across Indonesia such as Telaga Charity and Dompet Dhuafa as their digital infrastructure', icon: <Users className="w-6 h-6" /> },
             { title: 'Annual Audit', desc: 'Scholar Chairmen verify all calculations and distributions annually', icon: <CheckCircle className="w-6 h-6" /> }
           ].map((item, idx) => (
             <div key={idx} className="bg-white/5 p-6 rounded-2xl border border-white/10">
@@ -234,13 +234,25 @@ export default function Zakat() {
           <p className="text-tawf-sand/80 text-xl mb-10 max-w-2xl mx-auto">
             Every payment is recorded on the blockchain. Every distribution is traceable. This is zakat as it was meant to be—transparent, accountable, and trustworthy.
           </p>
-          <Link
-            to="/glossary"
-            className="inline-flex items-center gap-2 bg-tawf-gold text-tawf-green px-8 py-4 rounded-full text-base font-medium tracking-widest uppercase hover:bg-white transition-colors"
-          >
-            Learn Islamic Finance Terms
-            <ArrowRight className="w-5 h-5" />
-          </Link>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <a
+              href="https://ziswaf.tawf.foundation"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-tawf-gold text-tawf-green px-8 py-4 rounded-full text-base font-medium tracking-widest uppercase hover:bg-white transition-colors"
+            >
+              Pay Your Zakat
+              <ArrowRight className="w-5 h-5" />
+            </a>
+            <Link
+              to="/glossary"
+              className="inline-flex items-center gap-2 bg-transparent border-2 border-tawf-sand text-tawf-sand px-8 py-4 rounded-full text-base font-medium tracking-widest uppercase hover:bg-tawf-sand/10 transition-colors"
+            >
+              Learn Islamic Finance Terms
+              <ArrowRight className="w-5 h-5" />
+            </Link>
+          </div>
+          <p className="text-tawf-sand/60 text-sm mt-6 italic">Powered by Ziswaf Platform</p>
         </div>
       </Section>
     </>

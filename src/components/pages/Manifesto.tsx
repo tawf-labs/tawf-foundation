@@ -67,6 +67,9 @@ export default function Manifesto() {
                 That is where we come from. That is what we are rebuilding.
               </p>
               <p className="leading-relaxed mt-4">
+                Today, we serve as the digital backbone for BMT organizations across Indonesia such as Telaga Charity and Dompet Dhuafa, enabling transparent and efficient zakat, infaq, and sadaqah collection. We provide the blockchain infrastructure that brings the trust and accountability of traditional BMT governance into the digital age.
+              </p>
+              <p className="leading-relaxed mt-4">
                 The Tawf Islamic Foundation is the Baitul Maal, the social and charitable soul of this ecosystem. Everything commercial that Tawf Labs builds, earns, and grows flows back here. Into the community. Into the hands that need it. Into endowments that will outlast every market cycle. This is not a feature of Tawf. This is the reason Tawf exists.
               </p>
             </section>

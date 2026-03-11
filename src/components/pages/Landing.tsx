@@ -120,6 +120,14 @@ export default function Landing() {
               </span>
               {' '}lending - live on the blockchain, every day.
             </p>
+            <p className="text-tawf-muted text-lg leading-relaxed mt-6">
+              We serve as the digital backbone for{' '}
+              <span className="inline-flex items-center gap-1">
+                BMT
+                <InfoTooltip term="bmt" />
+              </span>
+              {' '}organizations across Indonesia such as Telaga Charity and Dompet Dhuafa, enabling transparent and efficient zakat, infaq, and sadaqah collection.
+            </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -485,10 +493,22 @@ export default function Landing() {
             </span>
             {' '}of zakat and place it in the hands of someone who needs it.
           </p>
-          <Link to="/manifesto" className={`bg-tawf-gold text-tawf-green px-10 py-5 ${RADIUS_BUTTON} text-base font-medium tracking-widest uppercase hover:bg-white transition-colors inline-flex items-center gap-2`}>
-            Read Our Manifesto
-            <ChevronRight className="w-5 h-5" />
-          </Link>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <a 
+              href="https://ziswaf.tawf.foundation" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className={`bg-tawf-gold text-tawf-green px-10 py-5 ${RADIUS_BUTTON} text-base font-medium tracking-widest uppercase hover:bg-white transition-colors inline-flex items-center gap-2`}
+            >
+              Pay Your Zakat
+              <ArrowRight className="w-5 h-5" />
+            </a>
+            <Link to="/manifesto" className={`bg-transparent border-2 border-tawf-sand text-tawf-sand px-10 py-5 ${RADIUS_BUTTON} text-base font-medium tracking-widest uppercase hover:bg-tawf-sand/10 transition-colors inline-flex items-center gap-2`}>
+              Read Our Manifesto
+              <ChevronRight className="w-5 h-5" />
+            </Link>
+          </div>
+          <p className="text-tawf-sand/60 text-sm mt-6 italic">Powered by Ziswaf Platform</p>
         </div>
       </section>
     </>
