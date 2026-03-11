@@ -482,7 +482,7 @@ export default function Landing() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a 
-              href="https://ziswaf.tawf.foundation" 
+              href="https://zakat.tawf.foundation" 
               target="_blank" 
               rel="noopener noreferrer"
               className={`bg-tawf-gold text-tawf-green px-10 py-5 ${RADIUS_BUTTON} text-base font-medium tracking-widest uppercase hover:bg-white transition-colors inline-flex items-center gap-2`}

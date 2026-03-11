@@ -236,7 +236,7 @@ export default function Zakat() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a
-              href="https://ziswaf.tawf.foundation"
+              href="https://zakat.tawf.foundation"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-tawf-gold text-tawf-green px-8 py-4 rounded-full text-base font-medium tracking-widest uppercase hover:bg-white transition-colors"
