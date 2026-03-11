@@ -98,35 +98,22 @@ export default function Landing() {
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-light text-tawf-green mb-6">What We Actually Do</h2>
             <p className="text-tawf-muted text-xl leading-relaxed">
-              We don't just talk about ethical finance. We operate it.{' '}
-              <span className="inline-flex items-center gap-1">
-                Zakat
-                <InfoTooltip term="zakat" />
-              </span>
-              {' '}collection,{' '}
-              <span className="inline-flex items-center gap-1">
-                waqf
-                <InfoTooltip term="waqf" />
-              </span>
-              {' '}trusteeship,{' '}
-              <span className="inline-flex items-center gap-1">
-                sadaqah
-                <InfoTooltip term="sadaqah" />
-              </span>
-              {' '}programs, and{' '}
-              <span className="inline-flex items-center gap-1">
-                qardhul hasan
-                <InfoTooltip term="qardhul-hasan" />
-              </span>
-              {' '}lending - live on the blockchain, every day.
-            </p>
-            <p className="text-tawf-muted text-lg leading-relaxed mt-6">
               We serve as the digital backbone for{' '}
               <span className="inline-flex items-center gap-1">
                 BMT
                 <InfoTooltip term="bmt" />
               </span>
-              {' '}organizations across Indonesia such as Telaga Charity and Dompet Dhuafa, enabling transparent and efficient zakat, infaq, and sadaqah collection.
+              {' '}organizations across Indonesia such as Telaga Charity and Dompet Dhuafa—enabling transparent{' '}
+              <span className="inline-flex items-center gap-1">
+                zakat
+                <InfoTooltip term="zakat" />
+              </span>
+              , infaq, and{' '}
+              <span className="inline-flex items-center gap-1">
+                sadaqah
+                <InfoTooltip term="sadaqah" />
+              </span>
+              {' '}collection on the blockchain.
             </p>
           </div>
 
@@ -136,7 +123,7 @@ export default function Landing() {
                 icon: <Coins className="w-8 h-8 text-tawf-gold" />,
                 title: "Zakat",
                 term: "zakat",
-                desc: "We serve as the official amil, collecting and distributing zakat from Labs revenue to eligible asnaf.",
+                desc: "Partnering with licensed amil organizations to collect and distribute zakat to eligible asnaf.",
                 detail: "Blockchain-verified & fully auditable"
               },
               {
