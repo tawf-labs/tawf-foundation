@@ -3,7 +3,7 @@ import { motion } from 'motion/react';
 import {
   Shield, HeartHandshake, Landmark, ArrowRight,
   ChevronRight, Fingerprint, Coins, Building2,
-  Network, HandHeart, Sparkles, TrendingUp, FileText, Users, ArrowDown
+  Network, HandHeart, Sparkles, TrendingUp, FileText, Users, ArrowDown, CheckCircle
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import InfoTooltip from '../ui/InfoTooltip';
@@ -103,7 +103,7 @@ export default function Landing() {
                 BMT
                 <InfoTooltip term="bmt" />
               </span>
-              {' '}organizations across Indonesia such as Telaga Charity and Dompet Dhuafa—enabling transparent{' '}
+              {' '}organizations across Indonesia such as Telaga Charity and Dompet Dhuafa - enabling transparent{' '}
               <span className="inline-flex items-center gap-1">
                 zakat
                 <InfoTooltip term="zakat" />
@@ -462,6 +462,67 @@ export default function Landing() {
             {' '}NFT built using secure privacy technology. It is permanently bound to one wallet, non-transferable, and carries zero monetary value.
           </p>
           <p className="text-tawf-green font-medium text-2xl">One Tawf ID. One vote. No exceptions.</p>
+        </div>
+      </section>
+
+      {/* How to Get Started Section */}
+      <section className={`${SECTION_PADDING} bg-tawf-ink text-tawf-sand border-t border-tawf-green/10`}>
+        <div className={`${MAX_WIDTH} mx-auto ${CONTAINER_PADDING}`}>
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-light text-white mb-6">How to Get Started</h2>
+            <p className="text-tawf-sand/70 text-xl max-w-3xl mx-auto">
+              Join the ecosystem in three simple steps. Your journey to transparent Islamic finance begins here.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {[
+              {
+                step: '01',
+                title: 'Get Your Tawf ID',
+                desc: 'Create your Tawf ID (TID) - a soulbound identity credential that grants access to the TAWF DAO. One person, one ID, one vote.',
+                icon: <Fingerprint className="w-6 h-6" />
+              },
+              {
+                step: '02',
+                title: 'Pay Your Zakat',
+                desc: 'Use our Ziswaf-powered platform to pay zakat with full blockchain transparency. Track every dirham from payment to distribution.',
+                icon: <HeartHandshake className="w-6 h-6" />
+              },
+              {
+                step: '03',
+                title: 'Join the Community',
+                desc: 'Participate in governance discussions and vote on ecosystem proposals. Your voice shapes the future of Islamic digital finance.',
+                icon: <Users className="w-6 h-6" />
+              },
+              {
+                step: '04',
+                title: 'Verify Everything',
+                desc: 'All transactions are recorded on-chain. View donation history, fund allocations, and impact reports anytime.',
+                icon: <Shield className="w-6 h-6" />
+              }
+            ].map((item, idx) => (
+              <motion.div
+                key={idx}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: idx * 0.1 }}
+                className={`bg-white/5 p-8 ${RADIUS_BOX} border border-white/10`}
+              >
+                <div className="flex gap-4">
+                  <div className="shrink-0 w-12 h-12 bg-tawf-green rounded-full flex items-center justify-center text-white">
+                    {item.icon}
+                  </div>
+                  <div className="flex-1">
+                    <span className="text-sm font-semibold tracking-wider uppercase text-tawf-gold">{item.step}</span>
+                    <h3 className="text-xl font-serif text-white mb-2">{item.title}</h3>
+                    <p className="text-tawf-sand/70">{item.desc}</p>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </section>
 
