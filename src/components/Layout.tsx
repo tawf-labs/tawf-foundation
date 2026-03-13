@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { ChevronDown, X, Menu } from 'lucide-react';
 import { useSubdomain } from '../hooks/useSubdomain';
+import SEO from './SEO';
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const { hash } = useLocation();
@@ -26,9 +27,20 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   }, [useLocation().pathname]);
 
   return (
-    <div className="min-h-screen flex flex-col selection:bg-tawf-gold/30 selection:text-tawf-green bg-tawf-sand">
-      {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-tawf-sand/90 backdrop-blur-md border-b border-tawf-green/10">
+    <>
+      {/* Dynamic SEO Meta Tags */}
+      <SEO />
+      {/* Skip to main content link for accessibility */}
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-tawf-green text-tawf-sand px-4 py-2 rounded-lg z-[100] focus:outline-none focus:ring-2 focus:ring-tawf-gold"
+      >
+        Skip to main content
+      </a>
+      <div className="min-h-screen flex flex-col selection:bg-tawf-gold/30 selection:text-tawf-green bg-tawf-sand">
+        {/* Site Header with Navigation */}
+        <header>
+          <nav className="fixed top-0 left-0 right-0 z-50 bg-tawf-sand/90 backdrop-blur-md border-b border-tawf-green/10" role="navigation" aria-label="Main navigation">
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
           {subdomain ? (
             <a href="https://tawf.foundation" className="font-serif text-2xl font-medium tracking-wide text-tawf-green">
@@ -129,15 +141,16 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             </div>
           </div>
         )}
-      </nav>
+          </nav>
+        </header>
 
-      {/* Main Content */}
-      <main className="flex-grow pt-20">
-        {children}
-      </main>
+        {/* Main Content */}
+        <main className="flex-grow pt-20" id="main-content" role="main">
+          {children}
+        </main>
 
-      {/* Footer */}
-      <footer className="bg-tawf-ink text-white/60 py-16 border-t border-white/10">
+        {/* Footer */}
+        <footer className="bg-tawf-ink text-white/60 py-16 border-t border-white/10" role="contentinfo">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
           <div className="col-span-1 md:col-span-2">
             <h3 className="font-serif text-xl font-medium tracking-wide text-white mb-6">
@@ -187,6 +200,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           </div>
         </div>
       </footer>
-    </div>
+      </div>
+    </>
   );
 }
