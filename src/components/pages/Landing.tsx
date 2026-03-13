@@ -177,14 +177,14 @@ export default function Landing() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
             {/* Telaga Charity - Featured Partner */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="md:col-span-2 p-10 bg-white border border-tawf-green/10 rounded-2xl"
+              className="p-10 bg-white border border-tawf-green/10 rounded-2xl"
             >
               <div className="flex flex-col md:flex-row items-center gap-8">
                 <div className="shrink-0 w-32 h-32 bg-tawf-green rounded-2xl flex items-center justify-center p-6">
@@ -213,46 +213,19 @@ export default function Landing() {
               </div>
             </motion.div>
 
-            {/* Ziswaf Platform */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              className="p-8 bg-white border border-tawf-green/10 rounded-2xl text-center"
-            >
-              <div className="w-16 h-16 bg-tawf-green/10 rounded-full flex items-center justify-center mx-auto mb-5">
-                <Handshake className="w-8 h-8 text-tawf-green" />
-              </div>
-              <h3 className="text-xl font-serif font-medium text-tawf-green mb-2">Ziswaf Platform</h3>
-              <p className="text-sm font-semibold tracking-wider uppercase text-tawf-gold mb-4">Technology Partner</p>
-              <p className="text-sm text-tawf-muted leading-relaxed mb-6">
-                Powering blockchain-based zakat and waqf management
-              </p>
-              <a
-                href="https://ziswaf.id"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-tawf-green hover:text-tawf-gold font-medium transition-colors"
-              >
-                Visit Website
-                <ArrowRight className="w-4 h-4" />
-              </a>
-            </motion.div>
-
             {/* Become a Partner CTA */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="md:col-span-3 p-10 bg-tawf-green text-white border-2 border-tawf-gold rounded-2xl text-center"
+              transition={{ duration: 0.5, delay: 0.1 }}
+              className="p-10 bg-tawf-green text-white border-2 border-tawf-gold rounded-2xl text-center flex flex-col justify-center"
             >
               <div className="w-20 h-20 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Handshake className="w-10 h-10 text-tawf-gold" />
               </div>
               <h3 className="text-3xl font-serif text-white mb-3">Become Our Partner</h3>
-              <p className="text-lg text-white/80 mb-8 max-w-2xl mx-auto">
+              <p className="text-lg text-white/80 mb-8">
                 Help us build digital infrastructure for Islamic philanthropy. Join our network of institutions committed to transparency and Sharia compliance.
               </p>
               <Link
