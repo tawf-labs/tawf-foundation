@@ -3,7 +3,7 @@ import { motion } from 'motion/react';
 import {
   Shield, HeartHandshake, Landmark, ArrowRight,
   ChevronRight, Fingerprint, Coins, Building2,
-  Network, HandHeart, Sparkles, TrendingUp, FileText, Users, ArrowDown, CheckCircle, Handshake
+  Network, HandHeart, Sparkles, TrendingUp, FileText, Users, ArrowDown, CheckCircle, Handshake, Calendar
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import InfoTooltip from '../ui/InfoTooltip';
@@ -162,8 +162,92 @@ export default function Landing() {
         </div>
       </section>
 
+      {/* Platforms Section */}
+      <section id="platforms" className={`${SECTION_PADDING} bg-tawf-sand`}>
+        <div className={`${MAX_WIDTH} mx-auto ${CONTAINER_PADDING}`}>
+          {/* Header */}
+          <div className="text-center mb-16">
+            <div className="flex items-center justify-center gap-3 mb-6">
+              <div className="h-px w-12 bg-tawf-gold"></div>
+              <span className="text-sm font-semibold tracking-[0.2em] uppercase text-tawf-gold">Active Platforms</span>
+              <div className="h-px w-12 bg-tawf-gold"></div>
+            </div>
+            <h2 className="text-4xl md:text-5xl font-light text-tawf-green mb-6">Tawf Platforms</h2>
+            <p className="text-tawf-muted text-xl max-w-3xl mx-auto">
+              Our digital platforms bring transparency and Sharia compliance to Islamic philanthropy.
+            </p>
+          </div>
+
+          {/* Platform Cards Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            {/* ZISWAF Platform Card */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="p-8 bg-white border border-tawf-green/10 rounded-2xl"
+            >
+              <div className="w-16 h-16 bg-tawf-green rounded-full flex items-center justify-center mb-6">
+                <Coins className="w-8 h-8 text-tawf-gold" />
+              </div>
+              <h3 className="text-2xl font-serif text-tawf-green mb-2">zkt.app</h3>
+              <p className="text-sm font-semibold tracking-wider uppercase text-tawf-gold mb-4">Transparent & Traceable Donations</p>
+              <p className="text-tawf-muted text-base leading-relaxed mb-6">
+                Blockchain-based donation platform where every donation is recorded and can be tracked in real-time with NFT receipts.
+              </p>
+              <div className="flex flex-wrap gap-3 mb-6">
+                <span className="text-xs font-semibold tracking-wider uppercase bg-tawf-sand/50 text-tawf-green px-3 py-1 rounded-full">Sharia Compliant</span>
+                <span className="text-xs font-semibold tracking-wider uppercase bg-tawf-sand/50 text-tawf-green px-3 py-1 rounded-full">100% On-Chain</span>
+              </div>
+              <a
+                href="https://ziswaf.tawf.foundation"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-tawf-green hover:text-tawf-gold font-medium transition-colors"
+              >
+                Visit Platform
+                <ArrowRight className="w-4 h-4" />
+              </a>
+            </motion.div>
+
+            {/* Qurban Platform Card */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              className="p-8 bg-white border border-tawf-green/10 rounded-2xl"
+            >
+              <div className="w-16 h-16 bg-tawf-green rounded-full flex items-center justify-center mb-6">
+                <Calendar className="w-8 h-8 text-tawf-gold" />
+              </div>
+              <h3 className="text-2xl font-serif text-tawf-green mb-2">qrbn.app</h3>
+              <p className="text-sm font-semibold tracking-wider uppercase text-tawf-gold mb-4">Transparent Qurban & Waqf</p>
+              <p className="text-tawf-muted text-base leading-relaxed mb-6">
+                Support sustainable Qurban farms through blockchain-powered Waqf with NFT certificates and DAO governance.
+              </p>
+              <div className="flex flex-wrap gap-3 mb-6">
+                <span className="text-xs font-semibold tracking-wider uppercase bg-tawf-sand/50 text-tawf-green px-3 py-1 rounded-full">Shariah Compliant</span>
+                <span className="text-xs font-semibold tracking-wider uppercase bg-tawf-sand/50 text-tawf-green px-3 py-1 rounded-full">NFT Certificates</span>
+                <span className="text-xs font-semibold tracking-wider uppercase bg-tawf-sand/50 text-tawf-green px-3 py-1 rounded-full">DAO Governance</span>
+              </div>
+              <a
+                href="https://qurban.tawf.foundation"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-tawf-green hover:text-tawf-gold font-medium transition-colors"
+              >
+                Visit Platform
+                <ArrowRight className="w-4 h-4" />
+              </a>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
       {/* Partners Section */}
-      <section id="partners" className={`${SECTION_PADDING} bg-tawf-sand`}>
+      <section id="partners" className={`${SECTION_PADDING} bg-white`}>
         <div className={`${MAX_WIDTH} mx-auto ${CONTAINER_PADDING}`}>
           <div className="text-center mb-16">
             <div className="flex items-center justify-center gap-3 mb-6">
@@ -184,7 +268,7 @@ export default function Landing() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="p-8 bg-white border border-tawf-green/10 rounded-2xl"
+              className="p-8 bg-tawf-sand/30 border border-tawf-green/10 rounded-2xl"
             >
               <div className="text-center">
                 <div className="w-24 h-24 bg-tawf-green rounded-2xl flex items-center justify-center p-5 mx-auto mb-6">
