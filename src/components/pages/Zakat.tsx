@@ -31,8 +31,8 @@ const faqs = [
     a: 'Any Muslim who possesses wealth above the nisab threshold for one lunar year must pay zakat. Nisab is equivalent to the value of 87.48 grams of gold or 612.36 grams of silver.'
   },
   {
-    q: 'How does Tawf Islamic Foundation collect zakat?',
-    a: 'We collect zakat from Tawf Labs revenue (3-8% monthly royalty), from direct community payments, and from ecosystem partners who contribute to our mission.'
+    q: 'How does zakat flow through the Tawf ecosystem?',
+    a: 'Zakat flows from Tawf Labs revenue through Foundation support (3-8% allocated), from direct community payments, and from ecosystem partners to eligible recipients.'
   },
   {
     q: 'How is zakat distributed?',
@@ -57,7 +57,7 @@ export default function Zakat() {
         badge="Zakat Collection & Distribution"
         title="Zakat at Tawf Islamic Foundation"
         subtitle="Transparent, blockchain-based obligatory charity"
-        description="We serve as the official amil, collecting and distributing zakat with full transparency. Every payment is recorded on the blockchain, every distribution is traceable."
+        description="We provide blockchain infrastructure for transparent zakat collection and distribution. Every payment is recorded on the blockchain, every distribution is traceable."
       />
 
       {/* What Is Zakat */}
@@ -66,15 +66,15 @@ export default function Zakat() {
           <div>
             <h2 className="text-3xl md:text-4xl font-serif text-tawf-green mb-6">What Is Zakat?</h2>
             <p className="text-tawf-muted text-lg leading-relaxed mb-6">
-              Zakat is not charity in the voluntary sense. It is an obligation—one of the Five Pillars of Islam. Eligible Muslims must pay 2.5% of their qualifying wealth annually to support those in need.
+              Zakat is not charity in the voluntary sense. It is an obligation, one of the Five Pillars of Islam. Eligible Muslims must pay 2.5% of their qualifying wealth annually to support those in need.
             </p>
             <p className="text-tawf-muted text-lg leading-relaxed mb-6">
-              At Tawf Islamic Foundation, we've modernized this ancient practice. We serve as the official{' '}
+              At Tawf Islamic Foundation, we've modernized this ancient practice. We provide the infrastructure for{' '}
               <span className="inline-flex items-center gap-1">
-                amil
-                <InfoTooltip term="amil" />
+                zakat
+                <InfoTooltip term="zakat" />
               </span>
-              , collecting zakat from Tawf Labs revenue and community contributions, then distributing it to the eight categories of eligible recipients known as{' '}
+              {' '}collection from Tawf Labs revenue and community contributions, then distribute it to the eight categories of eligible recipients known as{' '}
               <span className="inline-flex items-center gap-1">
                 asnaf
                 <InfoTooltip term="asnaf" />
@@ -93,7 +93,7 @@ export default function Zakat() {
               <div className="border-t border-tawf-green/10 pt-6 space-y-4">
                 <div className="flex justify-between">
                   <span className="text-tawf-muted">From Tawf Labs</span>
-                  <span className="font-semibold text-tawf-green">3-8% royalty</span>
+                  <span className="font-semibold text-tawf-green">3-8% allocated</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-tawf-muted">From Community</span>
@@ -119,7 +119,7 @@ export default function Zakat() {
               nisab
               <InfoTooltip term="nisab" />
             </span>
-            {' '}threshold—the minimum amount of wealth one must possess before being obligated to pay zakat.
+            {' '}threshold, the minimum amount of wealth one must possess before being obligated to pay zakat.
           </p>
         </div>
 
@@ -171,13 +171,13 @@ export default function Zakat() {
         </div>
       </Section>
 
-      {/* How Tawf Collects */}
+      {/* How Zakat Flows Through Tawf */}
       <Section background="ink">
         <div className="text-center mb-16">
-          <span className="text-sm font-semibold tracking-[0.2em] uppercase text-tawf-gold">Transparent Collection</span>
-          <h2 className="text-3xl md:text-4xl font-serif text-white mt-4 mb-6">How Tawf Collects Zakat</h2>
+          <span className="text-sm font-semibold tracking-[0.2em] uppercase text-tawf-gold">Transparent Flow</span>
+          <h2 className="text-3xl md:text-4xl font-serif text-white mt-4 mb-6">How Zakat Flows Through Tawf</h2>
           <p className="text-tawf-sand/70 text-xl max-w-3xl mx-auto">
-            We've designed our zakat collection system to be Sharia-compliant, transparent, and fully auditable.
+            We've built zakat infrastructure that is Sharia-compliant, transparent, and fully auditable.
           </p>
         </div>
 
@@ -185,7 +185,7 @@ export default function Zakat() {
           {[
             { title: 'Labs Revenue', desc: '3-8% of Tawf Labs revenue flows to Foundation monthly', icon: <TrendingUp className="w-6 h-6" /> },
             { title: 'Direct Payments', desc: 'Community members can pay zakat directly through our platform', icon: <Heart className="w-6 h-6" /> },
-            { title: 'BMT Partners', desc: 'We partner with BMT organizations across Indonesia such as Telaga Charity and Dompet Dhuafa as their digital infrastructure', icon: <Users className="w-6 h-6" /> },
+            { title: 'BMT Partners', desc: 'We provide digital infrastructure that powers Islamic charitable institutions across Indonesia, enabling transparent zakat operations', icon: <Users className="w-6 h-6" /> },
             { title: 'Annual Audit', desc: 'Scholar Chairmen verify all calculations and distributions annually', icon: <CheckCircle className="w-6 h-6" /> }
           ].map((item, idx) => (
             <div key={idx} className="bg-white/5 p-6 rounded-2xl border border-white/10">
@@ -232,7 +232,7 @@ export default function Zakat() {
         <div className="text-center">
           <h2 className="text-3xl md:text-4xl font-serif text-tawf-gold mb-6">Pay Your Zakat With Confidence</h2>
           <p className="text-tawf-sand/80 text-xl mb-10 max-w-2xl mx-auto">
-            Every payment is recorded on the blockchain. Every distribution is traceable. This is zakat as it was meant to be—transparent, accountable, and trustworthy.
+            Every payment flows through transparent infrastructure. Every distribution is traceable. This is zakat as it was meant to be: accountable and trustworthy.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a

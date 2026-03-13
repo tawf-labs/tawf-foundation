@@ -67,15 +67,15 @@ export default function Manifesto() {
                 That is where we come from. That is what we are rebuilding.
               </p>
               <p className="leading-relaxed mt-4">
-                Today, we serve as the digital backbone for BMT organizations across Indonesia such as Telaga Charity and Dompet Dhuafa, enabling transparent and efficient zakat, infaq, and sadaqah collection. We provide the blockchain infrastructure that brings the trust and accountability of traditional BMT governance into the digital age.
+                Today, we provide the digital infrastructure that enables BMT organizations across Indonesia to operate with full transparency. We don't replace these institutions - we power them with blockchain-based systems for zakat, infaq, and sadaqah collection.
               </p>
               <p className="leading-relaxed mt-4">
-                The Tawf Islamic Foundation is the Baitul Maal, the social and charitable soul of this ecosystem. Everything commercial that Tawf Labs builds, earns, and grows flows back here. Into the community. Into the hands that need it. Into endowments that will outlast every market cycle. This is not a feature of Tawf. This is the reason Tawf exists.
+                The Tawf Islamic Foundation is the shared infrastructure layer - a modern digital Baitul Maal that serves as the public trust backbone for the entire ecosystem. Everything commercial that Tawf Labs builds, earns, and grows flows back here. Into the community. Into the hands that need it. Into endowments that will outlast every market cycle. This is not a feature of Tawf. This is the reason Tawf exists.
               </p>
             </section>
 
             <section>
-              <h2 className="text-3xl font-serif text-tawf-green mb-6 font-medium">We Are the Baitul Maal. This Is What That Means.</h2>
+              <h2 className="text-3xl font-serif text-tawf-green mb-6 font-medium">We Build Digital Infrastructure. This Is What That Means.</h2>
               <p className="leading-relaxed">
                 In the original BMT model, Baitul Maal is not a charity department. It is not a PR initiative. It is not a percentage rounded up at checkout. It is the institutional heart of the entire cooperative, the body that holds the community's trust, manages its collective obligations, and ensures that commercial activity never becomes an end in itself.
               </p>
@@ -83,7 +83,7 @@ export default function Manifesto() {
                 Tawf Islamic Foundation is that body for the digital age.
               </p>
               <p className="leading-relaxed mt-4">
-                Every royalty. Every revenue stream that the commercial engine generates, a portion flows here, to the Foundation, where it is transformed from profit into purpose.
+                Every revenue stream. Every portion that flows from the commercial engine to the Foundation, where it is transformed from profit into purpose.
               </p>
               <p className="leading-relaxed mt-4 font-medium text-tawf-green">
                 We are not an organization that treats charity as an add-on. We are a structure where charity is architecturally mandatory.
@@ -97,7 +97,7 @@ export default function Manifesto() {
                 <div>
                   <h3 className="text-2xl font-serif text-tawf-green mb-4">Zakat</h3>
                   <p className="leading-relaxed">
-                    Zakat is not optional. It is one of the Five Pillars of Islam, an obligation, not a choice. The Tawf Islamic Foundation serves as the official amil, the legitimate collector and distributor of zakat for the entire Tawf ecosystem. A portion of Tawf Labs' commercial revenue is calculated, declared, and disbursed as zakat through the Foundation to the eight categories of eligible recipients (asnaf) defined by Islamic law. This is not symbolic. It is a real, recurring, blockchain operation, fully transparent, auditable by any community member, and governed by the Scholar Chairmen who ensure every distribution is Sharia-compliant.
+                    Zakat is not optional. It is one of the Five Pillars of Islam, an obligation, not a choice. The Tawf Islamic Foundation operates zakat infrastructure for the Tawf ecosystem. A portion of Tawf Labs' commercial revenue is calculated, declared, and disbursed as zakat through Foundation systems to the eight categories of eligible recipients (asnaf) defined by Islamic law. This is not symbolic. It is a real, recurring, blockchain operation, fully transparent, auditable by any community member, and governed by the Scholar Chairmen who ensure every distribution is Sharia-compliant.
                   </p>
                   <p className="leading-relaxed mt-4 font-medium text-tawf-green">
                     We are building the infrastructure to make this the most transparent zakat operation in Southeast Asia.
@@ -120,14 +120,14 @@ export default function Manifesto() {
                 <div>
                   <h3 className="text-2xl font-serif text-tawf-green mb-4">Sadaqah and Community Grant Programs</h3>
                   <p className="leading-relaxed">
-                    The Foundation runs active sadaqah programs, voluntary charitable giving channeled into targeted community impact initiatives. These include education grants for Islamic finance students, support for early-stage BMT digitization, and direct community relief programs. Recipients are selected through a transparent, DAO-informed process with final approval from the Board of Trustees.
+                    The Foundation runs active sadaqah programs, voluntary charitable giving channeled into targeted community impact initiatives. These include education grants for Islamic finance students, support for Islamic institutions seeking digital transformation, and direct community relief programs. Recipients are selected through a transparent, DAO-informed process with final approval from the Board of Trustees.
                   </p>
                 </div>
 
                 <div>
                   <h3 className="text-2xl font-serif text-tawf-green mb-4">Qardhul Hasan and Interest-Free Benevolent Lending</h3>
                   <p className="leading-relaxed">
-                    One of the most important and most neglected instruments in Islamic finance is qardhul hasan, a loan given purely for the sake of Allah, with no interest, no profit, and no expectation beyond repayment of the principal. The Foundation manages a qardhul hasan fund for underserved community members and early-stage BMTs who need access to capital but cannot, or will not, engage with interest-bearing debt. This is ethical microfinance at its most fundamental: money as a tool of human dignity, not a mechanism of extraction.
+                    One of the most important and most neglected instruments in Islamic finance is qardhul hasan, a loan given purely for the sake of Allah, with no interest, no profit, and no expectation beyond repayment of the principal. The Foundation manages a qardhul hasan fund for underserved community members and early-stage Islamic institutions seeking digitization who need access to capital but cannot, or will not, engage with interest-bearing debt. This is ethical microfinance at its most fundamental: money as a tool of human dignity, not a mechanism of extraction.
                   </p>
                 </div>
               </div>
@@ -139,7 +139,7 @@ export default function Manifesto() {
                 Tawf Labs is the commercial engine. Tawf Islamic Foundation is the mission that engine serves. The relationship between them is not just legal. It is architectural, moral, and designed to be permanent.
               </p>
               <p className="leading-relaxed mt-4 text-white/80">
-                Labs pays a monthly royalty of 3 to 8% of gross revenue to the Foundation. But beyond the royalty, Labs operates under a broader obligation: a portion of its annual profit is calculated as zakat and transferred to the Foundation for distribution. Waqf assets created through Labs products are held in Foundation trusteeship. Community governance, the TAWF DAO, lives in the Foundation, not in Labs.
+                Tawf Labs allocates a portion of revenue (3-8%) to support the Foundation's mission. This is not a payment for services, rather it is structural support that enables the Foundation to build and maintain shared infrastructure for the entire ecosystem. Waqf assets created through Labs products are held in Foundation trusteeship. Community governance, the TAWF DAO, lives in the Foundation, not in Labs.
               </p>
               <p className="leading-relaxed mt-4 text-white/80">
                 Labs is powerful. But the Foundation is sovereign.
@@ -259,7 +259,7 @@ export default function Manifesto() {
               </ul>
 
               <div className="mt-16 pt-12 border-t border-white/20 text-center">
-                <p className="text-2xl font-serif text-tawf-gold mb-4">Tawf Islamic Foundation. Baitul Maal, rebuilt for the digital age.</p>
+                <p className="text-2xl font-serif text-tawf-gold mb-4">Tawf Islamic Foundation. Digital Baitul Maal infrastructure for the modern age.</p>
                 <p className="text-xl font-light text-white mb-8">Ethical by principle. Sharia by design. Community by covenant.</p>
                 <p className="text-lg text-white/70 italic">And our zakat is on the blockchain. You can verify.</p>
               </div>

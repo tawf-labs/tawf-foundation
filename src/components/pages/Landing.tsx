@@ -3,7 +3,7 @@ import { motion } from 'motion/react';
 import {
   Shield, HeartHandshake, Landmark, ArrowRight,
   ChevronRight, Fingerprint, Coins, Building2,
-  Network, HandHeart, Sparkles, TrendingUp, FileText, Users, ArrowDown, CheckCircle
+  Network, HandHeart, Sparkles, TrendingUp, FileText, Users, ArrowDown, CheckCircle, Handshake
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import InfoTooltip from '../ui/InfoTooltip';
@@ -41,30 +41,21 @@ export default function Landing() {
             </div>
 
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light leading-[1.1] tracking-tight text-tawf-green mb-8">
-              <span className="inline-flex items-center gap-2">
-                Baitul Maal
-                <InfoTooltip term="baitul-maal" className="mt-2" />
-              </span>
-              , <span className="italic text-tawf-gold">rebuilt for the digital age.</span>
+              Infrastructure for<br />the <span className="italic text-tawf-gold">Digital Baitul Maal</span>
             </h1>
 
             <p className="text-xl text-tawf-muted font-light leading-relaxed mb-10 max-w-lg">
-              Tawf Islamic Foundation is the Baitul Maal - the social and charitable soul of the ecosystem. We collect{' '}
+              Tawf Islamic Foundation builds shared infrastructure for Islamic charitable institutions in the digital age. We create transparency systems for{' '}
               <span className="inline-flex items-center gap-1">
                 zakat
                 <InfoTooltip term="zakat" />
               </span>
-              , manage{' '}
+              distribution and{' '}
               <span className="inline-flex items-center gap-1">
                 waqf
                 <InfoTooltip term="waqf" />
               </span>
-              , and operate{' '}
-              <span className="inline-flex items-center gap-1">
-                sadaqah
-                <InfoTooltip term="sadaqah" />
-              </span>
-              {' '}programs. Not as promises. As blockchain reality.
+              management with blockchain-verifiable transparency.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -98,22 +89,22 @@ export default function Landing() {
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-light text-tawf-green mb-6">What We Actually Do</h2>
             <p className="text-tawf-muted text-xl leading-relaxed">
-              We serve as the digital backbone for{' '}
-              <span className="inline-flex items-center gap-1">
-                BMT
-                <InfoTooltip term="bmt" />
-              </span>
-              {' '}organizations across Indonesia such as Telaga Charity and Dompet Dhuafa - enabling transparent{' '}
+              We provide digital infrastructure that powers Islamic charitable institutions across Indonesia, enabling transparent{' '}
               <span className="inline-flex items-center gap-1">
                 zakat
                 <InfoTooltip term="zakat" />
               </span>
-              , infaq, and{' '}
+              ,{' '}
+              <span className="inline-flex items-center gap-1">
+                infaq
+                <InfoTooltip term="infaq" />
+              </span>
+              , and{' '}
               <span className="inline-flex items-center gap-1">
                 sadaqah
                 <InfoTooltip term="sadaqah" />
               </span>
-              {' '}collection on the blockchain.
+              {' '}operations.
             </p>
           </div>
 
@@ -123,28 +114,28 @@ export default function Landing() {
                 icon: <Coins className="w-8 h-8 text-tawf-gold" />,
                 title: "Zakat",
                 term: "zakat",
-                desc: "Partnering with licensed amil organizations to collect and distribute zakat to eligible asnaf.",
+                desc: "Building infrastructure for licensed amil organizations to collect and distribute zakat with full transparency to eligible asnaf.",
                 detail: "Blockchain-verified & fully auditable"
               },
               {
                 icon: <Landmark className="w-8 h-8 text-tawf-gold" />,
                 title: "Waqf",
                 term: "waqf",
-                desc: "Trustee for all waqf assets, including wakaf produktif that generates perpetual community benefit.",
-                detail: "Held in perpetual trust"
+                desc: "Infrastructure for transparent waqf management, including wakaf produktif that generates perpetual community benefit.",
+                detail: "Blockchain-verifiable stewardship"
               },
               {
                 icon: <HeartHandshake className="w-8 h-8 text-tawf-gold" />,
                 title: "Sadaqah",
                 term: "sadaqah",
-                desc: "Community grant programs for education, BMT digitization, and scholarly research.",
+                desc: "Community grant programs for education, Islamic institution digitization, and scholarly research.",
                 detail: "DAO-informed selection"
               },
               {
                 icon: <HandHeart className="w-8 h-8 text-tawf-gold" />,
                 title: "Qardhul Hasan",
                 term: "qardhul-hasan",
-                desc: "Interest-free benevolent lending for underserved communities and early-stage BMTs.",
+                desc: "Interest-free benevolent lending for underserved communities and early-stage Islamic institutions seeking digitization.",
                 detail: "Ethical microfinance"
               }
             ].map((item, idx) => (
@@ -167,6 +158,111 @@ export default function Landing() {
                 <p className="text-sm font-semibold tracking-wider uppercase text-tawf-gold">{item.detail}</p>
               </motion.div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Partners Section */}
+      <section id="partners" className={`${SECTION_PADDING} bg-tawf-sand`}>
+        <div className={`${MAX_WIDTH} mx-auto ${CONTAINER_PADDING}`}>
+          <div className="text-center mb-16">
+            <div className="flex items-center justify-center gap-3 mb-6">
+              <div className="h-px w-12 bg-tawf-gold"></div>
+              <span className="text-sm font-semibold tracking-[0.2em] uppercase text-tawf-gold">Trusted Institutions</span>
+              <div className="h-px w-12 bg-tawf-gold"></div>
+            </div>
+            <h2 className="text-4xl md:text-5xl font-light text-tawf-green mb-6">Our Partners</h2>
+            <p className="text-tawf-muted text-xl max-w-3xl mx-auto">
+              We provide digital infrastructure that powers Islamic charitable institutions across Indonesia, enabling transparent operations at scale.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            {/* Telaga Charity - Featured Partner */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="md:col-span-2 p-10 bg-white border border-tawf-green/10 rounded-2xl"
+            >
+              <div className="flex flex-col md:flex-row items-center gap-8">
+                <div className="shrink-0 w-32 h-32 bg-tawf-green rounded-2xl flex items-center justify-center p-6">
+                  <img
+                    src="https://framerusercontent.com/images/9AuswQsD0IeCkETwsF0nDOgyU.png"
+                    alt="Telaga Charity Logo"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <div className="flex-1 text-center md:text-left">
+                  <h3 className="text-2xl font-serif font-medium text-tawf-green mb-2">Telaga Charity</h3>
+                  <p className="text-sm font-semibold tracking-wider uppercase text-tawf-gold mb-4">Blockchain-Powered Nonprofit</p>
+                  <p className="text-tawf-muted leading-relaxed mb-6">
+                    Crypto-empowered charity focused on food, clean water, and education across Indonesia. Together, we're bringing verifiable transparency to charitable giving through blockchain technology.
+                  </p>
+                  <a
+                    href="https://telagacharity.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-tawf-green hover:text-tawf-gold font-medium transition-colors"
+                  >
+                    Visit Website
+                    <ArrowRight className="w-4 h-4" />
+                  </a>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Ziswaf Platform */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              className="p-8 bg-white border border-tawf-green/10 rounded-2xl text-center"
+            >
+              <div className="w-16 h-16 bg-tawf-green/10 rounded-full flex items-center justify-center mx-auto mb-5">
+                <Handshake className="w-8 h-8 text-tawf-green" />
+              </div>
+              <h3 className="text-xl font-serif font-medium text-tawf-green mb-2">Ziswaf Platform</h3>
+              <p className="text-sm font-semibold tracking-wider uppercase text-tawf-gold mb-4">Technology Partner</p>
+              <p className="text-sm text-tawf-muted leading-relaxed mb-6">
+                Powering blockchain-based zakat and waqf management
+              </p>
+              <a
+                href="https://ziswaf.id"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-tawf-green hover:text-tawf-gold font-medium transition-colors"
+              >
+                Visit Website
+                <ArrowRight className="w-4 h-4" />
+              </a>
+            </motion.div>
+
+            {/* Become a Partner CTA */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="md:col-span-3 p-10 bg-tawf-green text-white border-2 border-tawf-gold rounded-2xl text-center"
+            >
+              <div className="w-20 h-20 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Handshake className="w-10 h-10 text-tawf-gold" />
+              </div>
+              <h3 className="text-3xl font-serif text-white mb-3">Become Our Partner</h3>
+              <p className="text-lg text-white/80 mb-8 max-w-2xl mx-auto">
+                Help us build digital infrastructure for Islamic philanthropy. Join our network of institutions committed to transparency and Sharia compliance.
+              </p>
+              <Link
+                to="/contact"
+                className="inline-flex items-center gap-2 bg-tawf-gold text-tawf-green px-8 py-4 rounded-full text-base font-medium tracking-widest uppercase hover:bg-white transition-colors"
+              >
+                Get in Touch
+                <ArrowRight className="w-5 h-5" />
+              </Link>
+            </motion.div>
           </div>
         </div>
       </section>
@@ -197,7 +293,7 @@ export default function Landing() {
               <ul className="space-y-3 text-tawf-sand/80">
                 <li className="flex items-center gap-3">
                   <ChevronRight className="w-5 h-5 text-tawf-gold shrink-0" />
-                  <span>Monthly royalty flows to Foundation (3-8%)</span>
+                  <span>Portion of revenue supports Foundation mission (3-8%)</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <ChevronRight className="w-5 h-5 text-tawf-gold shrink-0" />
@@ -230,17 +326,12 @@ export default function Landing() {
                 </div>
                 <h3 className="text-2xl font-serif text-white">Tawf Islamic Foundation</h3>
               </div>
-              <p className="text-white/80 text-lg mb-6">The Baitul Maal that transforms profit into purpose.</p>
+              <p className="text-white/80 text-lg mb-6">The infrastructure layer that transforms profit into purpose.</p>
               <ul className="space-y-3 text-white/90">
                 <li className="flex items-center gap-3">
                   <Sparkles className="w-5 h-5 text-tawf-gold shrink-0" />
                   <span>
-                    Collects and distributes{' '}
-                    <span className="inline-flex items-center gap-1">
-                      zakat
-                      <InfoTooltip term="zakat" />
-                    </span>
-                    {' '}to{' '}
+                    Operates zakat infrastructure for distribution to{' '}
                     <span className="inline-flex items-center gap-1">
                       asnaf
                       <InfoTooltip term="asnaf" />
@@ -532,14 +623,14 @@ export default function Landing() {
           <div className="w-[600px] h-[600px] border border-tawf-gold rounded-full absolute"></div>
         </div>
         <div className="max-w-3xl mx-auto relative z-10">
-          <h2 className="text-4xl md:text-5xl font-serif text-tawf-sand mb-6">Our Zakat Is On The Blockchain.</h2>
+          <h2 className="text-4xl md:text-5xl font-serif text-tawf-sand mb-6">Zakat Transparency, Verified On-Chain</h2>
           <p className="text-tawf-sand/80 mb-10 text-xl font-light leading-relaxed">
-            You can check. This is not a promise of ethical finance. This is ethical finance, proven every single time we collect a{' '}
+            Track every {' '}
             <span className="inline-flex items-center gap-1">
               dirham
               <InfoTooltip term="dirham" />
             </span>
-            {' '}of zakat and place it in the hands of someone who needs it.
+            {' '}as it flows through Foundation infrastructure. Blockchain-verifiable transparency from payment to distribution.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a 

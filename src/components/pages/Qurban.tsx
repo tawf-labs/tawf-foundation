@@ -45,7 +45,7 @@ export default function Qurban() {
         badge="Eid al-Adha Sacrifice"
         title="Qurban at Tawf Islamic Foundation"
         subtitle="Digital qurban with full transparency"
-        description="Experience a modern approach to the ancient tradition of Qurban. Register online, track your sacrifice, and verify distribution—all on the blockchain."
+        description="Experience a modern approach to the ancient tradition of Qurban. Register online, track your sacrifice, and verify distribution, all on the blockchain."
       />
 
       {/* What Is Qurban */}
@@ -61,7 +61,7 @@ export default function Qurban() {
               Before the sacrifice could be completed, God provided a ram as a substitute. To honor this story, Muslims around the world sacrifice eligible livestock and distribute the meat to family, friends, and especially the needy.
             </p>
             <p className="text-tawf-muted text-lg leading-relaxed">
-              At Tawf Islamic Foundation, we've modernized this tradition. Our digital platform allows you to register your Qurban, track the process, and verify that the meat reaches those who need it most—all with full transparency.
+              At Tawf Islamic Foundation, we've modernized this tradition. Our digital platform allows you to register your Qurban, track the process, and verify that the meat reaches those who need it most, all with full transparency.
             </p>
           </div>
           <div className="relative">
@@ -200,15 +200,21 @@ export default function Qurban() {
         <div className="max-w-3xl mx-auto text-center">
           <div className="flex items-center justify-center gap-4 mb-6">
             <Calendar className="w-12 h-12 text-tawf-gold" />
-            <h2 className="text-3xl md:text-4xl font-serif text-white">Pre-register for Eid al-Adha</h2>
+            <h2 className="text-3xl md:text-4xl font-serif text-white">Fulfill Your Qurban This Eid al-Adha</h2>
           </div>
           <p className="text-tawf-sand/70 text-xl mb-10">
-            Pre-registration opens several months before Eid al-Adha. Sign up to be notified when registration opens for the upcoming season.
+            Register online, track your sacrifice, and verify distribution. A modern approach to this sacred tradition.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-tawf-gold text-tawf-green px-8 py-4 rounded-full text-base font-medium tracking-widest uppercase hover:bg-white transition-colors">
-              Notify Me
-            </button>
+            <a
+              href="https://qurban.tawf.foundation"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-tawf-gold text-tawf-green px-8 py-4 rounded-full text-base font-medium tracking-widest uppercase hover:bg-white transition-colors"
+            >
+              Register Your Qurban
+              <ArrowRight className="w-5 h-5" />
+            </a>
             <Link
               to="/glossary"
               className="inline-flex items-center gap-2 border border-white/30 text-white px-8 py-4 rounded-full text-base font-medium tracking-widest uppercase hover:bg-white/10 transition-colors"
@@ -252,17 +258,28 @@ export default function Qurban() {
       {/* CTA */}
       <Section background="green">
         <div className="text-center">
-          <h2 className="text-3xl md:text-4xl font-serif text-tawf-gold mb-6">Qurban Made Transparent</h2>
+          <h2 className="text-3xl md:text-4xl font-serif text-tawf-gold mb-6">Your Qurban, Verified On-Chain</h2>
           <p className="text-tawf-sand/80 text-xl mb-10 max-w-2xl mx-auto">
-            Honor the tradition of Prophet Ibrahim with confidence. Every sacrifice is verified, every distribution is recorded.
+            Honor the tradition of Prophet Ibrahim with confidence. Every sacrifice is verified, every distribution is recorded on the blockchain.
           </p>
-          <Link
-            to="/glossary"
-            className="inline-flex items-center gap-2 bg-tawf-gold text-tawf-green px-8 py-4 rounded-full text-base font-medium tracking-widest uppercase hover:bg-white transition-colors"
-          >
-            Learn Islamic Finance Terms
-            <ArrowRight className="w-5 h-5" />
-          </Link>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <a
+              href="https://qurban.tawf.foundation"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-tawf-gold text-tawf-green px-8 py-4 rounded-full text-base font-medium tracking-widest uppercase hover:bg-white transition-colors"
+            >
+              Register Your Qurban
+              <ArrowRight className="w-5 h-5" />
+            </a>
+            <Link
+              to="/glossary"
+              className="inline-flex items-center gap-2 bg-transparent border-2 border-tawf-sand text-tawf-sand px-8 py-4 rounded-full text-base font-medium tracking-widest uppercase hover:bg-tawf-sand/10 transition-colors"
+            >
+              Learn Islamic Finance Terms
+              <ArrowRight className="w-5 h-5" />
+            </Link>
+          </div>
         </div>
       </Section>
     </>

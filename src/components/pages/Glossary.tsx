@@ -25,8 +25,6 @@ export default function Glossary() {
 
   const selectedTermData = selectedTerm ? glossaryTerms[selectedTerm] : null;
 
-  const allTerms = Object.values(glossaryTerms);
-
   return (
     <>
       <PageHero
@@ -57,54 +55,66 @@ export default function Glossary() {
               </button>
             )}
           </div>
-          {searchQuery && (
-            <p className="text-center text-tawf-muted mt-4">
-              Found {filteredTerms.length} term{filteredTerms.length !== 1 ? 's' : ''}
-            </p>
-          )}
         </div>
       </Section>
 
       {/* All Terms */}
       <Section background="white">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-serif text-tawf-green mb-6">All Terms</h2>
+          <h2 className="text-3xl md:text-4xl font-serif text-tawf-green mb-6">
+            {searchQuery ? `Search Results` : `All Terms`}
+          </h2>
           <p className="text-tawf-muted text-xl max-w-3xl mx-auto">
-            Browse all Islamic finance and Web3 terms in our glossary.
+            {searchQuery
+              ? `Found ${filteredTerms.length} term${filteredTerms.length !== 1 ? 's' : ''} matching "${searchQuery}"`
+              : `Browse all Islamic finance and Web3 terms in our glossary.`
+            }
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {allTerms.map((term, idx) => (
-            <motion.button
-              key={term.term}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.3, delay: idx * 0.02 }}
-              onClick={() => setSelectedTerm(Object.keys(glossaryTerms).find(k => glossaryTerms[k].term === term.term) || null)}
-              className={`p-6 rounded-2xl border text-left transition-all hover:shadow-lg ${
-                selectedTerm === Object.keys(glossaryTerms).find(k => glossaryTerms[k].term === term.term)
-                  ? 'bg-tawf-green border-tawf-green'
-                  : 'bg-tawf-sand/30 border-tawf-green/10 hover:border-tawf-green/30'
-              }`}
+        {filteredTerms.length === 0 ? (
+          <div className="text-center py-16">
+            <p className="text-tawf-muted text-xl mb-4">No terms found matching "{searchQuery}"</p>
+            <button
+              onClick={() => setSearchQuery('')}
+              className="text-tawf-green hover:text-tawf-gold font-medium underline"
             >
-              <h3 className={`font-serif text-lg mb-2 ${
-                selectedTerm === Object.keys(glossaryTerms).find(k => glossaryTerms[k].term === term.term)
-                  ? 'text-white'
-                  : 'text-tawf-green'
-              }`}>
-                {term.term}
-              </h3>
-              <p className={`text-sm line-clamp-2 ${
-                selectedTerm === Object.keys(glossaryTerms).find(k => glossaryTerms[k].term === term.term)
-                  ? 'text-white/80'
-                  : 'text-tawf-muted'
-              }`}>
-                {term.definition}
-              </p>
-            </motion.button>
-          ))}
-        </div>
+              Clear search
+            </button>
+          </div>
+        ) : (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {filteredTerms.map(([key, term], idx) => (
+              <motion.button
+                key={key}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3, delay: idx * 0.02 }}
+                onClick={() => setSelectedTerm(key)}
+                className={`p-6 rounded-2xl border text-left transition-all hover:shadow-lg ${
+                  selectedTerm === key
+                    ? 'bg-tawf-green border-tawf-green'
+                    : 'bg-tawf-sand/30 border-tawf-green/10 hover:border-tawf-green/30'
+                }`}
+              >
+                <h3 className={`font-serif text-lg mb-2 ${
+                  selectedTerm === key
+                    ? 'text-white'
+                    : 'text-tawf-green'
+                }`}>
+                  {term.term}
+                </h3>
+                <p className={`text-sm line-clamp-2 ${
+                  selectedTerm === key
+                    ? 'text-white/80'
+                    : 'text-tawf-muted'
+                }`}>
+                  {term.definition}
+                </p>
+              </motion.button>
+            ))}
+          </div>
+        )}
       </Section>
 
       {/* Featured Categories */}

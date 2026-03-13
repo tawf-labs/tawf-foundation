@@ -13,15 +13,15 @@ export const glossaryTerms: Record<string, GlossaryTerm> = {
     term: "Baitul Maal",
     pronunciation: "bah-yool ma-al",
     definition: "A centuries-old Islamic community treasury. Think of it as a foundation, charity, and community bank combined. Historically, it collected, managed, and distributed community wealth for social welfare.",
-    context: "The Tawf Islamic Foundation is the Baitul Maal of the ecosystem - the social and charitable soul that transforms profit into purpose.",
+    context: "Tawf Islamic Foundation builds digital Baitul Maal infrastructure for the ecosystem: shared systems that transform profit into purpose.",
     shortDefinition: "An Islamic treasury managing community wealth for social welfare.",
-    shortContext: "Tawf Islamic Foundation serves as the ecosystem's Baitul Maal—transforming profit into purpose."
+    shortContext: "Tawf Islamic Foundation builds digital infrastructure for Baitul Maal operations."
   },
   "zakat": {
     term: "Zakat",
     pronunciation: "zah-kat",
     definition: "One of the Five Pillars of Islam. It's an obligatory charitable contribution (2.5% of qualifying wealth) that eligible Muslims must pay annually to support those in need.",
-    context: "The Foundation serves as the official amil (collector and distributor) of zakat from Tawf Labs revenue.",
+    context: "The Foundation provides zakat infrastructure that enables transparent collection and distribution from Tawf Labs revenue to eligible recipients.",
     related: ["asnaf", "amil", "nisab"]
   },
   "waqf": {
@@ -41,19 +41,25 @@ export const glossaryTerms: Record<string, GlossaryTerm> = {
     term: "Sadaqah",
     pronunciation: "sah-dah-kah",
     definition: "Voluntary charitable giving in Islam. Unlike zakat, it's not obligatory and can be given at any time in any amount. It's considered a virtuous act that purifies wealth and soul.",
-    context: "The Foundation runs sadaqah programs for education, BMT digitization, and research grants."
+    context: "The Foundation runs sadaqah programs for education, Islamic institution digitization, and research grants."
+  },
+  "infaq": {
+    term: "Infaq",
+    pronunciation: "in-fak",
+    definition: "Voluntary spending or giving in the path of Allah. Similar to sadaqah, it refers to discretionary charity beyond obligatory zakat, given freely to support good causes.",
+    context: "The Foundation's infrastructure supports transparent infaq operations alongside zakat and sadaqah."
   },
   "qardhul-hasan": {
     term: "Qardhul Hasan",
     pronunciation: "kar-dool has-sahn",
     definition: "A benevolent, interest-free loan given for the sake of Allah. The lender expects only the return of the principal amount, with no additional profit or interest.",
-    context: "The Foundation manages qardhul hasan funds for underserved communities and early-stage BMTs."
+    context: "The Foundation manages qardhul hasan funds for underserved communities and Islamic institutions seeking digitization."
   },
   "amil": {
     term: "Amil",
     pronunciation: "ah-meel",
     definition: "An officially appointed collector and administrator of zakat. Amils are authorized to collect zakat from eligible payers and ensure it reaches qualified recipients.",
-    context: "Tawf Islamic Foundation serves as the official amil for the Tawf ecosystem."
+    context: "Tawf Islamic Foundation provides zakat infrastructure and operates as amil for the Tawf ecosystem's internal zakat obligations."
   },
   "asnaf": {
     term: "Asnaf",
@@ -83,7 +89,7 @@ export const glossaryTerms: Record<string, GlossaryTerm> = {
     term: "BMT",
     pronunciation: "B-M-T",
     definition: "Baitul Maal wa Tamwil - Islamic financial cooperatives common in Indonesia. They combine social funds (Baitul Maal) for charity with commercial financing (Tamwil) for members.",
-    context: "Tawf Islamic Foundation works with BMTs across Indonesia for digitization and zakat distribution."
+    context: "Tawf Islamic Foundation provides digital infrastructure that enables BMTs across Indonesia to operate transparently."
   },
   "soulbound": {
     term: "Soulbound",
