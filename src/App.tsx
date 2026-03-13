@@ -7,6 +7,7 @@ import Zakat from './components/pages/Zakat';
 import Qurban from './components/pages/Qurban';
 import Research from './components/pages/Research';
 import Glossary from './components/pages/Glossary';
+import Contact from './components/pages/Contact';
 
 // Subdomain to route mapping
 const SUBDOMAIN_ROUTES: Record<string, string> = {
@@ -59,6 +60,7 @@ function AppRoutes() {
       <Route path="/qurban" element={<Qurban />} />
       <Route path="/research" element={<Research />} />
       <Route path="/glossary" element={<Glossary />} />
+      <Route path="/contact" element={<Contact />} />
     </Routes>
   );
 }

@@ -184,32 +184,30 @@ export default function Landing() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="p-10 bg-white border border-tawf-green/10 rounded-2xl"
+              className="p-8 bg-white border border-tawf-green/10 rounded-2xl"
             >
-              <div className="flex flex-col md:flex-row items-center gap-8">
-                <div className="shrink-0 w-32 h-32 bg-tawf-green rounded-2xl flex items-center justify-center p-6">
+              <div className="text-center">
+                <div className="w-24 h-24 bg-tawf-green rounded-2xl flex items-center justify-center p-5 mx-auto mb-6">
                   <img
                     src="https://framerusercontent.com/images/9AuswQsD0IeCkETwsF0nDOgyU.png"
                     alt="Telaga Charity Logo"
                     className="w-full h-full object-contain"
                   />
                 </div>
-                <div className="flex-1 text-center md:text-left">
-                  <h3 className="text-2xl font-serif font-medium text-tawf-green mb-2">Telaga Charity</h3>
-                  <p className="text-sm font-semibold tracking-wider uppercase text-tawf-gold mb-4">Blockchain-Powered Nonprofit</p>
-                  <p className="text-tawf-muted leading-relaxed mb-6">
-                    Crypto-empowered charity focused on food, clean water, and education across Indonesia. Together, we're bringing verifiable transparency to charitable giving through blockchain technology.
-                  </p>
-                  <a
-                    href="https://telagacharity.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-tawf-green hover:text-tawf-gold font-medium transition-colors"
-                  >
-                    Visit Website
-                    <ArrowRight className="w-4 h-4" />
-                  </a>
-                </div>
+                <h3 className="text-3xl font-serif text-tawf-green mb-2">Telaga Charity</h3>
+                <p className="text-sm font-semibold tracking-wider uppercase text-tawf-gold mb-4">Blockchain-Powered Nonprofit</p>
+                <p className="text-tawf-muted text-base leading-relaxed mb-6">
+                  Crypto-empowered charity focused on food, clean water, and education. We're bringing verifiable transparency to charitable giving.
+                </p>
+                <a
+                  href="https://telagacharity.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-tawf-green hover:text-tawf-gold font-medium transition-colors"
+                >
+                  Visit Website
+                  <ArrowRight className="w-4 h-4" />
+                </a>
               </div>
             </motion.div>
 

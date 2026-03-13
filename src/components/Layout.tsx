@@ -86,6 +86,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             </div>
 
             <Link to="/glossary" className="text-sm font-medium tracking-widest uppercase text-tawf-ink/70 hover:text-tawf-green transition-colors">Glossary</Link>
+            <Link to="/contact" className="text-sm font-medium tracking-widest uppercase text-tawf-ink/70 hover:text-tawf-green transition-colors">Contact</Link>
           </div>
 
           <div className="hidden md:flex items-center gap-4">
@@ -123,6 +124,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 </div>
               </div>
               <Link to="/glossary" className="block text-sm font-medium tracking-widest uppercase text-tawf-ink/70 hover:text-tawf-green">Glossary</Link>
+              <Link to="/contact" className="block text-sm font-medium tracking-widest uppercase text-tawf-ink/70 hover:text-tawf-green">Contact</Link>
               <Link to="/manifesto" className="block text-sm font-medium tracking-widest uppercase text-tawf-green border border-tawf-green px-6 py-2.5 rounded-full text-center">Read the Manifesto</Link>
             </div>
           </div>
@@ -170,6 +172,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <li><Link to="/qurban" className="hover:text-tawf-gold transition-colors">Qurban</Link></li>
               <li><Link to="/research" className="hover:text-tawf-gold transition-colors">Research</Link></li>
               <li><Link to="/glossary" className="hover:text-tawf-gold transition-colors">Glossary</Link></li>
+              <li><Link to="/contact" className="hover:text-tawf-gold transition-colors">Contact</Link></li>
               <li><Link to="/manifesto" className="hover:text-tawf-gold transition-colors">Read the Manifesto</Link></li>
               <li><a href="https://tawf.xyz" target="_blank" rel="noopener noreferrer" className="hover:text-tawf-gold transition-colors">Tawf Labs</a></li>
             </ul>
