@@ -6,3 +6,12 @@ coverage/
 *.log
 .env*
 !.env.example
+
+# AI agent directories
+.agent/
+.agents/
+.claude/
+skills-lock.json
+
+# Internal docs
+DESIGN_GUIDELINES.md
