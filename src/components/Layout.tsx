@@ -43,12 +43,12 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <nav className="fixed top-0 left-0 right-0 z-50 bg-tawf-sand/90 backdrop-blur-md border-b border-tawf-green/10" role="navigation" aria-label="Main navigation">
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
           {subdomain ? (
-            <a href="https://tawf.foundation" className="font-serif text-2xl font-medium tracking-wide text-tawf-green">
-              Tawf Islamic Foundation
+            <a href="https://tawf.foundation">
+              <img src="/images/tawftransparent.png" alt="Tawf" className="pt-2 h-24 w-auto invert" />
             </a>
           ) : (
-            <Link to="/" className="font-serif text-2xl font-medium tracking-wide text-tawf-green">
-              Tawf Islamic Foundation
+            <Link to="/">
+              <img src="/images/tawftransparent.png" alt="Tawf" className="pt-2 h-24 w-auto invert" />
             </Link>
           )}
 
@@ -153,7 +153,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <footer className="bg-tawf-ink text-white/60 py-16 border-t border-white/10" role="contentinfo">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
           <div className="col-span-1 md:col-span-2">
-            <h3 className="font-serif text-xl font-medium tracking-wide text-white mb-6">
+            <h3 className="font-serif text-2xl md:text-3xl font-medium tracking-wide text-white mb-6">
               Tawf Islamic Foundation
             </h3>
             <p className="text-sm max-w-sm leading-relaxed">

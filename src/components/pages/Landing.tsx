@@ -22,63 +22,52 @@ export default function Landing() {
   return (
     <>
       {/* Hero Section */}
-      <section className={`${SECTION_PADDING} ${CONTAINER_PADDING} relative overflow-hidden`}>
+      <section className={`min-h-screen -mt-[var(--navbar-height,80px)] pt-[var(--navbar-height,80px)] ${CONTAINER_PADDING} relative overflow-hidden flex items-center justify-center`}>
         <div className="absolute inset-0 opacity-[0.03] pointer-events-none flex items-center justify-center">
           <div className="w-[90vw] max-w-[600px] h-[90vw] max-h-[600px] md:w-[800px] md:h-[800px] border border-tawf-green rounded-full absolute transform -translate-y-1/4"></div>
           <div className="w-[120vw] max-w-[900px] h-[120vw] max-h-[900px] md:w-[1200px] md:h-[1200px] border border-tawf-green rounded-full absolute transform -translate-y-1/4"></div>
         </div>
 
-        <div className={`${MAX_WIDTH} mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10`}>
+        <div className={`${MAX_WIDTH} mx-auto relative z-10`}>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="max-w-2xl"
+            className="max-w-3xl mx-auto text-center"
           >
-            <div className="flex items-center gap-3 mb-8">
+            <div className="flex items-center justify-center gap-3 mb-8">
               <div className="h-px w-12 bg-tawf-gold"></div>
-              <span className="text-sm font-semibold tracking-[0.2em] uppercase text-tawf-gold">The Public Trust Cornerstone</span>
+              <span className="text-sm font-semibold tracking-[0.2em] uppercase text-tawf-gold">Rebuilding Trust in Islamic Finance</span>
+              <div className="h-px w-12 bg-tawf-gold"></div>
             </div>
 
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light leading-[1.1] tracking-tight text-tawf-green mb-8">
-              Infrastructure for<br />the <span className="italic text-tawf-gold">Digital Baitul Maal</span>
+            <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-light leading-[1.05] tracking-tight text-tawf-green mb-8">
+              See where your<br /><span className="italic text-tawf-gold">giving goes</span>
             </h1>
 
-            <p className="text-xl text-tawf-muted font-light leading-relaxed mb-10 max-w-lg">
-              Tawf Islamic Foundation builds shared infrastructure for Islamic charitable institutions in the digital age. We create transparency systems for{' '}
-              <span className="inline-flex items-center gap-1">
-                zakat
-                <InfoTooltip term="zakat" />
-              </span>
-              distribution and{' '}
-              <span className="inline-flex items-center gap-1">
-                waqf
-                <InfoTooltip term="waqf" />
-              </span>
-              management with blockchain-verifiable transparency.
+            <p className="text-xl text-tawf-muted font-light leading-relaxed mb-6">
+              Blockchain-verified zakat. Know exactly where your money goes.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link to="/manifesto" className={`bg-tawf-green text-tawf-sand px-8 py-4 ${RADIUS_BUTTON} text-base font-medium tracking-widest uppercase hover:bg-tawf-green-light transition-colors flex items-center justify-center gap-2`}>
+            <p className="text-lg text-tawf-muted font-light leading-relaxed mb-10">
+              And the infrastructure doesn't stop at zakat.
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="https://zakat.tawf.foundation"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`bg-tawf-green text-tawf-sand px-8 py-4 ${RADIUS_BUTTON} text-base font-medium tracking-widest uppercase hover:bg-tawf-green-light transition-colors flex items-center justify-center gap-2`}
+              >
+                Pay Your Zakat
+                <ArrowRight className="w-5 h-5" />
+              </a>
+              <Link to="/manifesto" className={`bg-transparent border border-tawf-green text-tawf-green px-8 py-4 ${RADIUS_BUTTON} text-base font-medium tracking-widest uppercase hover:bg-tawf-green/5 transition-colors flex items-center justify-center gap-2`}>
                 Read the Manifesto
                 <ArrowRight className="w-5 h-5" />
               </Link>
             </div>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
-            className="relative h-[300px] md:h-[450px] lg:h-[600px] flex items-center justify-center"
-          >
-            <div className="absolute inset-0 bg-tawf-green/5 rounded-full blur-3xl"></div>
-            <img
-              src="https://images.unsplash.com/photo-1584551246679-0daf3d275d0f?q=80&w=1000&auto=format&fit=crop"
-              alt="Islamic Architecture"
-              className="oval-mask w-full h-full object-cover opacity-90"
-              referrerPolicy="no-referrer"
-            />
           </motion.div>
         </div>
       </section>
@@ -89,22 +78,8 @@ export default function Landing() {
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-light text-tawf-green mb-6">What We Actually Do</h2>
             <p className="text-tawf-muted text-xl leading-relaxed">
-              We provide digital infrastructure that powers Islamic charitable institutions across Indonesia, enabling transparent{' '}
-              <span className="inline-flex items-center gap-1">
-                zakat
-                <InfoTooltip term="zakat" />
-              </span>
-              ,{' '}
-              <span className="inline-flex items-center gap-1">
-                infaq
-                <InfoTooltip term="infaq" />
-              </span>
-              , and{' '}
-              <span className="inline-flex items-center gap-1">
-                sadaqah
-                <InfoTooltip term="sadaqah" />
-              </span>
-              {' '}operations.
+              We provide the digital infrastructure layer for Islamic finance – going{' '}
+              <span className="font-semibold text-tawf-green">beyond zakat</span> to power staking, yield, and ethical financial products across the ecosystem.
             </p>
           </div>
 
@@ -115,28 +90,32 @@ export default function Landing() {
                 title: "Zakat",
                 term: "zakat",
                 desc: "Building infrastructure for licensed amil organizations to collect and distribute zakat with full transparency to eligible asnaf.",
-                detail: "Blockchain-verified & fully auditable"
+                detail: "Blockchain-verified & fully auditable",
+                featured: true
               },
               {
                 icon: <Landmark className="w-8 h-8 text-tawf-gold" />,
                 title: "Waqf",
                 term: "waqf",
                 desc: "Infrastructure for transparent waqf management, including wakaf produktif that generates perpetual community benefit.",
-                detail: "Blockchain-verifiable stewardship"
+                detail: "Blockchain-verifiable stewardship",
+                featured: false
               },
               {
                 icon: <HeartHandshake className="w-8 h-8 text-tawf-gold" />,
                 title: "Sadaqah",
                 term: "sadaqah",
                 desc: "Community grant programs for education, Islamic institution digitization, and scholarly research.",
-                detail: "DAO-informed selection"
+                detail: "DAO-informed selection",
+                featured: false
               },
               {
                 icon: <HandHeart className="w-8 h-8 text-tawf-gold" />,
                 title: "Qardhul Hasan",
                 term: "qardhul-hasan",
                 desc: "Interest-free benevolent lending for underserved communities and early-stage Islamic institutions seeking digitization.",
-                detail: "Ethical microfinance"
+                detail: "Ethical microfinance",
+                featured: false
               }
             ].map((item, idx) => (
               <motion.div
@@ -145,7 +124,7 @@ export default function Landing() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: idx * 0.1 }}
-                className={`p-8 border border-tawf-green/10 ${RADIUS_CARD} bg-tawf-sand/30`}
+                className={`p-8 border ${item.featured ? 'border-tawf-gold/30 bg-tawf-sand/50' : 'border-tawf-green/10 bg-tawf-sand/30'} ${RADIUS_CARD}`}
               >
                 <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center mb-5 shadow-sm">
                   {item.icon}
@@ -179,7 +158,7 @@ export default function Landing() {
           </div>
 
           {/* Platform Cards Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {/* ZISWAF Platform Card */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -234,6 +213,38 @@ export default function Landing() {
               </div>
               <a
                 href="https://qurban.tawf.foundation"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-tawf-green hover:text-tawf-gold font-medium transition-colors"
+              >
+                Visit Platform
+                <ArrowRight className="w-4 h-4" />
+              </a>
+            </motion.div>
+
+            {/* Tawf Finance Platform Card */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="p-8 bg-white border border-tawf-green/10 rounded-2xl"
+            >
+              <div className="w-16 h-16 bg-tawf-green rounded-full flex items-center justify-center mb-6">
+                <TrendingUp className="w-8 h-8 text-tawf-gold" />
+              </div>
+              <h3 className="text-2xl font-serif text-tawf-green mb-2">tawf.finance</h3>
+              <p className="text-sm font-semibold tracking-wider uppercase text-tawf-gold mb-4">Stake & Earn Yield</p>
+              <p className="text-tawf-muted text-base leading-relaxed mb-6">
+                Our commercial platform for staking assets and earning yield from real-world ethical projects. Sharia-compliant DeFi.
+              </p>
+              <div className="flex flex-wrap gap-3 mb-6">
+                <span className="text-xs font-semibold tracking-wider uppercase bg-tawf-sand/50 text-tawf-green px-3 py-1 rounded-full">Sharia Compliant</span>
+                <span className="text-xs font-semibold tracking-wider uppercase bg-tawf-sand/50 text-tawf-green px-3 py-1 rounded-full">Real-World Yield</span>
+                <span className="text-xs font-semibold tracking-wider uppercase bg-tawf-sand/50 text-tawf-green px-3 py-1 rounded-full">Staking</span>
+              </div>
+              <a
+                href="https://tawf.finance"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-tawf-green hover:text-tawf-gold font-medium transition-colors"
@@ -344,7 +355,7 @@ export default function Landing() {
                 </div>
                 <h3 className="text-2xl font-serif text-white">Tawf Labs</h3>
               </div>
-              <p className="text-tawf-sand/70 text-lg mb-6">The commercial engine that builds Sharia-compliant products.</p>
+              <p className="text-tawf-sand/70 text-lg mb-6">The commercial engine that builds Sharia-compliant products, including tawf.finance staking and yield platform.</p>
               <ul className="space-y-3 text-tawf-sand/80">
                 <li className="flex items-center gap-3">
                   <ChevronRight className="w-5 h-5 text-tawf-gold shrink-0" />
@@ -369,6 +380,10 @@ export default function Landing() {
                     </span>
                     {' '}assets held in Foundation trusteeship
                   </span>
+                </li>
+                <li className="flex items-center gap-3">
+                  <ChevronRight className="w-5 h-5 text-tawf-gold shrink-0" />
+                  <span>tawf.finance: Sharia-compliant staking and real-world yield platform</span>
                 </li>
               </ul>
             </div>
@@ -685,12 +700,12 @@ export default function Landing() {
               dirham
               <InfoTooltip term="dirham" />
             </span>
-            {' '}as it flows through Foundation infrastructure. Blockchain-verifiable transparency from payment to distribution.
+            {' '}as it flows through Foundation infrastructure. See your impact in real-time – from payment to recipient.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <a 
-              href="https://zakat.tawf.foundation" 
-              target="_blank" 
+            <a
+              href="https://zakat.tawf.foundation"
+              target="_blank"
               rel="noopener noreferrer"
               className={`bg-tawf-gold text-tawf-green px-10 py-5 ${RADIUS_BUTTON} text-base font-medium tracking-widest uppercase hover:bg-white transition-colors inline-flex items-center gap-2`}
             >

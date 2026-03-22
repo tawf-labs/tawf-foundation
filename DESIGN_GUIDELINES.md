@@ -3,6 +3,13 @@
 ## Overview
 The Tawf Islamic Foundation website embodies ethical Web3 finance through a sophisticated, trust-building design system that balances traditional Islamic aesthetics with modern digital interfaces.
 
+### Primary Focus
+Our primary focus is **Zakat Transparency** for Southeast Asian students. All design decisions should prioritize:
+- **Trust**: Every element must build credibility
+- **Clarity**: Users must understand where their zakat goes
+- **Local Context**: Designed for Indonesian/Malaysian users
+- **Youth Appeal**: Mobile-first, social, shareable
+
 ---
 
 ## Color Palette
@@ -302,6 +309,48 @@ Large:      > 1280px
 
 ---
 
+## Localization: Indonesian/Malay Context
+
+### Target Audience
+We design primarily for **Southeast Asian students** in Indonesia and Malaysia. Consider these cultural nuances:
+
+### Language Usage
+- **Primary**: English (for broader reach)
+- **Secondary**: Bahasa Indonesia / Bahasa Melayu (for local resonance)
+- **Key Islamic terms**: Keep in Arabic (zakat, waqf, asnaf, nisab) with tooltips
+
+### Local Payment Integration
+- **Indonesia**: GoPay, OVO, Dana, Bank Transfer
+- **Malaysia**: Touch 'n Go, GrabPay, Bank Transfer
+- Design CTAs that accommodate local payment preferences
+
+### Islamic Terminology (Local Variations)
+| Term | Arabic | Indonesian | Malay |
+|------|--------|------------|-------|
+| Zakat | Zakat | Zakat | Zakat |
+| Waqf | Waqf | Wakaf | Wakaf |
+| Alms | Sadaqah | Sedekah | Sedekah |
+| Poor | Fuqara | Fakir Miskin | Fakir Miskin |
+| Moslem Board | MUI | MUI | JAKIM |
+
+### Design Considerations
+- Mobile-first: Most users access via smartphones
+- Social sharing: Instagram Stories, WhatsApp status integration
+- modesty: Respectful imagery, no human faces in hero images
+- Fonts: Support for Jawi/Arabic script where appropriate
+
+### Currency Formatting
+- Indonesia: `Rp 750.000` (dots for thousands, no decimals)
+- Malaysia: `RM 250.00` (standard formatting)
+- Always clarify currency when showing amounts
+
+### Date & Time
+- Use `YYYY-MM-DD` or `DD Month YYYY` format
+- Consider Hijri calendar for Islamic events
+- Timezone: WIB (GMT+7) for Indonesia, MYT (GMT+8) for Malaysia
+
+---
+
 ## Implementation Notes
 
 ### CSS Variables
@@ -383,9 +432,10 @@ src/
 ---
 
 ## Version History
+- **v1.1** - Added localization notes for Indonesian/Malay context, refocused on zakat transparency (March 2026)
 - **v1.0** - Initial design system (March 2026)
 - Built with React 19, TypeScript 5.8, Vite 6.2, Tailwind CSS v4
 
 ---
 
-*This design system reflects the Tawf Islamic Foundation's commitment to ethical finance, transparency, and community ownership. Every design decision serves the mission of rebuilding Baitul Maal for the digital age.*
+*This design system reflects the Tawf Islamic Foundation's commitment to zakat transparency, Sharia compliance, and community ownership. Every design decision serves the mission of rebuilding trust in Islamic charitable giving.*
