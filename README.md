@@ -23,13 +23,13 @@ The **Tawf Islamic Foundation** is a non-profit organization building blockchain
 
 ### Our Primary Focus: Zakat Transparency
 
-Muslims give $1+ trillion in zakat annually. The problem isn't lack of generosity—it's **lack of trust**. Donors rarely know where their money goes or if it reached the intended recipients.
+Muslims give $1+ trillion in zakat annually. The problem isn't lack of generosity. It's **lack of trust**. Donors rarely know where their money goes or if it reached the intended recipients.
 
 We're solving this with **on-chain verification** that answers the fundamental question: *Where did my zakat go?*
 
 ### Our Target Users
 
-We're building first for **Southeast Asian students**—young, tech-savvy Muslims who want their zakat to be:
+We're building first for **Southeast Asian students**, young tech-savvy Muslims who want their zakat to be:
 - **Transparent**: Track every step from payment to recipient
 - **Sharia-certified**: Verified by respected ulama
 - **Local**: Designed for Indonesian/Malaysian context
@@ -82,7 +82,7 @@ tawf-foundation/
 - Opens zkt.app
 - "How much is your zakat?" → Connects GoPay/Bank API
 - AI calculates: "Your zakat mal is Rp 750,000 this month"
-- Breakdown: gold savings, cash, investments—all sharia-compliant
+- Breakdown: gold savings, cash, investments, all sharia-compliant
 
 **Step 2: Choose**
 - "Who needs your zakat today?"
@@ -91,7 +91,7 @@ tawf-foundation/
   - 🏠 5 families need rent help (Surabaya)
   - 🍚 12 families need food aid (Bandung)
 - Each profile has story, verification status, photo
-- Sarah picks the 3 students—she was there once
+- Sarah picks the 3 students, because she was there once
 
 **Step 3: Give**
 - One tap confirmation

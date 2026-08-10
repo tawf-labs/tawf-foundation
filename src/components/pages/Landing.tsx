@@ -78,7 +78,7 @@ export default function Landing() {
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-light text-tawf-green mb-6">What We Actually Do</h2>
             <p className="text-tawf-muted text-xl leading-relaxed">
-              We provide the digital infrastructure layer for Islamic finance – going{' '}
+              We provide the digital infrastructure layer for Islamic finance, going{' '}
               <span className="font-semibold text-tawf-green">beyond zakat</span> to power staking, yield, and ethical financial products across the ecosystem.
             </p>
           </div>
@@ -742,7 +742,7 @@ export default function Landing() {
               dirham
               <InfoTooltip term="dirham" />
             </span>
-            {' '}as it flows through Foundation infrastructure. See your impact in real-time – from payment to recipient.
+            {' '}as it flows through Foundation infrastructure. See your impact in real-time, from payment to recipient.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a

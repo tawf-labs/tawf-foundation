@@ -27,19 +27,19 @@ const faqs = [
   },
   {
     q: 'Can a perpetual endowment ever be withdrawn?',
-    a: 'No. This is enforced in the contract rather than in the interface. A perpetual position has no withdrawal path at all — the withdrawal function rejects it outright, and there is no administrative override for the Foundation, the nazir, or the contract owner. Hiding a button would not have been the same thing.'
+    a: 'No. This is enforced in the contract rather than in the interface. A perpetual position has no withdrawal path at all. The withdrawal function rejects it outright, and there is no administrative override for the Foundation, the nazir, or the contract owner. Hiding a button would not have been the same thing.'
   },
   {
     q: 'Where does the yield come from?',
-    a: 'Deposits are routed across a diversified basket: liquid staking positions in Ethereum via wstETH and weETH, plus a stable reserve held in the deposit currency. The staking rewards from those positions are the yield; the stable reserve dampens drawdowns and stands in for a Sharia-compliant real-asset sleeve.'
+    a: 'Deposits are routed across a diversified basket: liquid staking positions in Ethereum via wstETH and weETH, plus a stable reserve held in the deposit currency. The staking rewards from those positions are the yield. The stable reserve dampens drawdowns and stands in for a Sharia-compliant real-asset sleeve.'
   },
   {
     q: 'How does the yield reach the nazir?',
-    a: 'Through a function that anyone can call, which pays a small bounty to whoever calls it. There is no privileged keeper and no admin key on the path between the yield and the nazir wallet. If nobody calls it, the yield simply accumulates in the vault — it is never lost.'
+    a: 'Through a function that anyone can call, which pays a small bounty to whoever calls it. There is no privileged keeper and no admin key on the path between the yield and the nazir wallet. If nobody calls it, the yield simply accumulates in the vault, and it is never lost.'
   },
   {
     q: 'Is the capital guaranteed?',
-    a: 'No, and we will not claim otherwise. Capital is recorded in rupiah but is backed by assets that move with the Ethereum price. If ETH weakens against the rupiah, the backing can fall below the recorded amount, and no amount of code can create the difference. The platform makes that risk visible — a solvency ratio, a buffer held above the capital, and a top-up function open to anyone — rather than hiding it.'
+    a: 'No, and we will not claim otherwise. Capital is recorded in rupiah but is backed by assets that move with the Ethereum price. If ETH weakens against the rupiah, the backing can fall below the recorded amount, and no amount of code can create the difference. The platform makes that risk visible rather than hiding it, through a solvency ratio, a buffer held above the capital, and a top-up function open to anyone.'
   },
   {
     q: 'Is this live?',
@@ -56,7 +56,7 @@ export default function Waqf() {
         badge="Cash Waqf"
         title="Waqf at Tawf Islamic Foundation"
         subtitle="Give once. Keep giving forever."
-        description="Retail cash waqf, on-chain. Endow permanently and the capital is preserved while its staking yield reaches the nazir indefinitely — or dedicate it for a fixed term and take it back in full. Which akad you signed is enforced by the contract, not by us."
+        description="Retail cash waqf, on-chain. Endow permanently and the capital is preserved while its staking yield reaches the nazir indefinitely, or dedicate it for a fixed term and take it back in full. Which akad you signed is enforced by the contract, not by us."
       />
 
       {/* What it is */}
@@ -102,7 +102,7 @@ export default function Waqf() {
                 {[
                   { pct: '40%', label: 'Lido wstETH', note: 'Ethereum liquid staking' },
                   { pct: '30%', label: 'ether.fi weETH', note: 'a second, independent staking venue' },
-                  { pct: '30%', label: 'Stable reserve', note: 'cushions drawdowns; stands in for the RWA sleeve' }
+                  { pct: '30%', label: 'Stable reserve', note: 'cushions drawdowns, and stands in for the RWA sleeve' }
                 ].map((row) => (
                   <div key={row.label} className="flex items-start justify-between gap-4">
                     <div>
@@ -154,7 +154,7 @@ export default function Waqf() {
             </p>
             <h3 className="text-2xl font-serif text-tawf-green mb-3">Perpetual endowment</h3>
             <p className="text-tawf-muted leading-relaxed flex-1">
-              The capital is given permanently and is never returned — not to you, not to the
+              The capital is given permanently and is never returned. Not to you, not to the
               nazir, not to the Foundation. It stays invested, and a share of every harvest is
               retained to grow it, so the income it produces rises over time.
             </p>
@@ -234,7 +234,7 @@ export default function Waqf() {
               {
                 step: '02',
                 title: 'Deposit and receive your certificate',
-                desc: 'The vault mints a non-transferable receipt plus an Akad certificate NFT drawn entirely on-chain. A perpetual certificate never claims your capital comes back — the two akad carry different deeds.',
+                desc: 'The vault mints a non-transferable receipt plus an Akad certificate NFT drawn entirely on-chain. A perpetual certificate never claims your capital comes back, because the two akad carry different deeds.',
                 icon: <FileText className="w-6 h-6" />
               },
               {
@@ -354,7 +354,7 @@ export default function Waqf() {
               weakens against the rupiah, the backing can fall below the recorded amount and no
               amount of code can create the difference. A buffer above the capital, a stable
               reserve, a published solvency ratio and a top-up function open to anyone are there to
-              make that risk survivable and visible — not to eliminate it.
+              make that risk survivable and visible, not to eliminate it.
             </p>
             <p>
               <span className="text-white font-medium">A perpetual endowment has no exit from that

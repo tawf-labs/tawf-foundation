@@ -161,9 +161,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <footer className="bg-tawf-ink text-white/60 py-16 border-t border-white/10" role="contentinfo">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
           <div className="col-span-1 md:col-span-2">
-            <h3 className="font-serif text-2xl md:text-3xl font-medium tracking-wide text-white mb-6">
-              Tawf Islamic Foundation
-            </h3>
+            {/* The mark is already white, so the dark footer takes it without the `invert` the
+                light-background navbar needs. */}
+            <img src="/images/tawftransparent.png" alt="Tawf Islamic Foundation" className="-ml-3 h-24 w-auto mb-2" />
+            <h3 className="sr-only">Tawf Islamic Foundation</h3>
             <p className="text-sm max-w-sm leading-relaxed">
               Ethical finance on the blockchain. Baitul Maal for the digital age.
             </p>
