@@ -251,7 +251,7 @@ export default function Landing() {
               <div className="flex flex-wrap gap-3 mb-6">
                 <span className="text-xs font-semibold tracking-wider uppercase bg-tawf-sand/50 text-tawf-green px-3 py-1 rounded-full">Sharia Compliant</span>
                 <span className="text-xs font-semibold tracking-wider uppercase bg-tawf-sand/50 text-tawf-green px-3 py-1 rounded-full">Perpetual Endowment</span>
-                <span className="text-xs font-semibold tracking-wider uppercase bg-tawf-gold/20 text-tawf-green px-3 py-1 rounded-full">Testnet</span>
+                <span className="text-xs font-semibold tracking-wider uppercase bg-tawf-sand/50 text-tawf-green px-3 py-1 rounded-full">100% On-Chain</span>
               </div>
               <a
                 href="https://waqf.tawf.foundation"
