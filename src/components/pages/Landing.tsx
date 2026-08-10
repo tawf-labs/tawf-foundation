@@ -168,7 +168,7 @@ export default function Landing() {
           </div>
 
           {/* Platform Cards Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
             {/* ZISWAF Platform Card */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -212,9 +212,9 @@ export default function Landing() {
                 <Calendar className="w-8 h-8 text-tawf-gold" />
               </div>
               <h3 className="text-2xl font-serif text-tawf-green mb-2">qrbn.app</h3>
-              <p className="text-sm font-semibold tracking-wider uppercase text-tawf-gold mb-4">Transparent Qurban & Waqf</p>
+              <p className="text-sm font-semibold tracking-wider uppercase text-tawf-gold mb-4">Transparent Qurban</p>
               <p className="text-tawf-muted text-base leading-relaxed mb-6">
-                Support sustainable Qurban farms through blockchain-powered Waqf with NFT certificates and DAO governance.
+                Support sustainable Qurban farms with on-chain tracking, NFT certificates, and DAO governance over how funds are allocated.
               </p>
               <div className="flex flex-wrap gap-3 mb-6">
                 <span className="text-xs font-semibold tracking-wider uppercase bg-tawf-sand/50 text-tawf-green px-3 py-1 rounded-full">Shariah Compliant</span>
@@ -232,12 +232,44 @@ export default function Landing() {
               </a>
             </motion.div>
 
-            {/* Tawf Finance Platform Card */}
+            {/* Cash Waqf Platform Card */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.2 }}
+              className="p-8 bg-white border border-tawf-green/10 rounded-2xl"
+            >
+              <div className="w-16 h-16 bg-tawf-green rounded-full flex items-center justify-center mb-6">
+                <Landmark className="w-8 h-8 text-tawf-gold" />
+              </div>
+              <h3 className="text-2xl font-serif text-tawf-green mb-2 break-words">waqf.tawf.foundation</h3>
+              <p className="text-sm font-semibold tracking-wider uppercase text-tawf-gold mb-4">Perpetual Cash Waqf</p>
+              <p className="text-tawf-muted text-base leading-relaxed mb-6">
+                Endow permanently and the capital is preserved on-chain while its staking yield reaches the Nazir, or dedicate it for a fixed term and take it back in full.
+              </p>
+              <div className="flex flex-wrap gap-3 mb-6">
+                <span className="text-xs font-semibold tracking-wider uppercase bg-tawf-sand/50 text-tawf-green px-3 py-1 rounded-full">Sharia Compliant</span>
+                <span className="text-xs font-semibold tracking-wider uppercase bg-tawf-sand/50 text-tawf-green px-3 py-1 rounded-full">Perpetual Endowment</span>
+                <span className="text-xs font-semibold tracking-wider uppercase bg-tawf-gold/20 text-tawf-green px-3 py-1 rounded-full">Testnet</span>
+              </div>
+              <a
+                href="https://waqf.tawf.foundation"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-tawf-green hover:text-tawf-gold font-medium transition-colors"
+              >
+                Visit Platform
+                <ArrowRight className="w-4 h-4" />
+              </a>
+            </motion.div>
+
+            {/* Tawf Finance Platform Card */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.3 }}
               className="p-8 bg-white border border-tawf-green/10 rounded-2xl"
             >
               <div className="w-16 h-16 bg-tawf-green rounded-full flex items-center justify-center mb-6">
