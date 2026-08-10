@@ -80,6 +80,13 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                     Zakat
                   </Link>
                   <Link
+                    to="/waqf"
+                    className="block px-4 py-2 text-sm text-tawf-ink/70 hover:text-tawf-green hover:bg-tawf-sand/50"
+                    onClick={() => setProgramsOpen(false)}
+                  >
+                    Waqf
+                  </Link>
+                  <Link
                     to="/qurban"
                     className="block px-4 py-2 text-sm text-tawf-ink/70 hover:text-tawf-green hover:bg-tawf-sand/50"
                     onClick={() => setProgramsOpen(false)}
@@ -131,6 +138,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 <p className="text-xs font-semibold tracking-widest uppercase text-tawf-gold mb-3">Programs</p>
                 <div className="space-y-3 pl-2">
                   <Link to="/zakat" className="block text-sm text-tawf-ink/70 hover:text-tawf-green">Zakat</Link>
+                  <Link to="/waqf" className="block text-sm text-tawf-ink/70 hover:text-tawf-green">Waqf</Link>
                   <Link to="/qurban" className="block text-sm text-tawf-ink/70 hover:text-tawf-green">Qurban</Link>
                   <Link to="/research" className="block text-sm text-tawf-ink/70 hover:text-tawf-green">Research</Link>
                 </div>
@@ -182,6 +190,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <h4 className="text-white font-medium tracking-widest uppercase text-xs mb-6">Programs & Resources</h4>
             <ul className="space-y-4 text-sm">
               <li><Link to="/zakat" className="hover:text-tawf-gold transition-colors">Zakat Program</Link></li>
+              <li><Link to="/waqf" className="hover:text-tawf-gold transition-colors">Cash Waqf</Link></li>
               <li><Link to="/qurban" className="hover:text-tawf-gold transition-colors">Qurban</Link></li>
               <li><Link to="/research" className="hover:text-tawf-gold transition-colors">Research</Link></li>
               <li><Link to="/glossary" className="hover:text-tawf-gold transition-colors">Glossary</Link></li>

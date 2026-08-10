@@ -29,7 +29,42 @@ export const glossaryTerms: Record<string, GlossaryTerm> = {
     pronunciation: "wah-kif",
     definition: "An Islamic endowment or charitable trust. Property or assets are dedicated permanently for religious, charitable, or public benefit, with the principal remaining intact while the returns support community programs.",
     context: "The Foundation acts as trustee for all waqf assets, including wakaf produktif (productive waqf).",
-    related: ["wakaf-produktif"]
+    related: ["wakaf-produktif", "waqf-muabbad", "waqf-muaqqat", "waqif", "nazir"]
+  },
+  "waqf-muabbad": {
+    term: "Waqf Mu'abbad",
+    pronunciation: "wah-kif moo-ab-bad",
+    definition: "Perpetual waqf - the classical form. The endowed capital is given permanently and is never returned to the giver. It is preserved in perpetuity, and only the benefit it produces is distributed.",
+    context: "In Staking Waqf Ritel this is enforced by the contract itself: a perpetual position has no withdrawal function, for the waqif, the nazir and the contract owner alike.",
+    shortDefinition: "Perpetual waqf. The capital is given permanently and never returned.",
+    shortContext: "Enforced in code: a perpetual position simply has no withdrawal function.",
+    related: ["waqf", "waqf-muaqqat", "waqif"]
+  },
+  "waqf-muaqqat": {
+    term: "Waqf Mu'aqqat",
+    pronunciation: "wah-kif moo-ah-kat",
+    definition: "Temporary waqf. Capital is dedicated to charitable purpose for a fixed term, after which the original amount returns to the giver. The benefit produced during the term goes to the beneficiaries.",
+    context: "Staking Waqf Ritel offers this alongside perpetual waqf, for givers who need the capital back later.",
+    shortDefinition: "Temporary waqf. Capital is dedicated for a fixed term, then returned.",
+    shortContext: "Offered alongside perpetual waqf for givers who need the capital back.",
+    related: ["waqf", "waqf-muabbad"]
+  },
+  "waqif": {
+    term: "Waqif",
+    pronunciation: "wah-kif",
+    definition: "The person who creates a waqf - the giver who dedicates their property or capital to charitable purpose.",
+    context: "In Staking Waqf Ritel the waqif deposits IDRX and chooses which akad applies to it.",
+    shortDefinition: "The person who creates a waqf by dedicating their capital.",
+    related: ["waqf", "nazir"]
+  },
+  "nazir": {
+    term: "Nazir",
+    pronunciation: "nah-zir",
+    definition: "The trustee or manager of a waqf. The nazir is responsible for administering the endowed assets and directing the benefit they produce to the intended recipients.",
+    context: "In Staking Waqf Ritel the nazir's wallet receives the stripped yield directly from the contract, with no intermediary able to intercept it.",
+    shortDefinition: "The trustee who administers a waqf and directs its benefit to recipients.",
+    shortContext: "Receives stripped yield directly from the contract, with no intermediary.",
+    related: ["waqf", "waqif"]
   },
   "wakaf-produktif": {
     term: "Wakaf Produktif",

@@ -4,6 +4,7 @@ import Layout from './components/Layout';
 import Landing from './components/pages/Landing';
 import Manifesto from './components/pages/Manifesto';
 import Zakat from './components/pages/Zakat';
+import Waqf from './components/pages/Waqf';
 import Qurban from './components/pages/Qurban';
 import Research from './components/pages/Research';
 import Glossary from './components/pages/Glossary';
@@ -57,6 +58,7 @@ function AppRoutes() {
       <Route path="/" element={<Landing />} />
       <Route path="/manifesto" element={<Manifesto />} />
       <Route path="/zakat" element={<Zakat />} />
+      <Route path="/waqf" element={<Waqf />} />
       <Route path="/qurban" element={<Qurban />} />
       <Route path="/research" element={<Research />} />
       <Route path="/glossary" element={<Glossary />} />

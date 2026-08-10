@@ -104,6 +104,25 @@ export const pageSEO: Record<string, SEOConfig> = {
     canonical: `${SITE_URL}/zakat`,
   },
 
+  // Cash Waqf
+  waqf: {
+    title: 'Cash Waqf - Perpetual Endowment On-Chain',
+    description:
+      'Retail cash waqf on-chain. Endow permanently and the capital is preserved while its staking yield reaches the nazir, or dedicate it for a fixed term. Which akad you signed is enforced by the contract.',
+    keywords: [
+      'cash waqf',
+      'waqf on-chain',
+      'perpetual endowment',
+      'waqf mu\'abbad',
+      'tokenized waqf',
+      'Islamic endowment blockchain',
+      'staking waqf ritel',
+      'productive waqf',
+      'wakaf uang',
+    ],
+    canonical: `${SITE_URL}/waqf`,
+  },
+
   // Qurban
   qurban: {
     title: 'Qurban Management - Transparent Sacrifice',

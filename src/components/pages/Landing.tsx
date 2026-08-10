@@ -99,6 +99,7 @@ export default function Landing() {
                 term: "waqf",
                 desc: "Infrastructure for transparent waqf management, including wakaf produktif that generates perpetual community benefit.",
                 detail: "Blockchain-verifiable stewardship",
+                href: "/waqf",
                 featured: false
               },
               {
@@ -135,6 +136,15 @@ export default function Landing() {
                 </div>
                 <p className="text-tawf-muted leading-relaxed mb-4">{item.desc}</p>
                 <p className="text-sm font-semibold tracking-wider uppercase text-tawf-gold">{item.detail}</p>
+                {'href' in item && (
+                  <Link
+                    to={(item as { href: string }).href}
+                    className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-tawf-green hover:text-tawf-gold transition-colors"
+                  >
+                    Explore the program
+                    <ArrowRight className="w-4 h-4" />
+                  </Link>
+                )}
               </motion.div>
             ))}
           </div>
