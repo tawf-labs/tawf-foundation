@@ -102,6 +102,23 @@ export const glossaryTerms: Record<string, GlossaryTerm> = {
     definition: "The eight categories of eligible zakat recipients defined in Islamic law: the poor, the needy, zakat administrators, those whose hearts are to be reconciled, those in bondage, those burdened with debt, those in God's cause, and travelers.",
     context: "Zakat collected by the Foundation is distributed to these eight categories."
   },
+  "mustahik": {
+    term: "Mustahik",
+    pronunciation: "moos-tah-hik",
+    definition: "A person eligible to receive zakat, because their wealth falls below the nisab threshold and they belong to one of the eight asnaf categories.",
+    context: "Tawf DID lets someone prove they qualify as mustahik without disclosing their income, assets or debts to anyone.",
+    shortDefinition: "Someone eligible to receive zakat.",
+    shortContext: "Provable with a zero-knowledge proof, without revealing the figures behind it.",
+    related: ["zakat", "asnaf", "nisab", "muzakki"]
+  },
+  "muzakki": {
+    term: "Muzakki",
+    pronunciation: "moo-zak-kee",
+    definition: "A person obliged to pay zakat, because their wealth has exceeded the nisab threshold and been held for a full lunar year.",
+    context: "The counterpart to the mustahik: the muzakki gives, the mustahik receives, and the amil administers the transfer between them.",
+    shortDefinition: "Someone obliged to pay zakat.",
+    related: ["zakat", "nisab", "mustahik", "amil"]
+  },
   "nisab": {
     term: "Nisab",
     pronunciation: "nee-sab",
