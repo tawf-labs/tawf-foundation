@@ -180,7 +180,7 @@ export default function Landing() {
               <div className="w-16 h-16 bg-tawf-green rounded-full flex items-center justify-center mb-6">
                 <Coins className="w-8 h-8 text-tawf-gold" />
               </div>
-              <h3 className="text-2xl font-serif text-tawf-green mb-2">zkt.app</h3>
+              <h3 className="text-2xl font-serif text-tawf-green mb-2">zkt</h3>
               <p className="text-sm font-semibold tracking-wider uppercase text-tawf-gold mb-4">Transparent & Traceable Donations</p>
               <p className="text-tawf-muted text-base leading-relaxed mb-6">
                 Blockchain-based donation platform where every donation is recorded and can be tracked in real-time with NFT receipts.
@@ -190,7 +190,7 @@ export default function Landing() {
                 <span className="text-xs font-semibold tracking-wider uppercase bg-tawf-sand/50 text-tawf-green px-3 py-1 rounded-full">100% On-Chain</span>
               </div>
               <a
-                href="https://ziswaf.tawf.foundation"
+                href="https://zkt.tawf.foundation"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-tawf-green hover:text-tawf-gold font-medium transition-colors"
@@ -211,7 +211,7 @@ export default function Landing() {
               <div className="w-16 h-16 bg-tawf-green rounded-full flex items-center justify-center mb-6">
                 <Calendar className="w-8 h-8 text-tawf-gold" />
               </div>
-              <h3 className="text-2xl font-serif text-tawf-green mb-2">qrbn.app</h3>
+              <h3 className="text-2xl font-serif text-tawf-green mb-2">qrbn</h3>
               <p className="text-sm font-semibold tracking-wider uppercase text-tawf-gold mb-4">Transparent Qurban</p>
               <p className="text-tawf-muted text-base leading-relaxed mb-6">
                 Support sustainable Qurban farms with on-chain tracking, NFT certificates, and DAO governance over how funds are allocated.

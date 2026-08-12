@@ -79,7 +79,7 @@ tawf-foundation/
 ### After (Tawf 10-Star Experience)
 
 **Step 1: Calculate**
-- Opens zkt.app
+- Opens zkt
 - "How much is your zakat?" → Connects GoPay/Bank API
 - AI calculates: "Your zakat mal is Rp 750,000 this month"
 - Breakdown: gold savings, cash, investments, all sharia-compliant
@@ -145,8 +145,8 @@ We believe blockchain is the implementation detail, not the headline. Trust come
 
 | Platform | Purpose | Link |
 |----------|---------|------|
-| **zkt.app** | Transparent zakat with real-time tracking & NFT receipts | [zakat.tawf.foundation](https://zakat.tawf.foundation) |
-| **qrbn.app** | Transparent Qurban & Waqf with NFT certificates | [qurban.tawf.foundation](https://qurban.tawf.foundation) |
+| **zkt** | Transparent zakat with real-time tracking & NFT receipts | [zkt.tawf.foundation](https://zkt.tawf.foundation) |
+| **qrbn** | Transparent Qurban & Waqf with NFT certificates | [qurban.tawf.foundation](https://qurban.tawf.foundation) |
 
 ---
 
