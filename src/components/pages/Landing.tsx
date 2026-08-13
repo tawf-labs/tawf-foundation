@@ -243,7 +243,7 @@ export default function Landing() {
               <div className="w-16 h-16 bg-tawf-green rounded-full flex items-center justify-center mb-6">
                 <Landmark className="w-8 h-8 text-tawf-gold" />
               </div>
-              <h3 className="text-2xl font-serif text-tawf-green mb-2 break-words">waqf.tawf.foundation</h3>
+              <h3 className="text-2xl font-serif text-tawf-green mb-2 break-words">wqf</h3>
               <p className="text-sm font-semibold tracking-wider uppercase text-tawf-gold mb-4">Perpetual Cash Waqf</p>
               <p className="text-tawf-muted text-base leading-relaxed mb-6">
                 Endow permanently and the capital is preserved on-chain while its staking yield reaches the Nazir, or dedicate it for a fixed term and take it back in full.
