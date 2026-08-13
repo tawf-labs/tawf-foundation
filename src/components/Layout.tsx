@@ -56,6 +56,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <div className="hidden lg:flex items-center gap-8">
             {!subdomain && (
               <>
+                <Link to="/about" className="text-sm font-medium tracking-widest uppercase text-tawf-ink/70 hover:text-tawf-green transition-colors">About</Link>
                 <Link to="/#mission" className="text-sm font-medium tracking-widest uppercase text-tawf-ink/70 hover:text-tawf-green transition-colors">Mission</Link>
                 <Link to="/#governance" className="text-sm font-medium tracking-widest uppercase text-tawf-ink/70 hover:text-tawf-green transition-colors">Governance</Link>
               </>
@@ -130,6 +131,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <div className="px-6 py-4 space-y-4">
               {!subdomain && (
                 <>
+                  <Link to="/about" className="block text-sm font-medium tracking-widest uppercase text-tawf-ink/70 hover:text-tawf-green">About</Link>
                   <Link to="/#mission" className="block text-sm font-medium tracking-widest uppercase text-tawf-ink/70 hover:text-tawf-green">Mission</Link>
                   <Link to="/#governance" className="block text-sm font-medium tracking-widest uppercase text-tawf-ink/70 hover:text-tawf-green">Governance</Link>
                 </>
@@ -175,14 +177,15 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <ul className="space-y-4 text-sm">
               {!subdomain && (
                 <>
+                  <li><Link to="/about" className="hover:text-tawf-gold transition-colors">About Us</Link></li>
                   <li><Link to="/#mission" className="hover:text-tawf-gold transition-colors">Our Mission</Link></li>
                   <li><Link to="/#governance" className="hover:text-tawf-gold transition-colors">How Governance Works</Link></li>
-                  <li><Link to="/#organization" className="hover:text-tawf-gold transition-colors">Organizational Structure</Link></li>
+                  <li><Link to="/about" className="hover:text-tawf-gold transition-colors">Organizational Structure</Link></li>
                   <li><Link to="/#ecosystem" className="hover:text-tawf-gold transition-colors">Tawf ID (TID)</Link></li>
                 </>
               )}
               {subdomain && (
-                <li><a href="https://tawf.foundation/#mission" className="hover:text-tawf-gold transition-colors">Our Mission</a></li>
+                <li><a href="https://tawf.foundation/about" className="hover:text-tawf-gold transition-colors">About Us</a></li>
               )}
             </ul>
           </div>

@@ -72,6 +72,22 @@ export const pageSEO: Record<string, SEOConfig> = {
     canonical: `${SITE_URL}/`,
   },
 
+  // About
+  about: {
+    title: 'About Us - Tawf Islamic Foundation',
+    description: 'Learn about the Tawf Islamic Foundation: our mission, our governance structure, our trust strategy, and our roadmap for building transparent, Sharia-compliant infrastructure for Islamic philanthropy.',
+    keywords: [
+      'about Tawf Islamic Foundation',
+      'Islamic foundation mission',
+      'Tawf governance',
+      'Baitul Maal foundation',
+      'Islamic philanthropy foundation',
+      'Sharia advisory board',
+      'Tawf DAO',
+    ],
+    canonical: `${SITE_URL}/about`,
+  },
+
   // Manifesto
   manifesto: {
     title: 'Tawf Manifesto - Islamic Philanthropy Reimagined',

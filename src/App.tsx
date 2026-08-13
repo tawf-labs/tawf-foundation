@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { BrowserRouter, Routes, Route, useLocation, useNavigate } from 'react-router-dom';
 import Layout from './components/Layout';
 import Landing from './components/pages/Landing';
+import About from './components/pages/About';
 import Manifesto from './components/pages/Manifesto';
 import Zakat from './components/pages/Zakat';
 import Waqf from './components/pages/Waqf';
@@ -56,6 +57,7 @@ function AppRoutes() {
   return (
     <Routes>
       <Route path="/" element={<Landing />} />
+      <Route path="/about" element={<About />} />
       <Route path="/manifesto" element={<Manifesto />} />
       <Route path="/zakat" element={<Zakat />} />
       <Route path="/waqf" element={<Waqf />} />
