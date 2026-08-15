@@ -200,6 +200,23 @@ export const pageSEO: Record<string, SEOConfig> = {
     ],
     canonical: `${SITE_URL}/contact`,
   },
+
+  // Roadmap
+  roadmap: {
+    title: 'Roadmap — Real Progress of the Tawf Ecosystem',
+    description: 'An honest, living roadmap of the Tawf ecosystem: what is actually shipped across research, protocol, identity, and application, what is in progress, and what remains before mainnet.',
+    keywords: [
+      'Tawf roadmap',
+      'Islamic blockchain roadmap',
+      'Tawf progress',
+      'Tawf ecosystem',
+      'Tawf ID roadmap',
+      'waqf roadmap',
+      'zakat roadmap',
+      'Islamic DeFi roadmap',
+    ],
+    canonical: `${SITE_URL}/roadmap`,
+  },
 };
 
 // Helper function to get SEO config for a route
