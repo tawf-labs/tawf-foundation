@@ -203,7 +203,7 @@ export const pageSEO: Record<string, SEOConfig> = {
 
   // Roadmap
   roadmap: {
-    title: 'Roadmap — Real Progress of the Tawf Ecosystem',
+    title: 'Roadmap: Real Progress of the Tawf Ecosystem',
     description: 'An honest, living roadmap of the Tawf ecosystem: what is actually shipped across research, protocol, identity, and application, what is in progress, and what remains before mainnet.',
     keywords: [
       'Tawf roadmap',

@@ -75,8 +75,8 @@ const STATUS = {
 } as const;
 
 const PHASES = [
-  { key: 'p0', name: 'Foundation', range: '2024–2025' },
-  { key: 'p1', name: 'Testnet', range: '2025–2026' },
+  { key: 'p0', name: 'Foundation', range: '2024-2025' },
+  { key: 'p1', name: 'Testnet', range: '2025-2026' },
   { key: 'p2', name: 'Devnet', range: '2026' },
   { key: 'p3', name: 'Mainnet', range: '2026+' },
 ];
@@ -90,7 +90,7 @@ const NORTH_STARS: NorthStar[] = [
     icon: <Target className="w-6 h-6" />,
     title: 'Transparent Zakat',
     description:
-      'Private, auditable donations — every rupiah traceable from donor to recipient without exposing the giver.',
+      'Private, auditable donations. Every rupiah traceable from donor to recipient without exposing the giver.',
   },
   {
     icon: <Landmark className="w-6 h-6" />,
@@ -102,13 +102,13 @@ const NORTH_STARS: NorthStar[] = [
     icon: <Fingerprint className="w-6 h-6" />,
     title: 'Soulbound Identity',
     description:
-      'A privacy-preserving Tawf ID (TID) — one person, one credential, zero-knowledge proofs for sensitive claims.',
+      'A privacy-preserving Tawf ID (TID). One person, one credential, with zero-knowledge proofs for sensitive claims.',
   },
   {
     icon: <Vote className="w-6 h-6" />,
     title: 'Community Governance',
     description:
-      'On-chain, tier-weighted DAO where 1 TID = 1 vote — the roadmap itself is decided by its holders.',
+      'On-chain, tier-weighted DAO where 1 TID = 1 vote. The roadmap itself is decided by its holders.',
   },
 ];
 
@@ -122,7 +122,7 @@ const LAYERS: Layer[] = [
     color: { dot: 'bg-emerald-600', chip: 'bg-emerald-600/10 text-emerald-700', text: 'text-emerald-700' },
     phases: [
       {
-        label: 'ZK Zakat paper — accepted @ ICIMTECH 2026',
+        label: 'ZK Zakat paper, accepted @ ICIMTECH 2026',
         status: 'done',
         headliner: true,
       },
@@ -142,12 +142,12 @@ const LAYERS: Layer[] = [
     phases: [
       null,
       {
-        label: 'Waqf SWRVault — live on Sepolia',
+        label: 'Waqf and DAO on Sepolia, Verify on Base Sepolia',
         status: 'done',
         headliner: true,
       },
-      { label: 'Governance programs → devnet deploy', status: 'planned' },
-      { label: 'Independent security audits', status: 'planned' },
+      { label: 'Cross-chain app expansion', status: 'progress' },
+      { label: 'Ethereum L2 mainnet (Polygon or Arbitrum)', status: 'planned' },
     ],
   },
   {
@@ -189,7 +189,7 @@ const PILLARS: Pillar[] = [
     summary:
       'Peer-reviewed research grounding every product decision. Our zero-knowledge zakat paper is accepted at ICIMTECH 2026.',
     evidence: [
-      '“Zero-Knowledge Zakat: A Design Science Approach to Auditable Private Donations on Blockchain” — M. Z. Fatonie & A. A. S. Gunawan, accepted @ ICIMTECH 2026',
+      '“Zero-Knowledge Zakat: A Design Science Approach to Auditable Private Donations on Blockchain” by M. Z. Fatonie and A. A. S. Gunawan, accepted @ ICIMTECH 2026',
       '“Tokenized Waqf: Preserving Perpetuity in a Digital Age” (2025, published)',
       '“Calculating Zakat on Cryptocurrency Holdings” (in review)',
     ],
@@ -203,10 +203,10 @@ const PILLARS: Pillar[] = [
     summary:
       'The most complete dApp in the ecosystem: a real vault enforcing perpetual and fixed-tenor akad in code, deployed to Sepolia testnet.',
     evidence: [
-      'SWRVault.sol (792 lines) — perpetual + fixed-tenor deposits, yield adapters, solvency & buffer tracking',
+      'SWRVault.sol (792 lines), perpetual + fixed-tenor deposits, yield adapters, solvency & buffer tracking',
       'Soulbound Akad Certificate NFT with on-chain SVG',
       '1,681 lines of tests incl. fuzz + invariant',
-      'Deployed @ 0x2341a8b30c93b2624453dE9eD732cd875528eb4a — live at waqf.tawf.foundation',
+      'Deployed @ 0x2341a8b30c93b2624453dE9eD732cd875528eb4a, live at waqf.tawf.foundation',
     ],
     link: '/waqf',
   },
@@ -216,9 +216,9 @@ const PILLARS: Pillar[] = [
     status: 'done',
     statusLabel: 'Live on Base Sepolia',
     summary:
-      'Append-only Merkle-root notary proving a claim existed and was signed — without exposing the underlying data.',
+      'Append-only Merkle-root notary proving a claim existed and was signed, without exposing the underlying data.',
     evidence: [
-      'TawfVerifyRegistry.sol — org registration, scoped signers, gap-detecting sequential anchoring',
+      'TawfVerifyRegistry.sol, org registration, scoped signers, gap-detecting sequential anchoring',
       '4 packages: verify-core (Merkle/hash/PII-lint), verify-server, verify-react, verify-cli',
       'Foundry test suite (258 lines), cross-language parity with TypeScript core',
     ],
@@ -229,32 +229,32 @@ const PILLARS: Pillar[] = [
     status: 'done',
     statusLabel: 'Functional app',
     summary:
-      'Soulbound zero-knowledge identity — a working web app backed by dual-chain contracts (Ethereum + Solana).',
+      'Soulbound zero-knowledge identity, a working web app backed by dual-chain contracts (Ethereum + Solana).',
     evidence: [
       '8-page web app (create, verify, proofs, DID resolution, settings)',
-      'Solidity ERC-5192 TIDAttestation + TIDAnchor; Solana tid_attestation program (5 instructions)',
+      'Solidity ERC-5192 TIDAttestation + TIDAnchor and Solana tid_attestation program (5 instructions)',
       'did:tawf method spec + DID resolver (726 lines)',
     ],
   },
   {
     icon: <Vote className="w-6 h-6" />,
-    name: 'Governance (Solana)',
-    status: 'progress',
-    statusLabel: 'Localnet only',
+    name: 'Tawf DAO',
+    status: 'done',
+    statusLabel: 'Live on Sepolia',
     summary:
-      '12 Anchor programs for a Sharia-compliant DAO. Protocol logic is real and tested, but it is localnet-only and the frontend is not yet wired to the chain.',
+      'The Sharia-compliant DAO is live on Sepolia, wired to ZKTCore with zero-knowledge voting and tier-weighted governance.',
     evidence: [
-      '10 programs with real logic (proposal, voting, milestone, pool, zakat-escrow, wakaf-treasury, sharia-review, …)',
-      '27 integration tests passing on localnet',
-      'Frontend: React 19 wallet-connect scaffold with mock proposals (no CPI yet)',
+      '11 contracts deployed on Sepolia, ProposalManager, VotingManager, MilestoneManager, TawfPassport, VotingNFT, PoolManager, ZakatEscrowManager, and more',
+      'Soulbound tiered voting, KYC-gated proposals, and sequential fund release',
+      'A Solana app-layer expansion (12 Anchor programs) is in progress on the feat/solana-migration branch',
     ],
   },
 ];
 
 const GAPS = [
-  'No mainnet deployment anywhere — the entire ecosystem runs on testnet or localnet.',
+  'No mainnet deployment anywhere. The entire ecosystem runs on testnet or localnet.',
   'Security audits are a hard prerequisite before any mainnet deployment.',
-  'Governance frontend is not yet wired to the Anchor programs (no cross-program CPI).',
+  'The Solana migration frontend is not yet wired to the Anchor programs (no cross-program CPI).',
   'tawf-contracts (sukuk / staking / swap) is a Foundry bootstrap with empty stubs.',
   'Participation-tracker program is a 16-line scaffold pending real logic.',
 ];
@@ -285,7 +285,7 @@ export default function Roadmap() {
       <PageHero
         badge="Roadmap"
         title="The Tawf Strawmap"
-        subtitle="A strawman roadmap of our real progress — not our ambitions."
+        subtitle="A strawman roadmap of our real progress, not our ambitions."
         description="What is actually shipped, what is being built, and what remains. Maintained as a living document, updated alongside the code in the tawf-labs repositories."
         background="ink"
       />
@@ -295,7 +295,7 @@ export default function Roadmap() {
         <SectionHeader
           badge="North Stars"
           title="Where everything points"
-          description="Four end-goals every repo in the ecosystem is working toward. They are the destination — the roadmap below is the honest path."
+          description="Four end-goals every repo in the ecosystem is working toward. They are the destination, and the roadmap below is the honest path."
         />
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {NORTH_STARS.map((star, i) => (
@@ -322,7 +322,7 @@ export default function Roadmap() {
         <SectionHeader
           badge="Timeline"
           title="The map"
-          description="Layers run top-to-bottom; phases run left-to-right. Green is done, gold is in progress, dashed grey is planned."
+          description="Layers run top-to-bottom. Phases run left-to-right. Green is done, gold is in progress, dashed grey is planned."
         />
 
         {/* Legend */}
@@ -390,7 +390,7 @@ export default function Roadmap() {
         <SectionHeader
           badge="The Evidence"
           title="What 'done' actually means"
-          description="Every green mark below is backed by code in the tawf-labs GitHub organization — linked where it lives."
+          description="Every green mark below is backed by code in the tawf-labs GitHub organization, linked where it lives."
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -445,7 +445,7 @@ export default function Roadmap() {
           <h2 className="text-4xl md:text-5xl font-light text-white mb-6">What we have not done yet</h2>
           <p className="text-white/70 text-lg leading-relaxed mb-10">
             A roadmap that only shows wins is a marketing page. These are the gaps that stand between today&apos;s
-            testnets and a trustworthy mainnet — stated plainly so the community can hold us to them.
+            testnets and a trustworthy mainnet, stated plainly so the community can hold us to them.
           </p>
           <ul className="space-y-4">
             {GAPS.map((gap, i) => (
@@ -458,7 +458,7 @@ export default function Roadmap() {
 
           <div className="mt-12 flex items-center gap-2 text-xs text-white/40 font-medium tracking-wider uppercase">
             <GitBranch className="w-4 h-4" />
-            Living document — last updated {new Date().toLocaleDateString('en-US', { month: 'long', year: 'numeric' })}
+            Living document, last updated {new Date().toLocaleDateString('en-US', { month: 'long', year: 'numeric' })}
           </div>
         </div>
       </Section>
