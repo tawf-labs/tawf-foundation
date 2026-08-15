@@ -214,12 +214,12 @@ export default function Landing() {
               <h3 className="text-2xl font-serif text-tawf-green mb-2">qrbn</h3>
               <p className="text-sm font-semibold tracking-wider uppercase text-tawf-gold mb-4">Transparent Qurban</p>
               <p className="text-tawf-muted text-base leading-relaxed mb-6">
-                Support sustainable Qurban farms with on-chain tracking, NFT certificates, and DAO governance over how funds are allocated.
+                Support sustainable Qurban farms with on-chain tracking and NFT certificates over how funds are allocated.
               </p>
               <div className="flex flex-wrap gap-3 mb-6">
                 <span className="text-xs font-semibold tracking-wider uppercase bg-tawf-sand/50 text-tawf-green px-3 py-1 rounded-full">Shariah Compliant</span>
                 <span className="text-xs font-semibold tracking-wider uppercase bg-tawf-sand/50 text-tawf-green px-3 py-1 rounded-full">NFT Certificates</span>
-                <span className="text-xs font-semibold tracking-wider uppercase bg-tawf-sand/50 text-tawf-green px-3 py-1 rounded-full">DAO Governance</span>
+                <span className="text-xs font-semibold tracking-wider uppercase bg-tawf-sand/50 text-tawf-green px-3 py-1 rounded-full">On-Chain Tracking</span>
               </div>
               <a
                 href="https://qurban.tawf.foundation"
