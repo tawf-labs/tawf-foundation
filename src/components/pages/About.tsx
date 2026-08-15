@@ -3,7 +3,7 @@ import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
 import {
   Shield, Building2, Network, ScrollText, Handshake, Code2,
-  CheckCircle2, Clock, Compass, ArrowRight, Mail
+  ArrowRight, Mail
 } from 'lucide-react';
 import PageHero from '../ui/PageHero';
 import Section from '../ui/Section';
@@ -51,27 +51,6 @@ const governanceBodies = [
     tag: "Community Governance",
     tooltip: "dao",
     description: "The community's voice, gated by Tawf ID (TID), where 1 TID equals 1 vote. No token-weighting.",
-  },
-];
-
-const roadmapPhases = [
-  {
-    status: "Live",
-    statusIcon: <CheckCircle2 className="w-5 h-5" />,
-    title: "Zakat & Qurban Infrastructure",
-    description: "Zakat transparency (zkt.tawf.foundation) and the Qurban & Waqf platform with NFT certificates (qrbn.tawf.foundation) are shipped and operating. Tawf ID already functions as the credential behind DAO governance.",
-  },
-  {
-    status: "In Progress",
-    statusIcon: <Clock className="w-5 h-5" />,
-    title: "Community Governance & Beyond Zakat",
-    description: "The TAWF DAO's community governance is rolling out, with roadmap direction itself decided by TID holders. In parallel, we're expanding the infrastructure layer beyond zakat into staking, yield, and ethical financial products.",
-  },
-  {
-    status: "Building Toward",
-    statusIcon: <Compass className="w-5 h-5" />,
-    title: "Tokenized Waqf & BMT Network",
-    description: "Permanent, on-chain endowments through tokenized productive waqf, and deeper partnerships across Indonesia's 4,500+ BMT network, who already practice zakat and manage waqf for their communities.",
   },
 ];
 
@@ -181,28 +160,18 @@ export default function About() {
         <SectionHeader
           badge="Where We're Headed"
           title="Roadmap"
-          description="Our phases run in parallel, guided by community governance rather than a fixed calendar."
+          description="See our real progress, tracked against the code in the tawf-labs repositories."
           className="[&_h2]:text-white [&_p]:text-white/70"
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {roadmapPhases.map((phase, index) => (
-            <motion.div
-              key={phase.title}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.15 }}
-              className={`p-8 bg-white/5 border border-white/10 ${RADIUS_CARD}`}
-            >
-              <div className="inline-flex items-center gap-2 text-tawf-gold text-xs font-semibold tracking-widest uppercase mb-6 px-3 py-1.5 rounded-full bg-tawf-gold/10">
-                {phase.statusIcon}
-                {phase.status}
-              </div>
-              <h3 className="text-xl font-serif text-white mb-3">{phase.title}</h3>
-              <p className="text-white/70 leading-relaxed text-sm">{phase.description}</p>
-            </motion.div>
-          ))}
+        <div className="text-center">
+          <Link
+            to="/roadmap"
+            className="inline-flex items-center justify-center gap-2 bg-tawf-gold text-tawf-green px-8 py-4 rounded-full text-sm font-medium tracking-widest uppercase hover:bg-white transition-colors"
+          >
+            View the Roadmap
+            <ArrowRight className="w-4 h-4" />
+          </Link>
         </div>
       </Section>
 
