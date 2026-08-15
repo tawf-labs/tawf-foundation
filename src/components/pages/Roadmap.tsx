@@ -147,7 +147,7 @@ const LAYERS: Layer[] = [
         headliner: true,
       },
       { label: 'Cross-chain app expansion', status: 'progress' },
-      { label: 'Ethereum L2 mainnet (Polygon or Arbitrum)', status: 'planned' },
+      { label: 'Arbitrum mainnet', status: 'planned' },
     ],
   },
   {
