@@ -9,6 +9,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   const { subdomain } = useSubdomain();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [programsOpen, setProgramsOpen] = useState(false);
+  const [moreOpen, setMoreOpen] = useState(false);
 
   useEffect(() => {
     if (hash) {
@@ -55,13 +56,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-8">
             {!subdomain && (
-              <>
-                <Link to="/about" className="text-sm font-medium tracking-widest uppercase text-tawf-ink/70 hover:text-tawf-green transition-colors">About</Link>
-                <Link to="/#mission" className="text-sm font-medium tracking-widest uppercase text-tawf-ink/70 hover:text-tawf-green transition-colors">Mission</Link>
-                <Link to="/#governance" className="text-sm font-medium tracking-widest uppercase text-tawf-ink/70 hover:text-tawf-green transition-colors">Governance</Link>
-                <Link to="/roadmap" className="text-sm font-medium tracking-widest uppercase text-tawf-ink/70 hover:text-tawf-green transition-colors">Roadmap</Link>
-                <Link to="/institutions" className="text-sm font-medium tracking-widest uppercase text-tawf-ink/70 hover:text-tawf-green transition-colors">Institutions</Link>
-              </>
+              <Link to="/about" className="text-sm font-medium tracking-widest uppercase text-tawf-ink/70 hover:text-tawf-green transition-colors">About</Link>
             )}
 
             {/* Programs Dropdown */}
@@ -107,8 +102,30 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               )}
             </div>
 
-            <Link to="/glossary" className="text-sm font-medium tracking-widest uppercase text-tawf-ink/70 hover:text-tawf-green transition-colors">Glossary</Link>
-            <Link to="/contact" className="text-sm font-medium tracking-widest uppercase text-tawf-ink/70 hover:text-tawf-green transition-colors">Contact</Link>
+            {/* More Dropdown */}
+            <div className="relative">
+              <button
+                className="text-sm font-medium tracking-widest uppercase text-tawf-ink/70 hover:text-tawf-green transition-colors flex items-center gap-1"
+                onClick={() => setMoreOpen(!moreOpen)}
+              >
+                More
+                <ChevronDown className="w-4 h-4" />
+              </button>
+              {moreOpen && (
+                <div className="absolute top-full right-0 mt-2 w-48 bg-white rounded-xl shadow-xl border border-tawf-green/10 py-2">
+                  {!subdomain && (
+                    <>
+                      <Link to="/#mission" className="block px-4 py-2 text-sm text-tawf-ink/70 hover:text-tawf-green hover:bg-tawf-sand/50" onClick={() => setMoreOpen(false)}>Mission</Link>
+                      <Link to="/#governance" className="block px-4 py-2 text-sm text-tawf-ink/70 hover:text-tawf-green hover:bg-tawf-sand/50" onClick={() => setMoreOpen(false)}>Governance</Link>
+                    </>
+                  )}
+                  <Link to="/roadmap" className="block px-4 py-2 text-sm text-tawf-ink/70 hover:text-tawf-green hover:bg-tawf-sand/50" onClick={() => setMoreOpen(false)}>Roadmap</Link>
+                  <Link to="/institutions" className="block px-4 py-2 text-sm text-tawf-ink/70 hover:text-tawf-green hover:bg-tawf-sand/50" onClick={() => setMoreOpen(false)}>Institutions</Link>
+                  <Link to="/glossary" className="block px-4 py-2 text-sm text-tawf-ink/70 hover:text-tawf-green hover:bg-tawf-sand/50" onClick={() => setMoreOpen(false)}>Glossary</Link>
+                  <Link to="/contact" className="block px-4 py-2 text-sm text-tawf-ink/70 hover:text-tawf-green hover:bg-tawf-sand/50" onClick={() => setMoreOpen(false)}>Contact</Link>
+                </div>
+              )}
+            </div>
           </div>
 
           <div className="hidden md:flex items-center gap-4">
