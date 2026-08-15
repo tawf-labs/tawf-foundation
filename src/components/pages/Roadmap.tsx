@@ -142,12 +142,12 @@ const LAYERS: Layer[] = [
     phases: [
       null,
       {
-        label: 'Waqf and DAO on Sepolia, Verify on Base Sepolia',
+        label: 'Waqf, DAO, and Verify on Sepolia',
         status: 'done',
         headliner: true,
       },
-      { label: 'Cross-chain app expansion', status: 'progress' },
-      { label: 'Arbitrum mainnet', status: 'planned' },
+      { label: 'Multichain app expansion', status: 'progress' },
+      { label: 'Security audit, then Arbitrum mainnet', status: 'planned' },
     ],
   },
   {
@@ -158,11 +158,11 @@ const LAYERS: Layer[] = [
     phases: [
       null,
       {
-        label: 'Tawf ID app + ETH & Solana contracts',
+        label: 'Tawf ID app + multichain contracts',
         status: 'done',
         headliner: true,
       },
-      { label: 'Cross-chain bridge hardening', status: 'planned' },
+      { label: 'Multichain bridge hardening', status: 'planned' },
       null,
     ],
   },
@@ -214,7 +214,7 @@ const PILLARS: Pillar[] = [
     icon: <ScrollText className="w-6 h-6" />,
     name: 'Verify / Notarization',
     status: 'done',
-    statusLabel: 'Live on Base Sepolia',
+    statusLabel: 'Live on Sepolia',
     summary:
       'Append-only Merkle-root notary proving a claim existed and was signed, without exposing the underlying data.',
     evidence: [
@@ -229,10 +229,10 @@ const PILLARS: Pillar[] = [
     status: 'done',
     statusLabel: 'Functional app',
     summary:
-      'Soulbound zero-knowledge identity, a working web app backed by dual-chain contracts (Ethereum + Solana).',
+      'Soulbound zero-knowledge identity, a working web app backed by multichain contracts built on Ethereum standards.',
     evidence: [
       '8-page web app (create, verify, proofs, DID resolution, settings)',
-      'Solidity ERC-5192 TIDAttestation + TIDAnchor and Solana tid_attestation program (5 instructions)',
+      'Solidity ERC-5192 TIDAttestation + TIDAnchor and a multichain attestation program',
       'did:tawf method spec + DID resolver (726 lines)',
     ],
   },
@@ -246,7 +246,7 @@ const PILLARS: Pillar[] = [
     evidence: [
       '11 contracts deployed on Sepolia, ProposalManager, VotingManager, MilestoneManager, TawfPassport, VotingNFT, PoolManager, ZakatEscrowManager, and more',
       'Soulbound tiered voting, KYC-gated proposals, and sequential fund release',
-      'A Solana app-layer expansion (12 Anchor programs) is in progress on the feat/solana-migration branch',
+      'A multichain app-layer expansion is in progress on a dedicated feature branch',
     ],
   },
 ];
@@ -254,7 +254,7 @@ const PILLARS: Pillar[] = [
 const GAPS = [
   'No mainnet deployment anywhere. The entire ecosystem runs on testnet or localnet.',
   'Security audits are a hard prerequisite before any mainnet deployment.',
-  'The Solana migration frontend is not yet wired to the Anchor programs (no cross-program CPI).',
+  'The multichain expansion frontend is not yet wired to the on-chain programs.',
   'tawf-contracts (sukuk / staking / swap) is a Foundry bootstrap with empty stubs.',
   'Participation-tracker program is a 16-line scaffold pending real logic.',
 ];
