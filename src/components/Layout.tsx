@@ -60,6 +60,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 <Link to="/#mission" className="text-sm font-medium tracking-widest uppercase text-tawf-ink/70 hover:text-tawf-green transition-colors">Mission</Link>
                 <Link to="/#governance" className="text-sm font-medium tracking-widest uppercase text-tawf-ink/70 hover:text-tawf-green transition-colors">Governance</Link>
                 <Link to="/roadmap" className="text-sm font-medium tracking-widest uppercase text-tawf-ink/70 hover:text-tawf-green transition-colors">Roadmap</Link>
+                <Link to="/institutions" className="text-sm font-medium tracking-widest uppercase text-tawf-ink/70 hover:text-tawf-green transition-colors">Institutions</Link>
               </>
             )}
 
@@ -136,6 +137,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                   <Link to="/#mission" className="block text-sm font-medium tracking-widest uppercase text-tawf-ink/70 hover:text-tawf-green">Mission</Link>
                   <Link to="/#governance" className="block text-sm font-medium tracking-widest uppercase text-tawf-ink/70 hover:text-tawf-green">Governance</Link>
                   <Link to="/roadmap" className="block text-sm font-medium tracking-widest uppercase text-tawf-ink/70 hover:text-tawf-green">Roadmap</Link>
+                  <Link to="/institutions" className="block text-sm font-medium tracking-widest uppercase text-tawf-ink/70 hover:text-tawf-green">Institutions</Link>
                 </>
               )}
               <div className="pt-4 border-t border-tawf-green/10">
@@ -183,6 +185,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                   <li><Link to="/#mission" className="hover:text-tawf-gold transition-colors">Our Mission</Link></li>
                   <li><Link to="/#governance" className="hover:text-tawf-gold transition-colors">How Governance Works</Link></li>
                   <li><Link to="/roadmap" className="hover:text-tawf-gold transition-colors">Roadmap</Link></li>
+                  <li><Link to="/institutions" className="hover:text-tawf-gold transition-colors">For Institutions</Link></li>
                   <li><Link to="/about" className="hover:text-tawf-gold transition-colors">Organizational Structure</Link></li>
                   <li><Link to="/#ecosystem" className="hover:text-tawf-gold transition-colors">Tawf ID (TID)</Link></li>
                 </>

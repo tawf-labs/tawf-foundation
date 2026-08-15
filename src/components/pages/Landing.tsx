@@ -3,7 +3,8 @@ import { motion } from 'motion/react';
 import {
   Shield, HeartHandshake, Landmark, ArrowRight,
   ChevronRight, Fingerprint, Coins, Building2,
-  Network, HandHeart, Sparkles, TrendingUp, FileText, Users, ArrowDown, CheckCircle, Handshake, Calendar
+  Network, HandHeart, Sparkles, TrendingUp, FileText, Users, ArrowDown, CheckCircle, Handshake, Calendar,
+  Split, ShieldCheck, Code2
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import InfoTooltip from '../ui/InfoTooltip';
@@ -296,6 +297,114 @@ export default function Landing() {
               </a>
             </motion.div>
           </div>
+
+          {/* Infrastructure Sub-heading */}
+          <div className="text-center mt-20 mb-12">
+            <div className="flex items-center justify-center gap-3 mb-6">
+              <div className="h-px w-12 bg-tawf-gold"></div>
+              <span className="text-sm font-semibold tracking-[0.2em] uppercase text-tawf-gold">Infrastructure</span>
+              <div className="h-px w-12 bg-tawf-gold"></div>
+            </div>
+            <h3 className="text-3xl md:text-4xl font-light text-tawf-green mb-4">Building Blocks</h3>
+            <p className="text-tawf-muted text-lg max-w-3xl mx-auto">
+              Developer tools and infrastructure that power the platforms above.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-7xl mx-auto">
+            {/* tawf-pay */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="p-8 bg-white border border-tawf-green/10 rounded-2xl"
+            >
+              <div className="w-16 h-16 bg-tawf-green rounded-full flex items-center justify-center mb-6">
+                <Split className="w-8 h-8 text-tawf-gold" />
+              </div>
+              <h3 className="text-2xl font-serif text-tawf-green mb-2">tawf-pay</h3>
+              <p className="text-sm font-semibold tracking-wider uppercase text-tawf-gold mb-4">Charitable Payment Routing</p>
+              <p className="text-tawf-muted text-base leading-relaxed mb-6">
+                Payment infrastructure where the 1% fee flows to waqf, zakat, and sadaqah instead of a payment processor.
+              </p>
+              <div className="flex flex-wrap gap-3 mb-6">
+                <span className="text-xs font-semibold tracking-wider uppercase bg-tawf-sand/50 text-tawf-green px-3 py-1 rounded-full">1% Charitable Fee</span>
+                <span className="text-xs font-semibold tracking-wider uppercase bg-tawf-sand/50 text-tawf-green px-3 py-1 rounded-full">DAO-Governed Split</span>
+              </div>
+              <a
+                href="https://github.com/tawf-labs/tawf-pay"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-tawf-green hover:text-tawf-gold font-medium transition-colors"
+              >
+                View Source
+                <ArrowRight className="w-4 h-4" />
+              </a>
+            </motion.div>
+
+            {/* tawf-verify */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              className="p-8 bg-white border border-tawf-green/10 rounded-2xl"
+            >
+              <div className="w-16 h-16 bg-tawf-green rounded-full flex items-center justify-center mb-6">
+                <ShieldCheck className="w-8 h-8 text-tawf-gold" />
+              </div>
+              <h3 className="text-2xl font-serif text-tawf-green mb-2">tawf-verify</h3>
+              <p className="text-sm font-semibold tracking-wider uppercase text-tawf-gold mb-4">Cryptographic Notarization</p>
+              <p className="text-tawf-muted text-base leading-relaxed mb-6">
+                A notary, not a custodian. Anchor off-chain records to Ethereum so donors can verify a receipt without trusting the operator.
+              </p>
+              <div className="flex flex-wrap gap-3 mb-6">
+                <span className="text-xs font-semibold tracking-wider uppercase bg-tawf-sand/50 text-tawf-green px-3 py-1 rounded-full">Merkle Anchoring</span>
+                <span className="text-xs font-semibold tracking-wider uppercase bg-tawf-sand/50 text-tawf-green px-3 py-1 rounded-full">No Custody</span>
+              </div>
+              <a
+                href="https://github.com/tawf-labs/tawf-verify"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-tawf-green hover:text-tawf-gold font-medium transition-colors"
+              >
+                View Source
+                <ArrowRight className="w-4 h-4" />
+              </a>
+            </motion.div>
+
+            {/* tawf-sdk */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="p-8 bg-white border border-tawf-green/10 rounded-2xl"
+            >
+              <div className="w-16 h-16 bg-tawf-green rounded-full flex items-center justify-center mb-6">
+                <Code2 className="w-8 h-8 text-tawf-gold" />
+              </div>
+              <h3 className="text-2xl font-serif text-tawf-green mb-2">tawf-sdk</h3>
+              <p className="text-sm font-semibold tracking-wider uppercase text-tawf-gold mb-4">Developer SDK</p>
+              <p className="text-tawf-muted text-base leading-relaxed mb-6">
+                Composable @tawf packages for soulbound identity and notarization. Build on Ethereum with the same tools we use.
+              </p>
+              <div className="flex flex-wrap gap-3 mb-6">
+                <span className="text-xs font-semibold tracking-wider uppercase bg-tawf-sand/50 text-tawf-green px-3 py-1 rounded-full">Identity</span>
+                <span className="text-xs font-semibold tracking-wider uppercase bg-tawf-sand/50 text-tawf-green px-3 py-1 rounded-full">Notarization</span>
+              </div>
+              <a
+                href="https://github.com/tawf-labs/tawf-sdk"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-tawf-green hover:text-tawf-gold font-medium transition-colors"
+              >
+                View Source
+                <ArrowRight className="w-4 h-4" />
+              </a>
+            </motion.div>
+          </div>
         </div>
       </section>
 
@@ -481,6 +590,32 @@ export default function Landing() {
               <br />Locked into the Foundation by design. Forever.
             </p>
           </div>
+        </div>
+      </section>
+
+      {/* For Institutions CTA */}
+      <section className={`${SECTION_PADDING} bg-tawf-green text-center ${CONTAINER_PADDING} relative overflow-hidden`}>
+        <div className="absolute inset-0 opacity-10 pointer-events-none flex items-center justify-center">
+          <div className="w-[600px] h-[600px] border border-tawf-gold rounded-full absolute"></div>
+        </div>
+        <div className="max-w-3xl mx-auto relative z-10">
+          <div className="flex items-center justify-center gap-3 mb-6">
+            <div className="h-px w-12 bg-tawf-gold"></div>
+            <span className="text-sm font-semibold tracking-[0.2em] uppercase text-tawf-gold">For Institutions</span>
+            <div className="h-px w-12 bg-tawf-gold"></div>
+          </div>
+          <h2 className="text-4xl md:text-5xl font-light text-white mb-6">Built for the institutions that carry the trust</h2>
+          <p className="text-tawf-sand/80 text-xl font-light leading-relaxed mb-10 max-w-2xl mx-auto">
+            BAZNAS, LAZ, BMT, Nazir, Masjid, Yayasan, and Pesantren — the infrastructure is
+            ready. See how your institution fits.
+          </p>
+          <Link
+            to="/institutions"
+            className={`bg-tawf-gold text-tawf-green px-10 py-5 ${RADIUS_BUTTON} text-base font-medium tracking-widest uppercase hover:bg-white transition-colors inline-flex items-center gap-2`}
+          >
+            For Institutions
+            <ArrowRight className="w-5 h-5" />
+          </Link>
         </div>
       </section>
 

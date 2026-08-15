@@ -217,6 +217,23 @@ export const pageSEO: Record<string, SEOConfig> = {
     ],
     canonical: `${SITE_URL}/roadmap`,
   },
+
+  // Institutions
+  institutions: {
+    title: 'For Institutions — Infrastructure for Islamic Institutions',
+    description: 'Power the institutions that carry the trust. Tawf gives BAZNAS, LAZ, BMT, Nazir, Masjid, Yayasan, Pesantren, and merchants the digital infrastructure to collect, notarize, and disburse with transparency.',
+    keywords: [
+      'Tawf for institutions',
+      'BAZNAS blockchain',
+      'LAZ zakat platform',
+      'BMT digitization',
+      'Nazir waqf management',
+      'Masjid donation transparency',
+      'Islamic institution infrastructure',
+      'charitable payment routing',
+    ],
+    canonical: `${SITE_URL}/institutions`,
+  },
 };
 
 // Helper function to get SEO config for a route
