@@ -5,7 +5,7 @@ import { useSubdomain } from '../hooks/useSubdomain';
 import SEO from './SEO';
 
 export default function Layout({ children }: { children: React.ReactNode }) {
-  const { hash } = useLocation();
+  const { hash, pathname } = useLocation();
   const { subdomain } = useSubdomain();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [programsOpen, setProgramsOpen] = useState(false);
@@ -20,7 +20,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     } else {
       window.scrollTo(0, 0);
     }
-  }, [hash]);
+  }, [hash, pathname]);
 
   // Close mobile menu when route changes
   useEffect(() => {
@@ -121,6 +121,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                   )}
                   <Link to="/roadmap" className="block px-4 py-2 text-sm text-tawf-ink/70 hover:text-tawf-green hover:bg-tawf-sand/50" onClick={() => setMoreOpen(false)}>Roadmap</Link>
                   <Link to="/institutions" className="block px-4 py-2 text-sm text-tawf-ink/70 hover:text-tawf-green hover:bg-tawf-sand/50" onClick={() => setMoreOpen(false)}>Institutions</Link>
+                  <Link to="/ai" className="block px-4 py-2 text-sm text-tawf-ink/70 hover:text-tawf-green hover:bg-tawf-sand/50" onClick={() => setMoreOpen(false)}>Tawf AI</Link>
                   <Link to="/glossary" className="block px-4 py-2 text-sm text-tawf-ink/70 hover:text-tawf-green hover:bg-tawf-sand/50" onClick={() => setMoreOpen(false)}>Glossary</Link>
                   <Link to="/contact" className="block px-4 py-2 text-sm text-tawf-ink/70 hover:text-tawf-green hover:bg-tawf-sand/50" onClick={() => setMoreOpen(false)}>Contact</Link>
                 </div>
@@ -155,6 +156,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                   <Link to="/#governance" className="block text-sm font-medium tracking-widest uppercase text-tawf-ink/70 hover:text-tawf-green">Governance</Link>
                   <Link to="/roadmap" className="block text-sm font-medium tracking-widest uppercase text-tawf-ink/70 hover:text-tawf-green">Roadmap</Link>
                   <Link to="/institutions" className="block text-sm font-medium tracking-widest uppercase text-tawf-ink/70 hover:text-tawf-green">Institutions</Link>
+                  <Link to="/ai" className="block text-sm font-medium tracking-widest uppercase text-tawf-ink/70 hover:text-tawf-green">Tawf AI</Link>
                 </>
               )}
               <div className="pt-4 border-t border-tawf-green/10">
@@ -203,6 +205,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                   <li><Link to="/#governance" className="hover:text-tawf-gold transition-colors">How Governance Works</Link></li>
                   <li><Link to="/roadmap" className="hover:text-tawf-gold transition-colors">Roadmap</Link></li>
                   <li><Link to="/institutions" className="hover:text-tawf-gold transition-colors">For Institutions</Link></li>
+                  <li><Link to="/ai" className="hover:text-tawf-gold transition-colors">Tawf AI</Link></li>
                   <li><Link to="/about" className="hover:text-tawf-gold transition-colors">Organizational Structure</Link></li>
                   <li><Link to="/#ecosystem" className="hover:text-tawf-gold transition-colors">Tawf ID (TID)</Link></li>
                 </>

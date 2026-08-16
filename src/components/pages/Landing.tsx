@@ -4,7 +4,7 @@ import {
   Shield, HeartHandshake, Landmark, ArrowRight,
   ChevronRight, Fingerprint, Coins, Building2,
   Network, HandHeart, Sparkles, TrendingUp, FileText, Users, ArrowDown, CheckCircle, Handshake, Calendar,
-  Split, ShieldCheck, Code2
+  Split, ShieldCheck, Code2, Calculator, MessageSquare, BarChart3
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import InfoTooltip from '../ui/InfoTooltip';
@@ -589,6 +589,68 @@ export default function Landing() {
               This structure guarantees the community's share cannot be diluted, sold, or set aside.
               <br />Locked into the Foundation by design. Forever.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Tawf AI */}
+      <section className={`${SECTION_PADDING} bg-tawf-sand`}>
+        <div className={`${MAX_WIDTH} mx-auto ${CONTAINER_PADDING}`}>
+          <div className="text-center mb-16">
+            <div className="flex items-center justify-center gap-3 mb-6">
+              <div className="h-px w-12 bg-tawf-gold"></div>
+              <span className="text-sm font-semibold tracking-[0.2em] uppercase text-tawf-gold">Tawf AI</span>
+              <div className="h-px w-12 bg-tawf-gold"></div>
+            </div>
+            <h2 className="text-4xl md:text-5xl font-light text-tawf-green mb-6">Intelligence built into the ecosystem</h2>
+            <p className="text-tawf-muted text-xl max-w-3xl mx-auto">
+              A model-agnostic AI layer that powers zakat calculation, Sharia Q&A, and impact analytics across every product.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            {[
+              {
+                icon: <Calculator className="w-8 h-8 text-tawf-gold" />,
+                title: 'AI Zakat Calculator',
+                desc: 'Enter your assets and Tawf AI estimates your zakat using the Shafi\'i approach and the nisab of 85 grams of gold.',
+              },
+              {
+                icon: <MessageSquare className="w-8 h-8 text-tawf-gold" />,
+                title: 'Sharia Q&A',
+                desc: 'Ask about zakat, waqf, sadaqah, or qurban in plain language. Tawf AI explains, and never issues fatwas.',
+              },
+              {
+                icon: <BarChart3 className="w-8 h-8 text-tawf-gold" />,
+                title: 'AI Analytics',
+                desc: 'Donor impact dashboards and institution metrics, built on the same records that tawf-verify notarizes.',
+              },
+            ].map((item, i) => (
+              <motion.div
+                key={item.title}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.15 }}
+                className="p-8 bg-white border border-tawf-green/10 rounded-2xl"
+              >
+                <div className="w-16 h-16 bg-tawf-green rounded-full flex items-center justify-center mb-6">
+                  {item.icon}
+                </div>
+                <h3 className="font-serif text-2xl text-tawf-green mb-3">{item.title}</h3>
+                <p className="text-tawf-muted leading-relaxed">{item.desc}</p>
+              </motion.div>
+            ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <Link
+              to="/ai"
+              className="inline-flex items-center gap-2 bg-tawf-green text-tawf-sand px-8 py-4 rounded-full text-sm font-medium tracking-widest uppercase hover:bg-tawf-green-light transition-colors"
+            >
+              Explore Tawf AI
+              <ArrowRight className="w-4 h-4" />
+            </Link>
           </div>
         </div>
       </section>

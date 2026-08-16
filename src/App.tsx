@@ -12,6 +12,7 @@ import Glossary from './components/pages/Glossary';
 import Contact from './components/pages/Contact';
 import Roadmap from './components/pages/Roadmap';
 import Institutions from './components/pages/Institutions';
+import AI from './components/pages/AI';
 
 // Subdomain to route mapping
 const SUBDOMAIN_ROUTES: Record<string, string> = {
@@ -69,6 +70,7 @@ function AppRoutes() {
       <Route path="/contact" element={<Contact />} />
       <Route path="/roadmap" element={<Roadmap />} />
       <Route path="/institutions" element={<Institutions />} />
+      <Route path="/ai" element={<AI />} />
     </Routes>
   );
 }

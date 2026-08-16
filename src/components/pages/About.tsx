@@ -37,7 +37,15 @@ const governanceBodies = [
     title: "Sharia Advisory Board",
     tag: "Foundation Chairmen",
     tooltip: "sharia",
-    description: "Islamic scholars whose decisions on Sharia matters are final, binding, and beyond commercial override. Assisted by Tawf-AI, referencing AAOIFI, Muhammadiyah, Malaysia DPSN, Bahrain, and Indonesia MUI frameworks.",
+    description: (
+      <>
+        Islamic scholars whose decisions on Sharia matters are final, binding, and beyond commercial override. Assisted by{' '}
+        <Link to="/ai" className="text-tawf-green font-medium underline decoration-tawf-gold/50 hover:text-tawf-gold transition-colors">
+          Tawf AI
+        </Link>
+        , referencing AAOIFI, Muhammadiyah, Malaysia DPSN, Bahrain, and Indonesia MUI frameworks.
+      </>
+    ),
   },
   {
     icon: <Building2 className="w-10 h-10 text-tawf-green" />,

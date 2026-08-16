@@ -178,6 +178,18 @@ const LAYERS: Layer[] = [
       { label: 'Mainnet launch', status: 'planned' },
     ],
   },
+  {
+    id: 'ai',
+    name: 'AI',
+    icon: <Sparkles className="w-4 h-4" />,
+    color: { dot: 'bg-rose-600', chip: 'bg-rose-600/10 text-rose-700', text: 'text-rose-700' },
+    phases: [
+      null,
+      { label: 'Tawf AI zakat calculator & Sharia Q&A', status: 'progress' },
+      { label: 'AI analytics dashboards', status: 'planned' },
+      { label: 'On-chain AI analytics', status: 'planned' },
+    ],
+  },
 ];
 
 const PILLARS: Pillar[] = [

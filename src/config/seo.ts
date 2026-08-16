@@ -234,6 +234,23 @@ export const pageSEO: Record<string, SEOConfig> = {
     ],
     canonical: `${SITE_URL}/institutions`,
   },
+
+  // AI
+  ai: {
+    title: 'Tawf AI — Intelligence for the Baitul Maal',
+    description: 'Model-agnostic AI analytics and integration across the Tawf ecosystem. Zakat calculation, Sharia Q&A, impact analytics, and AI embedded in every product.',
+    keywords: [
+      'Tawf AI',
+      'AI zakat calculator',
+      'Islamic finance AI',
+      'Sharia AI assistant',
+      'zakat calculation',
+      'Islamic philanthropy analytics',
+      'AI impact dashboard',
+      'blockchain AI',
+    ],
+    canonical: `${SITE_URL}/ai`,
+  },
 };
 
 // Helper function to get SEO config for a route
