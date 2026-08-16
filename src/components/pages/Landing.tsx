@@ -80,7 +80,7 @@ export default function Landing() {
             <h2 className="text-4xl md:text-5xl font-light text-tawf-green mb-6">What We Actually Do</h2>
             <p className="text-tawf-muted text-xl leading-relaxed">
               We provide the digital infrastructure layer for Islamic finance, going{' '}
-              <span className="font-semibold text-tawf-green">beyond zakat</span> to power staking, yield, and ethical financial products across the ecosystem.
+              <span className="font-semibold text-tawf-green">beyond zakat</span> to power staking, yield, and ethical financial products across the ecosystem. The same infrastructure serves any nonprofit that wants to prove, not just claim.
             </p>
           </div>
 
@@ -357,7 +357,7 @@ export default function Landing() {
               <h3 className="text-2xl font-serif text-tawf-green mb-2">tawf-verify</h3>
               <p className="text-sm font-semibold tracking-wider uppercase text-tawf-gold mb-4">Cryptographic Notarization</p>
               <p className="text-tawf-muted text-base leading-relaxed mb-6">
-                A notary, not a custodian. Anchor off-chain records to Ethereum so donors can verify a receipt without trusting the operator.
+                A notary, not a custodian. Anchor any organization's records to Ethereum so its donors can verify a receipt without trusting the operator.
               </p>
               <div className="flex flex-wrap gap-3 mb-6">
                 <span className="text-xs font-semibold tracking-wider uppercase bg-tawf-sand/50 text-tawf-green px-3 py-1 rounded-full">Merkle Anchoring</span>

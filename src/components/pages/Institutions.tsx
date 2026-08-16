@@ -3,7 +3,7 @@ import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
 import {
   Landmark, HandCoins, Building2, HeartHandshake, GraduationCap,
-  Store, Code2, Split, ShieldCheck, Fingerprint, ArrowRight, Mail,
+  Store, Code2, Split, ShieldCheck, Fingerprint, ArrowRight, Mail, Globe,
 } from 'lucide-react';
 import PageHero from '../ui/PageHero';
 import Section from '../ui/Section';
@@ -37,6 +37,13 @@ const INSTITUTIONS = [
     name: 'Masjid / Yayasan',
     tag: 'Community Foundation',
     desc: 'Publish notarized donation records and accept payments where the fee itself flows back into your programs.',
+    products: ['tawf-verify', 'tawf-pay'],
+  },
+  {
+    icon: <Globe className="w-8 h-8 text-tawf-gold" />,
+    name: 'NGO / Nonprofit',
+    tag: 'Any Transparent Organization',
+    desc: 'Prove where every donation went. Anchor your records to Ethereum and let donors verify a receipt without trusting you.',
     products: ['tawf-verify', 'tawf-pay'],
   },
   {
@@ -76,9 +83,9 @@ export default function Institutions() {
     <>
       <PageHero
         badge="For Institutions"
-        title="Infrastructure for Islamic institutions"
-        subtitle="Power the institutions that already carry the trust"
-        description="We do not replace the BAZNAS, LAZ, BMT, and pesantren that already serve their communities. We give them digital tools equal to the wisdom they already carry."
+        title="Infrastructure for the organizations that serve"
+        subtitle="Born from Islamic finance, built for everyone"
+        description="We do not replace the organizations that already serve their communities. From amil zakat bodies to secular nonprofits, we give every institution the same tools: transparent collection, verifiable notarization, and proof of delivery."
       />
 
       {/* Who we serve */}
@@ -86,7 +93,7 @@ export default function Institutions() {
         <SectionHeader
           badge="Who We Serve"
           title="Built for every part of the ecosystem"
-          description="From national zakat collectors to local merchants, each institution plugs into the products that fit its mission."
+          description="From national zakat collectors to secular nonprofits, every organization plugs into the products that fit its mission."
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
