@@ -157,16 +157,17 @@ export const pageSEO: Record<string, SEOConfig> = {
 
   // Research
   research: {
-    title: 'Tawf Research - Islamic Finance & Blockchain',
-    description: 'Explore our research on Islamic finance, blockchain technology, tokenized waqf, digital zakat, and the future of decentralized Islamic philanthropy.',
+    title: 'Tawf Research - Zero-Knowledge Proofs & Islamic Finance',
+    description: 'Peer-reviewed research and open technical specifications. Zero-knowledge zakat, decentralized identity (did:tawf), cryptographic notarization, and on-chain zakat and waqf transparency.',
     keywords: [
+      'zero-knowledge zakat',
+      'zero-knowledge proofs',
+      'decentralized identity',
+      'did:tawf',
+      'cryptographic notarization',
       'Islamic finance research',
       'blockchain research',
-      'crypto waqf studies',
-      'tokenized waqf',
-      'Islamic DeFi',
       'Sharia-compliant blockchain',
-      'digital philanthropy research',
     ],
     canonical: `${SITE_URL}/research`,
     type: 'article',

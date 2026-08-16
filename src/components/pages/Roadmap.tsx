@@ -127,10 +127,10 @@ const LAYERS: Layer[] = [
         headliner: true,
       },
       {
-        label: 'Tokenized Waqf paper (2025)',
+        label: 'TID protocol specs (did:tawf, circuit, bridge)',
         status: 'done',
       },
-      { label: 'Crypto Zakat guide & Riba-in-DeFi papers', status: 'progress' },
+      { label: 'Tawf AI research', status: 'progress' },
       null,
     ],
   },
@@ -202,8 +202,8 @@ const PILLARS: Pillar[] = [
       'Peer-reviewed research grounding every product decision. Our zero-knowledge zakat paper is accepted at ICIMTECH 2026.',
     evidence: [
       '“Zero-Knowledge Zakat: A Design Science Approach to Auditable Private Donations on Blockchain” by M. Z. Fatonie and A. A. S. Gunawan, accepted @ ICIMTECH 2026',
-      '“Tokenized Waqf: Preserving Perpetuity in a Digital Age” (2025, published)',
-      '“Calculating Zakat on Cryptocurrency Holdings” (in review)',
+      'Four TID protocol specs published in tawf-did: did:tawf method, circuit, compact contract, and bridge',
+      'Tawf AI zakat calculator and Sharia Q&A grounded in AAOIFI and MUI frameworks',
     ],
     link: '/research',
   },
