@@ -23,7 +23,7 @@ export default function AI() {
         <SectionHeader
           badge="Zakat Calculator"
           title="Know what is due"
-          description="Tawf AI estimates your zakat using the Shafi'i approach and the nisab of 85 grams of gold. The final ruling rests with the scholar."
+          description="Tawf AI estimates your zakat using the Shafi'i approach and the nisab of 85 grams of gold. The final ruling rests with the AI Sharia Review."
         />
         <ZakatCalculator />
       </Section>

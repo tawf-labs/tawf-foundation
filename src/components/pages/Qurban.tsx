@@ -79,7 +79,7 @@ export default function Qurban() {
               <div className="space-y-4">
                 <div className="flex items-center gap-3">
                   <CheckCircle className="w-5 h-5 text-tawf-green shrink-0" />
-                  <span className="text-tawf-muted">Sharia-compliant slaughter</span>
+                  <span className="text-tawf-muted">Sharia-aligned slaughter</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <CheckCircle className="w-5 h-5 text-tawf-green shrink-0" />
@@ -129,7 +129,7 @@ export default function Qurban() {
               {
                 step: '03',
                 title: 'We Source & Sacrifice',
-                desc: 'Our trusted partners source healthy animals and perform Sharia-compliant slaughter.',
+                desc: 'Our trusted partners source healthy animals and perform Sharia-aligned slaughter.',
                 icon: <Scissors className="w-6 h-6" />
               },
               {
@@ -190,7 +190,7 @@ export default function Qurban() {
           <div className="text-center p-8 bg-white rounded-2xl border border-tawf-green/10">
             <CheckCircle className="w-12 h-12 text-tawf-gold mx-auto mb-4" />
             <h3 className="text-4xl font-serif text-tawf-green mb-2">100%</h3>
-            <p className="text-tawf-muted">Sharia-compliant distribution</p>
+            <p className="text-tawf-muted">Sharia-aligned distribution</p>
           </div>
         </div>
       </Section>

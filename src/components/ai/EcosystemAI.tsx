@@ -40,9 +40,9 @@ const USE_CASES = [
   },
   {
     icon: <ScrollText className="w-8 h-8 text-tawf-gold" />,
-    product: 'Sharia board',
+    product: 'AI Sharia Review',
     use: 'AI framework reference',
-    desc: 'Tawf AI surfaces AAOIFI, Muhammadiyah, DPSN, Bahrain, and MUI references for the scholars.',
+    desc: 'Tawf AI surfaces AAOIFI and DSN-MUI references for Sharia alignment reviews.',
   },
 ];
 

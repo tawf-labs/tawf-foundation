@@ -31,7 +31,7 @@ const faqs = [
   },
   {
     q: 'Where does the yield come from?',
-    a: 'Deposits are routed across a diversified basket: liquid staking positions in Ethereum via wstETH and weETH, plus a stable reserve held in the deposit currency. The staking rewards from those positions are the yield. The stable reserve dampens drawdowns and stands in for a Sharia-compliant real-asset sleeve.'
+    a: 'Deposits are routed across a diversified basket: liquid staking positions in Ethereum via wstETH and weETH, plus a stable reserve held in the deposit currency. The staking rewards from those positions are the yield. The stable reserve dampens drawdowns and stands in for a Sharia-aligned real-asset sleeve.'
   },
   {
     q: 'How does the yield reach the nazir?',

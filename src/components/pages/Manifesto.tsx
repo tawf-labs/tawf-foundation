@@ -45,7 +45,7 @@ export default function Manifesto() {
             <section>
               <h2 className="text-3xl font-serif text-tawf-green mb-6 font-medium">We Believe Finance Can Be Just.</h2>
               <p className="leading-relaxed">
-                Not as an ideal. Not as a tagline. As a structural fact, encoded into governance, enforced by scholars, owned by the community, and proven every single time we collect a dirham of zakat and place it in the hands of someone who needs it.
+                Not as an ideal. Not as a tagline. As a structural fact, encoded into governance, guided by AI Sharia review aligned to AAOIFI and DSN-MUI, owned by the community, and proven every single time we collect a dirham of zakat and place it in the hands of someone who needs it.
               </p>
               <p className="leading-relaxed mt-4">
                 For too long, the financial system has operated on a single premise: that profit is the only principle worth building around. That interest is inevitable. That opacity is acceptable. That the community is a market, not a stakeholder. That ethics are a feature you add at the end, not a foundation you build from the beginning.
@@ -97,7 +97,7 @@ export default function Manifesto() {
                 <div>
                   <h3 className="text-2xl font-serif text-tawf-green mb-4">Zakat</h3>
                   <p className="leading-relaxed">
-                    Zakat is not optional. It is one of the Five Pillars of Islam, an obligation, not a choice. The Tawf Islamic Foundation operates zakat infrastructure for the Tawf ecosystem. A portion of Tawf Labs' commercial revenue is calculated, declared, and disbursed as zakat through Foundation systems to the eight categories of eligible recipients (asnaf) defined by Islamic law. This is not symbolic. It is a real, recurring, blockchain operation, fully transparent, auditable by any community member, and governed by the Scholar Chairmen who ensure every distribution is Sharia-compliant.
+                    Zakat is not optional. It is one of the Five Pillars of Islam, an obligation, not a choice. The Tawf Islamic Foundation operates zakat infrastructure for the Tawf ecosystem. A portion of Tawf Labs' commercial revenue is calculated, declared, and disbursed as zakat through Foundation systems to the eight categories of eligible recipients (asnaf) defined by Islamic law. This is not symbolic. It is a real, recurring, blockchain operation, fully transparent, auditable by any community member, and reviewed through AI Sharia Review to ensure every distribution aligns with Sharia principles.
                   </p>
                   <p className="leading-relaxed mt-4 font-medium text-tawf-green">
                     We are building the infrastructure to make this the most transparent zakat operation in Southeast Asia.
@@ -150,28 +150,28 @@ export default function Manifesto() {
             </section>
 
             <section>
-              <h2 className="text-3xl font-serif text-tawf-green mb-6 font-medium">We Believe in Seven Principles. Non-Negotiable. Always.</h2>
+              <h2 className="text-3xl font-serif text-tawf-green mb-6 font-medium">We Believe in Seven Principles. Firmly Held. Always Reconsidered.</h2>
               <ul className="space-y-6 list-none pl-0">
                 <li className="leading-relaxed">
-                  <strong className="text-tawf-green">No Riba.</strong> Interest is not a neutral instrument. It is a mechanism that transfers wealth from the borrower to the lender regardless of outcome, rewarding capital while punishing labor, entrenching inequality with mathematical precision. We build without it. We operate without it.
+                  <strong className="text-tawf-green">No Riba.</strong> Interest transfers wealth from the borrower to the lender regardless of outcome, rewarding capital while too often leaving labor behind. We build without it. We operate without it.
                 </li>
                 <li className="leading-relaxed">
-                  <strong className="text-tawf-green">No Gharar.</strong> Uncertainty that harms is prohibited. Smart contracts must be auditable. Terms must be disclosed. Users must know what they are entering into. Opacity in finance is not sophistication. It is predation.
+                  <strong className="text-tawf-green">No Gharar.</strong> Uncertainty that harms is prohibited. Smart contracts must be auditable. Terms must be disclosed. Users must know what they are entering into. Opacity in finance is not sophistication; it is risk we choose to avoid.
                 </li>
                 <li className="leading-relaxed">
                   <strong className="text-tawf-green">No Maysir.</strong> Gambling is not a financial product. Zero-sum speculation that enriches participants at each other's expense is not innovation. The financial system must create real value, not merely redistribute it from the unlucky to the lucky.
                 </li>
                 <li className="leading-relaxed">
-                  <strong className="text-tawf-green">Real Asset Backing.</strong> Tokens must represent something real. Finance entirely detached from productive human activity, from goods, services, labor, and land, is not finance. It is a fiction that eventually collapses on the people least able to survive the fall.
+                  <strong className="text-tawf-green">Real Asset Backing.</strong> Tokens must represent something real. Finance detached from productive human activity, from goods, services, labor, and land, can drift into fiction and eventually collapse on the people least able to absorb the loss.
                 </li>
                 <li className="leading-relaxed">
-                  <strong className="text-tawf-green">Transparent Governance.</strong> Power must be visible. Decisions must be traceable. Those who govern must be accountable to those they govern. On-chain auditability is not a technical feature. It is a moral requirement.
+                  <strong className="text-tawf-green">Transparent Governance.</strong> Power should be visible. Decisions should be traceable. Those who govern should be accountable to those they serve. On-chain auditability is not only a technical feature; it is how we keep our word.
                 </li>
                 <li className="leading-relaxed">
-                  <strong className="text-tawf-green">Social Impact and Maslaha.</strong> Every financial product must answer a simple question: who benefits, and how? Finance must serve the many. That is what it is for. Maslaha is not a soft aspiration. It is a screening criterion, and it is the reason we run zakat and waqf operations ourselves.
+                  <strong className="text-tawf-green">Social Impact and Maslaha.</strong> Every financial product should answer a simple question: who benefits, and how? Finance should serve the many. That is what it is for. Maslaha is one of our screening criteria, and it is the reason we run zakat and waqf operations ourselves.
                 </li>
                 <li className="leading-relaxed">
-                  <strong className="text-tawf-green">Halal Sector Compliance.</strong> Capital has direction. Where money flows, power and harm follow. Financial products must not direct capital toward industries that cause demonstrable harm to individuals, families, or communities.
+                  <strong className="text-tawf-green">Halal Sector Alignment.</strong> Capital has direction. Where money flows, impact follows. Financial products should avoid directing capital toward industries that cause demonstrable harm to individuals, families, or communities.
                 </li>
               </ul>
             </section>
@@ -187,12 +187,12 @@ export default function Manifesto() {
             </section>
 
             <section>
-              <h2 className="text-3xl font-serif text-tawf-green mb-6 font-medium">We Believe Scholars Must Lead.</h2>
+              <h2 className="text-3xl font-serif text-tawf-green mb-6 font-medium">We Believe Sharia Review Must Be Rigorous and Independent.</h2>
               <p className="leading-relaxed">
-                At the apex of the Foundation sit the Scholar Chairmen, Islamic scholars whose authority over Sharia matters is absolute, unconditional, and structurally protected from every commercial pressure imaginable.
+                At the heart of the Foundation sits the AI Sharia Review, an AI-assisted layer that evaluates Sharia-related matters against the strict AAOIFI and DSN-MUI frameworks, kept independent from commercial pressure.
               </p>
               <p className="leading-relaxed mt-4">
-                They do not advise. They chair. Their rulings on Sharia compliance and on the legitimacy of our zakat and waqf operations are final. No DAO vote, no board resolution, no investor term sheet will ever change that. This is not a promise. It is a structural fact.
+                Its purpose is to review, not to advise. Its assessments of Sharia alignment and of the legitimacy of our zakat and waqf operations are published openly. No DAO vote, no board resolution, no investor term sheet can override the underlying frameworks it applies.
               </p>
             </section>
 
@@ -202,7 +202,7 @@ export default function Manifesto() {
                 Zakat from Labs revenue. Waqf endowments from ecosystem participants. Sadaqah from individuals who believe in this mission. Grants from Islamic development institutions. And royalties from commercial products.
               </p>
               <p className="leading-relaxed mt-4">
-                The key word is obligation. The zakat that flows through this Foundation is not optional. It is not a goodwill gesture that Labs makes when times are good and quietly skips when margins are tight. It is a calculated, Sharia-mandated, scholar-verified obligation, enforced by the same governance structure that governs everything else here. You cannot run an Islamic institution and treat zakat as a discretionary line item. We will not.
+                The key word is obligation. The zakat that flows through this Foundation is not optional. It is not a goodwill gesture that Labs makes when times are good and quietly skips when margins are tight. It is a calculated, Sharia-aligned obligation held to AAOIFI and DSN-MUI standards, upheld by the same governance structure that governs everything else here. You cannot run an Islamic institution and treat zakat as a discretionary line item. We will not.
               </p>
             </section>
 
@@ -228,7 +228,7 @@ export default function Manifesto() {
                 Tawf Islamic Foundation does not claim to be the final authority on Islamic finance. We do not issue fatwas. We are not a religious body. We are a public trust institution that operates transparently, with zakat disbursements on the blockchain and visible, waqf holdings publicly declared, and governance decisions logged and auditable.
               </p>
               <p className="leading-relaxed mt-4">
-                We hold ourselves to the same standard we apply to everyone else. If we ever fall short, the community will see it. And the scholars will act.
+                We hold ourselves to the same standard we apply to everyone else. If we ever fall short, the community will see it. And our AI Sharia Review, rooted in AAOIFI and DSN-MUI, will surface it.
               </p>
             </section>
 
@@ -239,7 +239,7 @@ export default function Manifesto() {
                   <strong className="text-white">To the communities we serve:</strong> we will never trade your trust for growth.
                 </li>
                 <li className="leading-relaxed text-lg">
-                  <strong className="text-white">To the scholars who chair our board:</strong> we will protect your authority from every commercial pressure, forever.
+                  <strong className="text-white">To the frameworks that guide us:</strong> we will keep our Sharia review aligned to AAOIFI and DSN-MUI, free from commercial pressure, forever.
                 </li>
                 <li className="leading-relaxed text-lg">
                   <strong className="text-white">To the builders and partners in our ecosystem:</strong> we will work with you transparently, consistently, and with integrity.

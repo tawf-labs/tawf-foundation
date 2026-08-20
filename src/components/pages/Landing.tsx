@@ -164,7 +164,7 @@ export default function Landing() {
             </div>
             <h2 className="text-4xl md:text-5xl font-light text-tawf-green mb-6">Tawf Platforms</h2>
             <p className="text-tawf-muted text-xl max-w-3xl mx-auto">
-              Our digital platforms bring transparency and Sharia compliance to Islamic philanthropy.
+              Our digital platforms bring transparency and Sharia alignment to Islamic philanthropy.
             </p>
           </div>
 
@@ -187,7 +187,7 @@ export default function Landing() {
                 Blockchain-based donation platform where every donation is recorded and can be tracked in real-time with NFT receipts.
               </p>
               <div className="flex flex-wrap gap-3 mb-6">
-                <span className="text-xs font-semibold tracking-wider uppercase bg-tawf-sand/50 text-tawf-green px-3 py-1 rounded-full">Sharia Compliant</span>
+                <span className="text-xs font-semibold tracking-wider uppercase bg-tawf-sand/50 text-tawf-green px-3 py-1 rounded-full">Sharia Aligned</span>
                 <span className="text-xs font-semibold tracking-wider uppercase bg-tawf-sand/50 text-tawf-green px-3 py-1 rounded-full">100% On-Chain</span>
               </div>
               <a
@@ -218,7 +218,7 @@ export default function Landing() {
                 Support sustainable Qurban farms with on-chain tracking and NFT certificates over how funds are allocated.
               </p>
               <div className="flex flex-wrap gap-3 mb-6">
-                <span className="text-xs font-semibold tracking-wider uppercase bg-tawf-sand/50 text-tawf-green px-3 py-1 rounded-full">Shariah Compliant</span>
+                <span className="text-xs font-semibold tracking-wider uppercase bg-tawf-sand/50 text-tawf-green px-3 py-1 rounded-full">Sharia Aligned</span>
                 <span className="text-xs font-semibold tracking-wider uppercase bg-tawf-sand/50 text-tawf-green px-3 py-1 rounded-full">NFT Certificates</span>
                 <span className="text-xs font-semibold tracking-wider uppercase bg-tawf-sand/50 text-tawf-green px-3 py-1 rounded-full">On-Chain Tracking</span>
               </div>
@@ -250,7 +250,7 @@ export default function Landing() {
                 Endow permanently and the capital is preserved on-chain while its staking yield reaches the Nazir, or dedicate it for a fixed term and take it back in full.
               </p>
               <div className="flex flex-wrap gap-3 mb-6">
-                <span className="text-xs font-semibold tracking-wider uppercase bg-tawf-sand/50 text-tawf-green px-3 py-1 rounded-full">Sharia Compliant</span>
+                <span className="text-xs font-semibold tracking-wider uppercase bg-tawf-sand/50 text-tawf-green px-3 py-1 rounded-full">Sharia Aligned</span>
                 <span className="text-xs font-semibold tracking-wider uppercase bg-tawf-sand/50 text-tawf-green px-3 py-1 rounded-full">Perpetual Endowment</span>
                 <span className="text-xs font-semibold tracking-wider uppercase bg-tawf-sand/50 text-tawf-green px-3 py-1 rounded-full">100% On-Chain</span>
               </div>
@@ -279,10 +279,10 @@ export default function Landing() {
               <h3 className="text-2xl font-serif text-tawf-green mb-2">tawf.finance</h3>
               <p className="text-sm font-semibold tracking-wider uppercase text-tawf-gold mb-4">Stake & Earn Yield</p>
               <p className="text-tawf-muted text-base leading-relaxed mb-6">
-                Our commercial platform for staking assets and earning yield from real-world ethical projects. Sharia-compliant DeFi.
+                Our commercial platform for staking assets and earning yield from real-world ethical projects. Sharia-aligned DeFi.
               </p>
               <div className="flex flex-wrap gap-3 mb-6">
-                <span className="text-xs font-semibold tracking-wider uppercase bg-tawf-sand/50 text-tawf-green px-3 py-1 rounded-full">Sharia Compliant</span>
+                <span className="text-xs font-semibold tracking-wider uppercase bg-tawf-sand/50 text-tawf-green px-3 py-1 rounded-full">Sharia Aligned</span>
                 <span className="text-xs font-semibold tracking-wider uppercase bg-tawf-sand/50 text-tawf-green px-3 py-1 rounded-full">Real-World Yield</span>
                 <span className="text-xs font-semibold tracking-wider uppercase bg-tawf-sand/50 text-tawf-green px-3 py-1 rounded-full">Staking</span>
               </div>
@@ -470,7 +470,7 @@ export default function Landing() {
               </div>
               <h3 className="text-3xl font-serif text-white mb-3">Become Our Partner</h3>
               <p className="text-lg text-white/80 mb-8">
-                Help us build digital infrastructure for Islamic philanthropy. Join our network of institutions committed to transparency and Sharia compliance.
+                Help us build digital infrastructure for Islamic philanthropy. Join our network of institutions committed to transparency and Sharia alignment.
               </p>
               <Link
                 to="/contact"
@@ -506,7 +506,7 @@ export default function Landing() {
                 </div>
                 <h3 className="text-2xl font-serif text-white">Tawf Labs</h3>
               </div>
-              <p className="text-tawf-sand/70 text-lg mb-6">The commercial engine that builds Sharia-compliant products, including tawf.finance staking and yield platform.</p>
+              <p className="text-tawf-sand/70 text-lg mb-6">The commercial engine that builds Sharia-aligned products, including tawf.finance staking and yield platform.</p>
               <ul className="space-y-3 text-tawf-sand/80">
                 <li className="flex items-center gap-3">
                   <ChevronRight className="w-5 h-5 text-tawf-gold shrink-0" />
@@ -534,7 +534,7 @@ export default function Landing() {
                 </li>
                 <li className="flex items-center gap-3">
                   <ChevronRight className="w-5 h-5 text-tawf-gold shrink-0" />
-                  <span>tawf.finance: Sharia-compliant staking and real-world yield platform</span>
+                  <span>tawf.finance: Sharia-aligned staking and real-world yield platform</span>
                 </li>
               </ul>
             </div>
@@ -575,7 +575,7 @@ export default function Landing() {
                   <span>Houses the{' '}<span className="inline-flex items-center gap-1">
                     Sharia
                     <InfoTooltip term="sharia" />
-                  </span> Advisory Board and DAO governance</span>
+                  </span> AI Sharia Review and DAO governance</span>
                 </li>
               </ul>
               <div className="mt-8 pt-6 border-t border-white/20">
@@ -705,19 +705,19 @@ export default function Landing() {
                 <Shield className="w-32 h-32 text-tawf-green" />
               </div>
               <h3 className="text-2xl font-serif font-medium text-tawf-green mb-2">
-                Sharia Advisory Board
+                AI Sharia Review
                 <InfoTooltip term="sharia" />
               </h3>
-              <p className="text-sm font-bold tracking-wider uppercase text-tawf-gold mb-6">Foundation Chairmen</p>
+              <p className="text-sm font-bold tracking-wider uppercase text-tawf-gold mb-6">Framework Alignment</p>
               <p className="text-tawf-muted text-lg leading-relaxed mb-4">
-                Islamic scholars whose decisions on all{' '}
+                An AI-assisted review layer that checks all{' '}
                 <span className="inline-flex items-center gap-1">
                   Sharia
                   <InfoTooltip term="sharia" />
-                </span> matters are final, binding, and beyond commercial override.
+                </span> matters against strict standards.
               </p>
               <p className="text-tawf-muted text-sm leading-relaxed">
-                Assisted by Tawf-AI referencing established frameworks: AAOIFI, Muhammadiyah, Malaysia DPSN, Bahrain, and Indonesia MUI.
+                Aligned to the AAOIFI and DSN-MUI frameworks.
               </p>
             </motion.div>
 
@@ -734,7 +734,7 @@ export default function Landing() {
               <h3 className="text-2xl font-serif font-medium text-tawf-green mb-2">Board of Trustees</h3>
               <p className="text-sm font-bold tracking-wider uppercase text-tawf-gold mb-6">Legal & Financial</p>
               <p className="text-tawf-muted text-lg leading-relaxed">
-                Handles legal governance, financial oversight, and executive accountability. Absolute separation from{' '}
+                Handles legal governance, financial oversight, and executive accountability. Clear separation from{' '}
                 <span className="inline-flex items-center gap-1">
                   Sharia
                   <InfoTooltip term="sharia" />
@@ -824,13 +824,13 @@ export default function Landing() {
                 <div className="w-10 h-10 bg-tawf-green/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-tawf-green font-semibold">3</span>
                 </div>
-                <h4 className="font-semibold text-tawf-green mb-2">Sharia Council Review</h4>
+                <h4 className="font-semibold text-tawf-green mb-2">AI Sharia Review</h4>
                 <p className="text-tawf-muted text-sm leading-relaxed">
-                  The{' '}
+                  An AI-assisted review layer checks every proposal against the{' '}
                   <span className="inline-flex items-center gap-1">
                     Sharia
                     <InfoTooltip term="sharia" />
-                  </span> Advisory Board provides final guidance on all Sharia matters.
+                  </span> aligned AAOIFI and DSN-MUI frameworks.
                 </p>
               </div>
             </div>

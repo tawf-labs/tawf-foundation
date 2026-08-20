@@ -17,7 +17,7 @@ const trustPillars = [
   {
     icon: <ScrollText className="w-8 h-8 text-tawf-gold" />,
     title: "Sharia Credibility",
-    description: "Respected Indonesian ulama sit on our Sharia Advisory Board. Every smart contract is audited and signed by scholars, with a public fatwa database linked directly to on-chain decisions.",
+    description: "Our products are reviewed through an AI Sharia Review aligned to the strict AAOIFI and DSN-MUI frameworks, giving every decision a clear, referenceable basis.",
   },
   {
     icon: <Handshake className="w-8 h-8 text-tawf-gold" />,
@@ -34,16 +34,16 @@ const trustPillars = [
 const governanceBodies = [
   {
     icon: <Shield className="w-10 h-10 text-tawf-green" />,
-    title: "Sharia Advisory Board",
-    tag: "Foundation Chairmen",
+    title: "AI Sharia Review",
+    tag: "Framework Alignment",
     tooltip: "sharia",
     description: (
       <>
-        Islamic scholars whose decisions on Sharia matters are final, binding, and beyond commercial override. Assisted by{' '}
+        An AI-assisted review layer that checks Sharia-related matters against strict standards,{' '}
         <Link to="/ai" className="text-tawf-green font-medium underline decoration-tawf-gold/50 hover:text-tawf-gold transition-colors">
           Tawf AI
         </Link>
-        , referencing AAOIFI, Muhammadiyah, Malaysia DPSN, Bahrain, and Indonesia MUI frameworks.
+        , referencing the AAOIFI and DSN-MUI frameworks.
       </>
     ),
   },
@@ -51,7 +51,7 @@ const governanceBodies = [
     icon: <Building2 className="w-10 h-10 text-tawf-green" />,
     title: "Board of Trustees",
     tag: "Legal & Financial",
-    description: "Handles legal governance, financial oversight, and executive accountability, with absolute separation from Sharia authority.",
+    description: "Handles legal governance, financial oversight, and executive accountability, with clear separation from Sharia review.",
   },
   {
     icon: <Network className="w-10 h-10 text-tawf-green" />,
@@ -88,7 +88,7 @@ export default function About() {
             For generations, Indonesian communities built their own financial institutions from the ground up: cooperatives rooted in trust, not collateral, funded by zakat and waqf. BMTs did not wait for banks to serve them. They built for themselves, governed themselves, trusted themselves. That is what we are rebuilding, for the digital age.
           </p>
           <p>
-            Muslims give over $1 trillion in zakat annually. The problem isn't lack of generosity, it's lack of trust: donors rarely know where their money goes or whether it reached the people it was meant for. We're building first for Southeast Asian students, young and tech-savvy, who want their giving to be transparent, Sharia-certified, local, and beautiful.
+            Muslims give over $1 trillion in zakat annually. The problem isn't lack of generosity, it's lack of trust: donors rarely know where their money goes or whether it reached the people it was meant for. We're building first for Southeast Asian students, young and tech-savvy, who want their giving to be transparent, Sharia-aligned, local, and beautiful.
           </p>
           <p className="font-medium text-tawf-green">
             We are not an organization that treats charity as an add-on. We are a structure where charity is architecturally mandatory.

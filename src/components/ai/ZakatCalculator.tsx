@@ -98,7 +98,7 @@ export default function ZakatCalculator() {
         {!result && !error && (
           <p className="text-tawf-muted text-sm leading-relaxed">
             Enter your assets and Tawf AI will estimate your zakat using the Shafi&apos;i approach and
-            the nisab of 85 grams of gold. The final ruling rests with the Sharia Advisory Board.
+            the nisab of 85 grams of gold. The final ruling rests with the AI Sharia Review.
           </p>
         )}
       </div>

@@ -159,7 +159,7 @@ export const glossaryTerms: Record<string, GlossaryTerm> = {
     term: "Sharia",
     pronunciation: "shah-ree-ah",
     definition: "Islamic religious law derived from the Quran and the teachings of Prophet Muhammad (peace be upon him). It governs all aspects of a Muslim's life, including finance, business, and ethics.",
-    context: "The Sharia Advisory Board provides guidance on all Sharia matters within the Tawf ecosystem."
+    context: "The AI Sharia Review provides guidance on all Sharia matters within the Tawf ecosystem, aligned with AAOIFI and DSN-MUI."
   },
   "riba": {
     term: "Riba",

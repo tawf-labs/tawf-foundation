@@ -44,7 +44,7 @@ const faqs = [
   },
   {
     q: 'Can I specify which asnaf my zakat goes to?',
-    a: 'While you can express preference, our Scholar Chairmen review all distributions to ensure Sharia compliance and fair allocation across all eight categories.'
+    a: 'While you can express preference, our AI Sharia Review checks all distributions to ensure Sharia alignment and fair allocation across all eight categories.'
   }
 ];
 
@@ -147,7 +147,7 @@ export default function Zakat() {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-serif text-tawf-green mb-6">The Eight Asnaf</h2>
           <p className="text-tawf-muted text-xl max-w-3xl mx-auto">
-            Islamic law specifies eight categories of eligible zakat recipients. The Tawf Islamic Foundation distributes to all eight categories under the guidance of our Scholar Chairmen.
+            Islamic law specifies eight categories of eligible zakat recipients. The Tawf Islamic Foundation distributes to all eight categories, aligned with the AAOIFI and DSN-MUI frameworks.
           </p>
         </div>
 
@@ -177,7 +177,7 @@ export default function Zakat() {
           <span className="text-sm font-semibold tracking-[0.2em] uppercase text-tawf-gold">Transparent Flow</span>
           <h2 className="text-3xl md:text-4xl font-serif text-white mt-4 mb-6">How Zakat Flows Through Tawf</h2>
           <p className="text-tawf-sand/70 text-xl max-w-3xl mx-auto">
-            We've built zakat infrastructure that is Sharia-compliant, transparent, and fully auditable.
+            We've built zakat infrastructure that is Sharia-aligned, transparent, and fully auditable.
           </p>
         </div>
 
@@ -186,7 +186,7 @@ export default function Zakat() {
             { title: 'Labs Revenue', desc: '3-8% of Tawf Labs revenue flows to Foundation monthly', icon: <TrendingUp className="w-6 h-6" /> },
             { title: 'Direct Payments', desc: 'Community members can pay zakat directly through our platform', icon: <Heart className="w-6 h-6" /> },
             { title: 'BMT Partners', desc: 'We provide digital infrastructure that powers Islamic charitable institutions across Indonesia, enabling transparent zakat operations', icon: <Users className="w-6 h-6" /> },
-            { title: 'Annual Audit', desc: 'Scholar Chairmen verify all calculations and distributions annually', icon: <CheckCircle className="w-6 h-6" /> }
+            { title: 'Annual Audit', desc: 'AI Sharia Review verifies all calculations and distributions annually', icon: <CheckCircle className="w-6 h-6" /> }
           ].map((item, idx) => (
             <div key={idx} className="bg-white/5 p-6 rounded-2xl border border-white/10">
               <div className="text-tawf-gold mb-4">{item.icon}</div>

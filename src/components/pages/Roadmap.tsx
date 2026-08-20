@@ -94,7 +94,7 @@ const NORTH_STARS: NorthStar[] = [
   },
   {
     icon: <Landmark className="w-6 h-6" />,
-    title: 'Sharia-Compliant DeFi',
+    title: 'Sharia-Aligned DeFi',
     description:
       'Halal on-chain finance: perpetual cash waqf, sukuk, and yield whose akad is enforced by code, not promises.',
   },
@@ -203,7 +203,7 @@ const PILLARS: Pillar[] = [
     evidence: [
       '“Zero-Knowledge Zakat: A Design Science Approach to Auditable Private Donations on Blockchain” by M. Z. Fatonie and A. A. S. Gunawan, accepted @ ICIMTECH 2026',
       'Four TID protocol specs published in tawf-did: did:tawf method, circuit, compact contract, and bridge',
-      'Tawf AI zakat calculator and Sharia Q&A grounded in AAOIFI and MUI frameworks',
+      'Tawf AI zakat calculator and Sharia Q&A grounded in AAOIFI and DSN-MUI frameworks',
     ],
     link: '/research',
   },
@@ -254,7 +254,7 @@ const PILLARS: Pillar[] = [
     status: 'done',
     statusLabel: 'Live on Sepolia',
     summary:
-      'The Sharia-compliant DAO is live on Sepolia, wired to ZKTCore with zero-knowledge voting and tier-weighted governance.',
+      'The Sharia-aligned DAO is live on Sepolia, wired to ZKTCore with zero-knowledge voting and tier-weighted governance.',
     evidence: [
       '11 contracts deployed on Sepolia, ProposalManager, VotingManager, MilestoneManager, TawfPassport, VotingNFT, PoolManager, ZakatEscrowManager, and more',
       'Soulbound tiered voting, KYC-gated proposals, and sequential fund release',

@@ -31,7 +31,7 @@ We're solving this with **on-chain verification** that answers the fundamental q
 
 We're building first for **Southeast Asian students**, young tech-savvy Muslims who want their zakat to be:
 - **Transparent**: Track every step from payment to recipient
-- **Sharia-certified**: Verified by respected ulama
+- **Sharia-aligned**: Reviewed via AI Sharia Review (AAOIFI + DSN-MUI)
 - **Local**: Designed for Indonesian/Malaysian context
 - **Beautiful**: Mobile-first, social, shareable
 
@@ -82,7 +82,7 @@ tawf-foundation/
 - Opens zkt
 - "How much is your zakat?" → Connects GoPay/Bank API
 - AI calculates: "Your zakat mal is Rp 750,000 this month"
-- Breakdown: gold savings, cash, investments, all sharia-compliant
+- Breakdown: gold savings, cash, investments, all Sharia-aligned
 
 **Step 2: Choose**
 - "Who needs your zakat today?"
@@ -123,10 +123,10 @@ tawf-foundation/
 We believe blockchain is the implementation detail, not the headline. Trust comes from:
 
 ### 1. Sharia Credibility
-- Recruit respected Indonesian ulama as advisors
-- Public fatwa database linked to on-chain decisions
-- Every smart contract audited and signed by scholars
-- "Halal Verified" badges on-chain
+- AI Sharia Review aligned to AAOIFI and DSN-MUI
+- Review outcomes linked to on-chain decisions
+- Every smart contract checked against the frameworks
+- "Sharia Aligned" badges on-chain
 
 ### 2. Institution Partnerships
 - Partner with trusted pesantrens and BMTs

@@ -203,7 +203,7 @@ export default function Institutions() {
               Sharia
               <InfoTooltip term="sharia" />
             </span>
-            {' '}decision is final-signed by the Sharia Advisory Board.
+            {' '}decision is reviewed by the AI Sharia Review, aligned to AAOIFI and DSN-MUI.
           </p>
         </div>
       </Section>
