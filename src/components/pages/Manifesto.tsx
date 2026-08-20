@@ -156,7 +156,7 @@ export default function Manifesto() {
                   <strong className="text-tawf-green">No Riba.</strong> Interest transfers wealth from the borrower to the lender regardless of outcome, rewarding capital while too often leaving labor behind. We build without it. We operate without it.
                 </li>
                 <li className="leading-relaxed">
-                  <strong className="text-tawf-green">No Gharar.</strong> Uncertainty that harms is prohibited. Smart contracts must be auditable. Terms must be disclosed. Users must know what they are entering into. Opacity in finance is not sophistication; it is risk we choose to avoid.
+                  <strong className="text-tawf-green">No Gharar.</strong> Uncertainty that harms is prohibited. Smart contracts must be auditable. Terms must be disclosed. Users must know what they are entering into. Opacity in finance is not sophistication. It is risk we choose to avoid.
                 </li>
                 <li className="leading-relaxed">
                   <strong className="text-tawf-green">No Maysir.</strong> Gambling is not a financial product. Zero-sum speculation that enriches participants at each other's expense is not innovation. The financial system must create real value, not merely redistribute it from the unlucky to the lucky.
@@ -165,7 +165,7 @@ export default function Manifesto() {
                   <strong className="text-tawf-green">Real Asset Backing.</strong> Tokens must represent something real. Finance detached from productive human activity, from goods, services, labor, and land, can drift into fiction and eventually collapse on the people least able to absorb the loss.
                 </li>
                 <li className="leading-relaxed">
-                  <strong className="text-tawf-green">Transparent Governance.</strong> Power should be visible. Decisions should be traceable. Those who govern should be accountable to those they serve. On-chain auditability is not only a technical feature; it is how we keep our word.
+                  <strong className="text-tawf-green">Transparent Governance.</strong> Power should be visible. Decisions should be traceable. Those who govern should be accountable to those they serve. On-chain auditability is not only a technical feature. It is how we keep our word.
                 </li>
                 <li className="leading-relaxed">
                   <strong className="text-tawf-green">Social Impact and Maslaha.</strong> Every financial product should answer a simple question: who benefits, and how? Finance should serve the many. That is what it is for. Maslaha is one of our screening criteria, and it is the reason we run zakat and waqf operations ourselves.

@@ -1,4 +1,4 @@
-// Tawf AI — a model-agnostic intelligence layer.
+// Tawf AI. A model-agnostic intelligence layer.
 // The backing provider is abstracted behind a single `tawfAI` call so the model
 // can be swapped without touching any component.
 

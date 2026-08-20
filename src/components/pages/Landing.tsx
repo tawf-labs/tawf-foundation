@@ -668,7 +668,7 @@ export default function Landing() {
           </div>
           <h2 className="text-4xl md:text-5xl font-light text-white mb-6">Built for the institutions that carry the trust</h2>
           <p className="text-tawf-sand/80 text-xl font-light leading-relaxed mb-10 max-w-2xl mx-auto">
-            BAZNAS, LAZ, BMT, Nazir, Masjid, Yayasan, and Pesantren — the infrastructure is
+            BAZNAS, LAZ, BMT, Nazir, Masjid, Yayasan, and Pesantren. The infrastructure is
             ready. See how your institution fits.
           </p>
           <Link

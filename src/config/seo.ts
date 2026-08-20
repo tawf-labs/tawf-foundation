@@ -221,7 +221,7 @@ export const pageSEO: Record<string, SEOConfig> = {
 
   // Institutions
   institutions: {
-    title: 'For Institutions — Infrastructure for Islamic Institutions',
+    title: 'For Institutions. Infrastructure for Islamic Institutions',
     description: 'Power the institutions that carry the trust. Tawf gives BAZNAS, LAZ, BMT, Nazir, Masjid, Yayasan, Pesantren, and merchants the digital infrastructure to collect, notarize, and disburse with transparency.',
     keywords: [
       'Tawf for institutions',
@@ -238,7 +238,7 @@ export const pageSEO: Record<string, SEOConfig> = {
 
   // AI
   ai: {
-    title: 'Tawf AI — Intelligence for the Baitul Maal',
+    title: 'Tawf AI. Intelligence for the Baitul Maal',
     description: 'Model-agnostic AI analytics and integration across the Tawf ecosystem. Zakat calculation, Sharia Q&A, impact analytics, and AI embedded in every product.',
     keywords: [
       'Tawf AI',
