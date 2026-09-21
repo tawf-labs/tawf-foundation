@@ -1,16 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap');
 @import "tailwindcss";
 
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-serif: "Cormorant Garamond", ui-serif, Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
 
   --color-tawf-green: #0F3D30;
   --color-tawf-green-light: #1A5242;
   --color-tawf-gold: #C5A869;
+  --color-tawf-gold-light: #D9C08C;
   --color-tawf-sand: #F9F6F0;
   --color-tawf-ink: #1A1A1A;
+  --color-tawf-ink-deep: #0B0D0C;
   --color-tawf-muted: #6B7280;
+  --color-tawf-line: rgba(15, 61, 48, 0.10);
 
   /* Spacing scale */
   --spacing-section: 6rem;
@@ -38,16 +42,40 @@
   --text-body-xl: 1.25rem;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
 body {
   background-color: var(--color-tawf-sand);
   color: var(--color-tawf-ink);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-serif);
+}
+
+/* Mono eyebrow label — Laravel-style section marker */
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+/* Card elevation via subtle overlay, never shadow jumps */
+.card-hover {
+  transition: border-color 0.25s ease, background-color 0.25s ease, transform 0.25s ease;
+}
+.card-hover:hover {
+  border-color: rgba(197, 168, 105, 0.35);
+  background-color: rgba(255, 255, 255, 0.85);
 }
 
 .oval-mask {
@@ -59,6 +87,21 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-mask-size: 100% 100%;
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center;
+}
+
+/* Animated dashed flow lines (providers orbit) */
+.providers-animated-line {
+  stroke-dasharray: 2 6;
+  animation: providers-dash-flow 900ms linear infinite;
+}
+.providers-animated-line:nth-child(odd) {
+  animation-direction: reverse;
+}
+@keyframes providers-dash-flow {
+  100% { stroke-dashoffset: 8; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .providers-animated-line { animation: none; }
 }
 
 /* Glossary tooltip animations */
