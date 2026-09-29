@@ -195,11 +195,13 @@ export default function HeroStackArt() {
       </defs>
 
       {/* 1 — grid + wash */}
-      <motion.g variants={fade(0, 0.9)}>
-        <g mask="url(#hero-floor)"><path d={GRID} stroke="#e6e8ec" strokeWidth="1" fill="none" /></g>
+     <motion.g variants={fade(0, 0.9)}>
+      <g mask="url(#hero-floor)">
+        <path d={GRID} stroke="#e6e8ec" strokeWidth="1" fill="none" />
         <path fill="url(#hero-wash)" d="M0 0h1395.3v1453.54H0z" transform={PLANE} />
         <path fill="url(#hero-plane-b)" opacity=".9" d="M0 0h1395.3v1453.54H0z" transform={PLANE} />
-      </motion.g>
+      </g>
+    </motion.g>
 
       {/* 2 — path digambar dulu, semuanya berakhir di tepi kiri stack */}
       <g transform={ISO_T} mask="url(#hero-lead)">
