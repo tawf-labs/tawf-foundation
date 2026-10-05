@@ -427,7 +427,7 @@ export default function MissionSection() {
           </Reveal>
 
           <Reveal delay={0.32} className="relative col-span-6 min-h-[320px] overflow-hidden border-b border-[#e4e6ea] px-6 pt-8 md:px-8 lg:col-span-3 lg:px-8">
-            <p className="max-w-[20ch] text-[clamp(22px,2.6vw,30px)] font-medium leading-[1.16] tracking-tight text-tawf-ink">Ethical microfinance — one ecosystem, verifiable on-chain</p>
+            <p className="max-w-[20ch] text-[clamp(22px,2.6vw,30px)] font-medium leading-[1.16] tracking-tight text-tawf-ink">Ethical microfinance, one ecosystem, verifiable on-chain</p>
             <div className="relative mt-7 min-h-[250px] flex-1"><ChainVisual /></div>
           </Reveal>
         </div>
