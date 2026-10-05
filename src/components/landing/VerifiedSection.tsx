@@ -84,7 +84,7 @@ export default function VerifiedSection() {
 
       <div className={`${CONTAINER} relative`}>
         <Reveal className="mx-auto flex max-w-[820px] flex-col items-center text-center">
-          <div className="flex justify-center"><Kick>Verified on-chain</Kick></div>
+          <div className="flex justify-center"><Kick>Verified on chain</Kick></div>
 
           <h2
             className="bg-clip-text pb-2 text-[clamp(38px,6.2vw,72px)] font-medium leading-[1.02] tracking-[-0.035em] text-transparent"
@@ -96,7 +96,7 @@ export default function VerifiedSection() {
           </h2>
 
           <p className="mt-6 max-w-[34em] text-[clamp(16px,1.4vw,18px)] leading-[1.6]" style={{ color: MUTED2 }}>
-            Track every <span className="inline-flex items-center gap-1">dirham<InfoTooltip term="dirham" /></span> as it flows through Foundation infrastructure. See your impact in real-time, from payment to recipient.
+            Track every <span className="inline-flex items-center gap-1">dirham<InfoTooltip term="dirham" /></span> as it flows through Foundation infrastructure. See your impact in real time, from payment to recipient.
           </p>
 
           {/* Live verification pill */}

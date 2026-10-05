@@ -69,7 +69,7 @@ function DonationVisual({ on }: { on: boolean }) {
 
 function QurbanVisual({ on }: { on: boolean }) {
   const steps: [string, string, boolean][] = [
-    ['Funds received', 'Recorded on-chain', true],
+    ['Funds received', 'Recorded on chain', true],
     ['Farm allocated', 'Sustainable partner farm', true],
     ['Distributed', 'Delivered to recipients', true],
     ['Certificate', 'Issued to the donor', false],
@@ -120,7 +120,7 @@ function WaqfChartVisual({ on }: { on: boolean }) {
         </div>
       </Rise>
       <div className="mt-3 grid grid-cols-2 gap-2">
-        {[['Capital', 'Preserved on-chain'], ['Yield', 'Reaches the Nazir']].map(([t, s], i) => (
+        {[['Capital', 'Preserved on chain'], ['Yield', 'Reaches the Nazir']].map(([t, s], i) => (
           <Rise key={t} on={on} delay={460 + i * 90} className="rounded-[10px] border border-[#e4e6ea] bg-white px-3 py-2.5">
             <div className="text-[11px] text-[#666b75]">{t}</div>
             <div className="text-[13px] font-medium text-[#14181c]">{s}</div>
@@ -138,7 +138,7 @@ function YieldVisual({ on }: { on: boolean }) {
     <div>
       <VisualHead title="Stake and earn" badge="Sharia aligned" on={on} />
       <Rise on={on} delay={80} className="rounded-[10px] border border-[#e4e6ea] bg-[#fafafa] p-3">
-        <div className="mb-2 text-[11px] text-[#666b75]">Yield from real-world ethical projects</div>
+        <div className="mb-2 text-[11px] text-[#666b75]">Yield from real world ethical projects</div>
         <svg viewBox="0 0 300 100" className="block h-auto w-full" fill="none" aria-hidden="true">
           <defs>
             <linearGradient id="plat-yield-fill" x1="0" y1="0" x2="0" y2="1">
@@ -160,7 +160,7 @@ function YieldVisual({ on }: { on: boolean }) {
         </svg>
       </Rise>
       <div className="mt-3 grid grid-cols-2 gap-2">
-        {[['Staking', 'Stake assets to earn'], ['Real-world yield', 'Backed by ethical projects']].map(([t, s], i) => (
+        {[['Staking', 'Stake assets to earn'], ['Real world yield', 'Backed by ethical projects']].map(([t, s], i) => (
           <Rise key={t} on={on} delay={460 + i * 90} className="rounded-[10px] border border-[#e4e6ea] bg-white px-3 py-2.5">
             <div className="text-[11px] text-[#666b75]">{t}</div>
             <div className="text-[13px] font-medium text-[#14181c]">{s}</div>
@@ -178,10 +178,10 @@ const VISUALS = [DonationVisual, QurbanVisual, WaqfChartVisual, YieldVisual];
 /* ------------------------------------------------------------------ */
 
 const PLATFORMS = [
-  { ctag: 'zkt', label: 'Zakat', host: 'zkt.tawf.foundation', title: 'Transparent & Traceable Donations', desc: 'Blockchain-based donation platform where every donation is recorded and trackable in real-time with NFT receipts.', tags: [['Sharia Aligned', true], ['100% On-Chain', false]], href: 'https://zkt.tawf.foundation' },
-  { ctag: 'qrbn', label: 'Qurban', host: 'qurban.tawf.foundation', title: 'Transparent Qurban', desc: 'Support sustainable Qurban farms with on-chain tracking and NFT certificates over how funds are allocated.', tags: [['Sharia Aligned', true], ['NFT Certificates', false], ['On-Chain Tracking', false]], href: 'https://qurban.tawf.foundation' },
-  { ctag: 'wqf', label: 'Waqf', host: 'waqf.tawf.foundation', title: 'Perpetual Cash Waqf', desc: 'Endow permanently and the capital is preserved on-chain while its staking yield reaches the Nazir, or dedicate it for a fixed term.', tags: [['Sharia Aligned', true], ['Perpetual Endowment', false], ['100% On-Chain', false]], href: 'https://waqf.tawf.foundation' },
-  { ctag: 'tawf.finance', label: 'Yield', host: 'tawf.finance', title: 'Stake & Earn Yield', desc: 'Our commercial platform for staking assets and earning yield from real-world ethical projects. Sharia-aligned DeFi.', tags: [['Sharia Aligned', true], ['Real-World Yield', false], ['Staking', false]], href: 'https://tawf.finance' },
+  { ctag: 'zkt', label: 'Zakat', host: 'zkt.tawf.foundation', title: 'Transparent & Traceable Donations', desc: 'Blockchain based donation platform where every donation is recorded and trackable in real time with NFT receipts.', tags: [['Sharia Aligned', true], ['100% On Chain', false]], href: 'https://zkt.tawf.foundation' },
+  { ctag: 'qrbn', label: 'Qurban', host: 'qurban.tawf.foundation', title: 'Transparent Qurban', desc: 'Support sustainable Qurban farms with on chain tracking and NFT certificates over how funds are allocated.', tags: [['Sharia Aligned', true], ['NFT Certificates', false], ['On Chain Tracking', false]], href: 'https://qurban.tawf.foundation' },
+  { ctag: 'wqf', label: 'Waqf', host: 'waqf.tawf.foundation', title: 'Perpetual Cash Waqf', desc: 'Endow permanently and the capital is preserved on chain while its staking yield reaches the Nazir, or dedicate it for a fixed term.', tags: [['Sharia Aligned', true], ['Perpetual Endowment', false], ['100% On Chain', false]], href: 'https://waqf.tawf.foundation' },
+  { ctag: 'tawf.finance', label: 'Yield', host: 'tawf.finance', title: 'Stake & Earn Yield', desc: 'Our commercial platform for staking assets and earning yield from real world ethical projects. Sharia aligned DeFi.', tags: [['Sharia Aligned', true], ['Real World Yield', false], ['Staking', false]], href: 'https://tawf.finance' },
 ] as const;
 
 export default function PlatformsSection() {
@@ -220,7 +220,7 @@ export default function PlatformsSection() {
             <h2 className="max-w-[16em] text-[clamp(30px,4.2vw,46px)] font-medium leading-[1.06] tracking-[-0.03em] text-[#14181c]">One trust layer. Many ways to give.</h2>
           </div>
           <p className="max-w-[40em] text-base leading-[1.6] lg:pb-1.5" style={{ color: MUTED2 }}>
-            Purpose-built platforms for zakat, qurban, waqf, and ethical yield, connected by the same transparent infrastructure that brings Sharia alignment to Islamic philanthropy.
+            Purpose built platforms for zakat, qurban, waqf, and ethical yield, connected by the same transparent infrastructure that brings Sharia alignment to Islamic philanthropy.
           </p>
         </Reveal>
 

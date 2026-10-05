@@ -31,7 +31,7 @@ export default function HeroSection() {
               transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
               className="mt-5 max-w-[32em] text-[clamp(16px,1.4vw,18.5px)] leading-[1.6] text-[#5d646d] max-md:mx-auto"
             >
-              <strong className="font-semibold text-[#14181c]">Blockchain verified zakat.</strong> Know exactly where your money goes and infrastructure that doesn't stop at zakat.
+              <strong className="font-semibold text-[#14181c]">Blockchain verified zakat.</strong> Know exactly where your money goes and infrastructure that doesn't stop at zakat. Built on EVM, secured by Ethereum.
             </motion.p>
 
             <motion.div

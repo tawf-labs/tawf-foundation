@@ -14,9 +14,9 @@ function Plus({ left, className = '' }: { left: number; className?: string }) {
 export default function GetStartedSection() {
   const steps = [
     ['01', 'Get Your Tawf ID', 'Create your Tawf ID (TID), a soulbound identity credential that grants access to the TAWF DAO. One person, one ID, one vote.'],
-    ['02', 'Pay Your Zakat', 'Use our Ziswaf-powered platform to pay zakat with full blockchain transparency. Track every dirham from payment to distribution.'],
+    ['02', 'Pay Your Zakat', 'Use our Ziswaf powered platform to pay zakat with full blockchain transparency. Track every dirham from payment to distribution.'],
     ['03', 'Join the Community', 'Participate in governance discussions and vote on ecosystem proposals. Your voice shapes the future of Islamic digital finance.'],
-    ['04', 'Verify Everything', 'All transactions are recorded on-chain. View donation history, fund allocations, and impact reports anytime.'],
+    ['04', 'Verify Everything', 'All transactions are recorded on chain. View donation history, fund allocations, and impact reports anytime.'],
   ];
 
   return (
