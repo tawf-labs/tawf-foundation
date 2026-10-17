@@ -56,12 +56,12 @@ function MerkleArt() {
 
 function TerminalArt() {
   const lines: [string, string, string][] = [
-    ['import', '{ mintTid } from "@tawf/identity";', ''],
-    ['import', '{ anchor } from "@tawf/verify";', ''],
+    ['import', '{ mintTid } from "@tawf/identity"', ''],
+    ['import', '{ anchor } from "@tawf/verify"', ''],
     ['', '', ''],
     ['', '// one soulbound ID per person', 'comment'],
-    ['const', 'tid = await mintTid(wallet);', ''],
-    ['', 'await anchor(records);', ''],
+    ['const', 'tid = await mintTid(wallet)', ''],
+    ['', 'await anchor(records)', ''],
   ];
   return (
     <div className="absolute inset-0 rounded-t-xl border border-b-0 p-4 font-mono text-xs leading-[1.85]" style={{ background: '#fff', borderColor: LINE2, boxShadow: '0 1px 2px rgba(20,24,32,.05),0 8px 24px rgba(20,24,32,.06)' }}>

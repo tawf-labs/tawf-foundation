@@ -67,10 +67,10 @@ export default function Manifesto() {
                 That is where we come from. That is what we are rebuilding.
               </p>
               <p className="leading-relaxed mt-4">
-                Today, we provide the digital infrastructure that enables BMT organizations across Indonesia to operate with full transparency. We don't replace these institutions - we power them with blockchain-based systems for zakat, infaq, and sadaqah collection.
+                Today, we provide the digital infrastructure that enables BMT organizations across Indonesia to operate with full transparency. We don't replace these institutions. We power them with blockchain-based systems for zakat, infaq, and sadaqah collection.
               </p>
               <p className="leading-relaxed mt-4">
-                The Tawf Islamic Foundation is the shared infrastructure layer - a modern digital Baitul Maal that serves as the public trust backbone for the entire ecosystem. Everything commercial that Tawf Labs builds, earns, and grows flows back here. Into the community. Into the hands that need it. Into endowments that will outlast every market cycle. This is not a feature of Tawf. This is the reason Tawf exists.
+                The Tawf Islamic Foundation is the shared infrastructure layer, a modern digital Baitul Maal that serves as the public trust backbone for the entire ecosystem. Everything commercial that Tawf Labs builds, earns, and grows flows back here. Into the community. Into the hands that need it. Into endowments that will outlast every market cycle. This is not a feature of Tawf. This is the reason Tawf exists.
               </p>
             </section>
 

@@ -11,8 +11,8 @@ import InfoTooltip from '../ui/InfoTooltip';
 import { glossaryTerms } from '../../content/glossary';
 
 const asnafCategories = [
-  { key: 'faqir', name: 'Al-Fuqara', desc: 'The poor - those who don\'t have enough to meet basic needs' },
-  { key: 'miskin', name: 'Al-Masakin', desc: 'The needy - those who have some means but insufficient' },
+  { key: 'faqir', name: 'Al-Fuqara', desc: 'The poor, those who don\'t have enough to meet basic needs' },
+  { key: 'miskin', name: 'Al-Masakin', desc: 'The needy, those who have some means but insufficient' },
   { key: 'amil', name: 'Al-Amilin', desc: 'The collectors/administrators of zakat' },
   { key: 'muallaf', name: 'Al-Mu\'allafah', desc: 'Those whose hearts are to be reconciled' },
   { key: 'riqab', name: 'Ar-Riqab', desc: 'Those in bondage or seeking freedom' },

@@ -45,7 +45,7 @@ export const websiteSchema = {
   '@type': 'WebSite',
   name: 'Tawf Islamic Foundation',
   url: SITE_URL,
-  description: 'Infrastructure for the Digital Baitul Maal - Blockchain-based Islamic philanthropy, zakat, and waqf management.',
+  description: 'Infrastructure for the Digital Baitul Maal. Blockchain-based Islamic philanthropy, zakat, and waqf management.',
   potentialAction: {
     '@type': 'SearchAction',
     target: `${SITE_URL}/glossary?q={search_term_string}`,
@@ -74,7 +74,7 @@ export const pageSEO: Record<string, SEOConfig> = {
 
   // About
   about: {
-    title: 'About Us - Tawf Islamic Foundation',
+    title: 'About Us. Tawf Islamic Foundation',
     description: 'Learn about the Tawf Islamic Foundation: our mission, our governance structure, our trust strategy, and our roadmap for building transparent, Sharia-compliant infrastructure for Islamic philanthropy.',
     keywords: [
       'about Tawf Islamic Foundation',
@@ -90,7 +90,7 @@ export const pageSEO: Record<string, SEOConfig> = {
 
   // Manifesto
   manifesto: {
-    title: 'Tawf Manifesto - Islamic Philanthropy Reimagined',
+    title: 'Tawf Manifesto. Islamic Philanthropy Reimagined',
     description: 'Our vision for transparent, accountable Islamic philanthropy using blockchain technology and zero-knowledge proofs. Seven non-negotiable principles for ethical finance.',
     keywords: [
       'Islamic philanthropy manifesto',
@@ -106,7 +106,7 @@ export const pageSEO: Record<string, SEOConfig> = {
 
   // Zakat
   zakat: {
-    title: 'Zakat Transparency - On-Chain Verification',
+    title: 'Zakat Transparency. On-Chain Verification',
     description: 'Track your zakat contributions with complete transparency. Blockchain-verified zakat distribution to the eight asnaf categories for maximum accountability.',
     keywords: [
       'digital zakat',
@@ -122,7 +122,7 @@ export const pageSEO: Record<string, SEOConfig> = {
 
   // Cash Waqf
   waqf: {
-    title: 'Cash Waqf - Perpetual Endowment On-Chain',
+    title: 'Cash Waqf. Perpetual Endowment On-Chain',
     description:
       'Retail cash waqf on-chain. Endow permanently and the capital is preserved while its staking yield reaches the nazir, or dedicate it for a fixed term. Which akad you signed is enforced by the contract.',
     keywords: [
@@ -141,7 +141,7 @@ export const pageSEO: Record<string, SEOConfig> = {
 
   // Qurban
   qurban: {
-    title: 'Qurban Management - Transparent Sacrifice',
+    title: 'Qurban Management. Transparent Sacrifice',
     description: 'Modern qurban management with on-chain tracking. Ensure your sacrifice reaches beneficiaries with full transparency through NFT certificates.',
     keywords: [
       'digital qurban',
@@ -157,7 +157,7 @@ export const pageSEO: Record<string, SEOConfig> = {
 
   // Research
   research: {
-    title: 'Tawf Research - Zero-Knowledge Proofs & Islamic Finance',
+    title: 'Tawf Research. Zero-Knowledge Proofs & Islamic Finance',
     description: 'Peer-reviewed research and open technical specifications. Zero-knowledge zakat, decentralized identity (did:tawf), cryptographic notarization, and on-chain zakat and waqf transparency.',
     keywords: [
       'zero-knowledge zakat',
@@ -175,7 +175,7 @@ export const pageSEO: Record<string, SEOConfig> = {
 
   // Glossary
   glossary: {
-    title: 'Islamic Finance Glossary - Tawf',
+    title: 'Islamic Finance Glossary. Tawf',
     description: 'Learn key terms in Islamic finance, zakat, waqf, sadaqah, and blockchain technology. Comprehensive glossary for understanding modern Islamic philanthropy.',
     keywords: [
       'Islamic finance terms',

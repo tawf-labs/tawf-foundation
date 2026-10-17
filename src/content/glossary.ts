@@ -34,7 +34,7 @@ export const glossaryTerms: Record<string, GlossaryTerm> = {
   "waqf-muabbad": {
     term: "Waqf Mu'abbad",
     pronunciation: "wah-kif moo-ab-bad",
-    definition: "Perpetual waqf - the classical form. The endowed capital is given permanently and is never returned to the giver. It is preserved in perpetuity, and only the benefit it produces is distributed.",
+    definition: "Perpetual waqf, the classical form. The endowed capital is given permanently and is never returned to the giver. It is preserved in perpetuity, and only the benefit it produces is distributed.",
     context: "In Staking Waqf Ritel this is enforced by the contract itself: a perpetual position has no withdrawal function, for the waqif, the nazir and the contract owner alike.",
     shortDefinition: "Perpetual waqf. The capital is given permanently and never returned.",
     shortContext: "Enforced in code: a perpetual position simply has no withdrawal function.",
@@ -52,7 +52,7 @@ export const glossaryTerms: Record<string, GlossaryTerm> = {
   "waqif": {
     term: "Waqif",
     pronunciation: "wah-kif",
-    definition: "The person who creates a waqf - the giver who dedicates their property or capital to charitable purpose.",
+    definition: "The person who creates a waqf. The giver who dedicates their property or capital to charitable purpose.",
     context: "In Staking Waqf Ritel the waqif deposits IDRX and chooses which akad applies to it.",
     shortDefinition: "The person who creates a waqf by dedicating their capital.",
     related: ["waqf", "nazir"]
@@ -69,7 +69,7 @@ export const glossaryTerms: Record<string, GlossaryTerm> = {
   "wakaf-produktif": {
     term: "Wakaf Produktif",
     pronunciation: "wah-kaf pro-duk-tif",
-    definition: "Productive waqf - where the endowment assets are actively invested or used to generate ongoing returns that fund community programs perpetually, rather than being held statically.",
+    definition: "Productive waqf, where the endowment assets are actively invested or used to generate ongoing returns that fund community programs perpetually, rather than being held statically.",
     context: "Through Tawf Labs, we're building toward tokenized waqf that can be managed digitally."
   },
   "sadaqah": {
@@ -140,7 +140,7 @@ export const glossaryTerms: Record<string, GlossaryTerm> = {
   "bmt": {
     term: "BMT",
     pronunciation: "B-M-T",
-    definition: "Baitul Maal wa Tamwil - Islamic financial cooperatives common in Indonesia. They combine social funds (Baitul Maal) for charity with commercial financing (Tamwil) for members.",
+    definition: "Baitul Maal wa Tamwil. Islamic financial cooperatives common in Indonesia. They combine social funds (Baitul Maal) for charity with commercial financing (Tamwil) for members.",
     context: "Tawf Islamic Foundation provides digital infrastructure that enables BMTs across Indonesia to operate transparently."
   },
   "soulbound": {
@@ -152,7 +152,7 @@ export const glossaryTerms: Record<string, GlossaryTerm> = {
   "dao": {
     term: "DAO",
     pronunciation: "D-A-O",
-    definition: "Decentralized Autonomous Organization - a member-governed organization where rules and decisions are encoded in smart contracts on a blockchain.",
+    definition: "Decentralized Autonomous Organization. A member-governed organization where rules and decisions are encoded in smart contracts on a blockchain.",
     context: "The TAWF DAO enables community governance with one TID equaling one vote."
   },
   "sharia": {
@@ -164,7 +164,7 @@ export const glossaryTerms: Record<string, GlossaryTerm> = {
   "riba": {
     term: "Riba",
     pronunciation: "ree-bah",
-    definition: "Interest or usury - the prohibition of charging or paying interest on loans. It's considered exploitative as it generates wealth from wealth without productive activity.",
+    definition: "Interest or usury. The prohibition of charging or paying interest on loans. It's considered exploitative as it generates wealth from wealth without productive activity.",
     context: "The Tawf ecosystem excludes all forms of riba."
   },
   "gharar": {
@@ -182,13 +182,13 @@ export const glossaryTerms: Record<string, GlossaryTerm> = {
   "maslaha": {
     term: "Maslaha",
     pronunciation: "mas-lah-hah",
-    definition: "Public interest or social welfare - a principle in Islamic jurisprudence that permits or encourages actions that benefit the community while aligning with Sharia objectives.",
+    definition: "Public interest or social welfare. A principle in Islamic jurisprudence that permits or encourages actions that benefit the community while aligning with Sharia objectives.",
     context: "All Tawf products must demonstrate genuine maslaha (public benefit)."
   },
   "tamwil": {
     term: "Tamwil",
     pronunciation: "tahm-weel",
-    definition: "Financing or funding - the commercial side of BMT operations that provides ethical financing products and services to members.",
+    definition: "Financing or funding. The commercial side of BMT operations that provides ethical financing products and services to members.",
     context: "Tawf Labs provides tamwil services, while the Foundation manages the Baitul Maal."
   }
 };
