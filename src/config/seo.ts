@@ -24,7 +24,7 @@ export const organizationSchema = {
   logo: `${SITE_URL}/images/tawflogo.png`,
   description: 'Baitul Maal rebuilt for the digital age. We provide blockchain-based infrastructure for transparent Islamic philanthropy, zakat, and waqf management.',
   sameAs: [
-    'https://tawf.xyz',
+    'https://tawflabs.com',
     'https://x.com/TawfFoundation',
   ],
   address: {

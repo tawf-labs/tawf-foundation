@@ -226,7 +226,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <li><Link to="/glossary" className="hover:text-tawf-gold transition-colors">Glossary</Link></li>
               <li><Link to="/contact" className="hover:text-tawf-gold transition-colors">Contact</Link></li>
               <li><Link to="/manifesto" className="hover:text-tawf-gold transition-colors">Read the Manifesto</Link></li>
-              <li><a href="https://tawf.xyz" target="_blank" rel="noopener noreferrer" className="hover:text-tawf-gold transition-colors">Tawf Labs</a></li>
+              <li><a href="https://tawflabs.com" target="_blank" rel="noopener noreferrer" className="hover:text-tawf-gold transition-colors">Tawf Labs</a></li>
             </ul>
           </div>
         </div>
